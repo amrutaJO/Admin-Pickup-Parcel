@@ -1,10 +1,9 @@
 <?php require_once __DIR__."/header.php"?>
-
 <div class="content container-fluid">
     <div class="page-header">
         <div class="row align-items-center">
             <div class="col">
-                <h1 class="page-header-title">Dashboard</h1>
+                <h1 class="page-header-title"><?= translate('') ?></h1>
             </div>
         </div>
     </div>
