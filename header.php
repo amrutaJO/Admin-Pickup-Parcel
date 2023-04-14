@@ -413,10 +413,10 @@ if (isset($_POST['change_lang'])) {
 								<i class="bi-trash3-fill me-1 align-middle"></i>
 								Clear demo nursery data							</a>
 														<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="profile">
+							<a class="dropdown-item" href="profile.php">
 								<i class="bi-person-fill me-1 align-middle"></i>
 								Profile							</a>
-														<a class="dropdown-item" href="settings">
+														<a class="dropdown-item" href="settings.php">
 								<i class="bi bi-gear-fill me-1 align-middle"></i>
 								Settings							</a>
 														<div class="dropdown-divider"></div>
@@ -459,7 +459,7 @@ if (isset($_POST['change_lang'])) {
 					</div>
 					<div id="navbarVerticalMenuPagesMenu">
 																	<div class="nav-item">
-							<a class="nav-link" href="customers">
+							<a class="nav-link" href="customers.php">
 								<i class="bi-people nav-icon"></i>
 								<span class="nav-link-title">Customers</span>
 							</a>
@@ -478,37 +478,37 @@ if (isset($_POST['change_lang'])) {
 							</div>
 						</div> -->
 						<div class="nav-item">
-							<a class="nav-link" href="products">
+							<a class="nav-link" href="products.php">
 								<i class="bi-suit-club nav-icon"></i>
 								<span class="nav-link-title">Inventory</span>
 							</a>
 						</div>
 						<div class="nav-item">
-							<a class="nav-link" href="sowing">
+							<a class="nav-link" href="sowing.php">
 								<i class="bi-flower2 nav-icon"></i>
 								<span class="nav-link-title">Sowing</span>
 							</a>
 						</div>
 																		<div class="nav-item">
-							<a class="nav-link" href="purchase">
+							<a class="nav-link" href="purchase.php">
 								<i class="bi-cart-plus nav-icon"></i>
 								<span class="nav-link-title">Purchase</span>
 							</a>
 						</div>
 																		<div class="nav-item">
-							<a class="nav-link" href="billing">
+							<a class="nav-link" href="billing.php">
 								<i class="bi-cash-coin nav-icon"></i>
 								<span class="nav-link-title">Billing</span>
 							</a>
 						</div>
 																		<div class="nav-item">
-							<a class="nav-link" href="bookings">
+							<a class="nav-link" href="bookings.php">
 								<i class="bi-tags nav-icon"></i>
 								<span class="nav-link-title">Bookings</span>
 							</a>
 						</div>
 																		<div class="nav-item">
-							<a class="nav-link" href="suppliers">
+							<a class="nav-link" href="suppliers.php">
 								<i class="bi-truck nav-icon"></i>
 								<span class="nav-link-title">Suppliers</span>
 							</a>
@@ -522,31 +522,31 @@ if (isset($_POST['change_lang'])) {
 								<a class="nav-link " href="employees">View All</a>
 								<div>
 									<div class="nav-item">
-										<a class="nav-link" href="attendance">Attendance</a>
+										<a class="nav-link" href="attendance.php">Attendance</a>
 									</div>
 									<div class="nav-item">
-										<a class="nav-link" href="advance">Advance / Borrowing</a>
+										<a class="nav-link" href="advance.php">Advance / Borrowing</a>
 									</div>
 									<div class="nav-item">
-										<a class="nav-link" href="salary">Salary</a>
+										<a class="nav-link" href="salary.php">Salary</a>
 									</div>
 								</div>
 							</div>
 						</div>
 																		<div class="nav-item">
-							<a class="nav-link" href="expenses">
+							<a class="nav-link" href="expenses.php">
 								<i class="bi-currency-exchange nav-icon"></i>
 								<span class="nav-link-title">Expenses</span>
 							</a>
 						</div>
 																		<div class="nav-item">
-							<a class="nav-link" href="reports">
+							<a class="nav-link" href="reports.php">
 								<i class="bi-stickies nav-icon"></i>
 								<span class="nav-link-title">Reports</span>
 							</a>
 						</div>
 																		<div class="nav-item">
-							<a class="nav-link" href="users">
+							<a class="nav-link" href="users.php">
 								<i class="bi-person-bounding-box nav-icon"></i>
 								<span class="nav-link-title">Users</span>
 							</a>

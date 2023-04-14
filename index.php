@@ -1,5 +1,4 @@
 <?php require_once __DIR__."/header.php"?>
-
 <div class="content container-fluid">
     <div class="page-header">
         <div class="row align-items-center">
