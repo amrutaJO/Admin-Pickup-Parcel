@@ -211,7 +211,7 @@ if (isset($_POST['change_lang'])) {
 	</script>
 </head>
 
-<body class="has-navbar-vertical-aside navbar-vertical-aside-show-xl footer-offset" lang="en">
+<body class="has-navbar-vertical-aside navbar-vertical-aside-show-xl footer-offset" lang="<?= $lang ?>">
 	<script src="assets/js/hs.theme-appearance.js"></script>
 	<script src="assets/vendor/hs-navbar-vertical-aside/dist/hs-navbar-vertical-aside-mini-cache.js"></script>
 	<!-- ========== HEADER ========== -->
@@ -541,104 +541,32 @@ if (isset($_POST['change_lang'])) {
 							<div class="nav-item">
 								<a class="nav-link" href="customers.php">
 									<i class="bi-people nav-icon"></i>
-									<span class="nav-link-title">User Management</span>
+									<span class="nav-link-title">Customers</span>
 								</a>
 							</div>
 							<!-- <div class="nav-item">
-								<a class="nav-link" href="customers.php">
-									<i class="bi-people nav-icon"></i>
-									<span class="nav-link-title">Sub Admin</span>
-								</a>
-							</div> -->
-							<div class="nav-item">
-								<a class="nav-link dropdown-toggle " href="#subadmin" role="button" data-bs-toggle="collapse" data-bs-target="#subadmin" aria-expanded="false" aria-controls="subadmin">
-									<i class="bi-people nav-icon"></i>
-									<span class="nav-link-title">Sub Admin</span>
-								</a>
-								<div id="subadmin" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
-									<a class="nav-link " href="createsubadmin.php">Create Sub Admin</a>
-									<a class="nav-link " href="sowing">Create Staff</a>
-									<a class="nav-link " href="">Department</a>
-									<a class="nav-link " href="">Permissions</a>
-									<a class="nav-link " href="">Branches</a>
-								</div>
+							<a class="nav-link dropdown-toggle " href="#navbarVerticalMenuPagesProductsMenu" role="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalMenuPagesProductsMenu" aria-expanded="false" aria-controls="navbarVerticalMenuPagesProductsMenu">
+								<i class="bi-suit-club nav-icon"></i>
+								<span class="nav-link-title">Inventory</span>
+							</a>
+							<div id="navbarVerticalMenuPagesProductsMenu" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
+								<a class="nav-link " href="products">Products</a>
+								<a class="nav-link " href="sowing">Sowing</a>
+								<a class="nav-link " href="">Category</a>
+								<a class="nav-link " href="">Sub Category</a>
+								<a class="nav-link " href="">Brand</a>
 							</div>
+						</div> -->
 							<div class="nav-item">
-								<a class="nav-link dropdown-toggle " href="#inventory" role="button" data-bs-toggle="collapse" data-bs-target="#inventory" aria-expanded="false" aria-controls="inventory">
+								<a class="nav-link" href="products.php">
 									<i class="bi-suit-club nav-icon"></i>
 									<span class="nav-link-title">Inventory</span>
 								</a>
-								<div id="inventory" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
-									<a class="nav-link " href="products.php">Add Product</a>
-									<a class="nav-link " href="">Purchase</a>
-									<a class="nav-link " href="">Supplier</a>
-									<a class="nav-link " href="">Stocktakes</a>
-								</div>
-							</div>
-							<div class="nav-item">
-								<a class="nav-link" href="index.php">
-									<i class="bi-flower2 nav-icon"></i>
-									<span class="nav-link-title">Booking Dashboard</span>
-								</a>
 							</div>
 							<div class="nav-item">
 								<a class="nav-link" href="sowing.php">
 									<i class="bi-flower2 nav-icon"></i>
-									<span class="nav-link-title">Bookings</span>
-								</a>
-							</div>
-							<div class="nav-item">
-								<a class="nav-link" href="sowing.php">
-									<i class="bi-flower2 nav-icon"></i>
-									<span class="nav-link-title">Sells Department</span>
-								</a>
-							</div>
-							<div class="nav-item">
-								<a class="nav-link" href="sowing.php">
-									<i class="bi-flower2 nav-icon"></i>
-									<span class="nav-link-title">Sowing Department</span>
-								</a>
-							</div>
-							<div class="nav-item">
-								<a class="nav-link" href="sowing.php">
-									<i class="bi-flower2 nav-icon"></i>
-									<span class="nav-link-title">Production Department</span>
-								</a>
-							</div>
-							<div class="nav-item">
-								<a class="nav-link" href="sowing.php">
-									<i class="bi-flower2 nav-icon"></i>
-									<span class="nav-link-title">Dispatch Department</span>
-								</a>
-							</div>
-							<div class="nav-item">
-								<a class="nav-link" href="sowing.php">
-									<i class="bi-flower2 nav-icon"></i>
-									<span class="nav-link-title">Transport Department</span>
-								</a>
-							</div>
-							<div class="nav-item">
-								<a class="nav-link" href="sowing.php">
-									<i class="bi-flower2 nav-icon"></i>
-									<span class="nav-link-title">HR Management</span>
-								</a>
-							</div>
-							<div class="nav-item">
-								<a class="nav-link" href="sowing.php">
-									<i class="bi-flower2 nav-icon"></i>
-									<span class="nav-link-title">Accounts Department</span>
-								</a>
-							</div>
-							<div class="nav-item">
-								<a class="nav-link" href="sowing.php">
-									<i class="bi-flower2 nav-icon"></i>
-									<span class="nav-link-title">Ledger Management</span>
-								</a>
-							</div>
-							<div class="nav-item">
-								<a class="nav-link" href="sowing.php">
-									<i class="bi-flower2 nav-icon"></i>
-									<span class="nav-link-title">Custum Push</span>
+									<span class="nav-link-title">Sowing</span>
 								</a>
 							</div>
 							<div class="nav-item">
@@ -671,7 +599,7 @@ if (isset($_POST['change_lang'])) {
 									<span class="nav-link-title">Employee</span>
 								</a>
 								<div id="navbarVerticalMenuPagesEmployeesMenu" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
-									<a class="nav-link " href="employees.php">View All</a>
+									<a class="nav-link " href="employees">View All</a>
 									<div>
 										<div class="nav-item">
 											<a class="nav-link" href="attendance.php">Attendance</a>
