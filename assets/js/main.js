@@ -1,25 +1,34 @@
 'use strict';
+function empt() {
+	let selectElement = document.getElementById("empt");
+	const selectedOption = selectElement.options[selectElement.selectedIndex];
+	console.log("Selected Option Value: " + selectedOption.value);
+	console.log("Selected Option Text: " + selectedOption.text);
+}
+function persal() {
+	let perdaymonth = document.getElementsByClassName("perdaymonth")
+}
 function browserName() {
 	let browser;
 	if ((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1) {
-    	browser = 'Opera';
+		browser = 'Opera';
 	} else if (navigator.userAgent.indexOf("Edg") != -1) {
-	    browser = 'Edge';
+		browser = 'Edge';
 	} else if (navigator.userAgent.indexOf("Chrome") != -1) {
-	    browser = 'Chrome';
+		browser = 'Chrome';
 	} else if (navigator.userAgent.indexOf("Safari") != -1) {
-	    browser = 'Safari';
+		browser = 'Safari';
 	} else if (navigator.userAgent.indexOf("Firefox") != -1) {
-	    browser = 'Firefox';
+		browser = 'Firefox';
 	} else if ((navigator.userAgent.indexOf("MSIE") != -1) || (!!document.documentMode == true)) {
-	    browser = 'IE';
+		browser = 'IE';
 	} else {
-	    browser = 'Unknown';
+		browser = 'Unknown';
 	}
 	return browser;
 }
 Object.defineProperty(String.prototype, 'toTitleCase', {
-	value: function() {
+	value: function () {
 		return this.charAt(0).toUpperCase() + this.slice(1);
 	},
 	enumerable: false
@@ -45,31 +54,31 @@ function to12Hrs(time24hrs) {
 	let i = Number(time24hrs[1]);
 	let am_pm = (h > 11) ? 'PM' : 'AM';
 	h %= 12;
-	h = (h === 0) ? 12 : ('0'+h).slice(-2);
-	i = ('0'+i).slice(-2);
+	h = (h === 0) ? 12 : ('0' + h).slice(-2);
+	i = ('0' + i).slice(-2);
 	return `${h}:${i} ${am_pm}`;
 }
-Date.prototype.getTimeStr = function(f12hrs=false){
+Date.prototype.getTimeStr = function (f12hrs = false) {
 	let h = this.getHours();
 	let i = this.getMinutes();
 	let am_pm = (h > 11) ? 'PM' : 'AM';
-	h = (h === 0) ? (f12hrs ? 12 : '00') : ('0'+h).slice(-2);
-	i = ('0'+i).slice(-2);
+	h = (h === 0) ? (f12hrs ? 12 : '00') : ('0' + h).slice(-2);
+	i = ('0' + i).slice(-2);
 	if (f12hrs) {
 		return `${h}:${i}:00 ${am_pm}`;
 	} else {
 		return `${h}:${i}:00`;
 	}
 }
-Date.prototype.getToday = function(separator='/'){
+Date.prototype.getToday = function (separator = '/') {
 	let y = this.getFullYear();
 	let m = this.getMonth() + 1;
 	let d = this.getDate();
-	m = m < 10 ? '0'+m : m;
-	d = d < 10 ? '0'+d : d;
-	return y+separator+m+separator+d;
+	m = m < 10 ? '0' + m : m;
+	d = d < 10 ? '0' + d : d;
+	return y + separator + m + separator + d;
 }
-Date.prototype.getFormatedDate = function(format='yyyy-mm-dd') {
+Date.prototype.getFormatedDate = function (format = 'yyyy-mm-dd') {
 	const def = {
 		yy: this.getFullYear() % 100,
 		yyyy: this.getFullYear(),
@@ -79,7 +88,7 @@ Date.prototype.getFormatedDate = function(format='yyyy-mm-dd') {
 		dd: ('0' + this.getDate()).substr(-2)
 	}
 	let rt = format;
-	format.split(/[^a-zA-Z]/).forEach(el=>{
+	format.split(/[^a-zA-Z]/).forEach(el => {
 		el = el.toLowerCase();
 		if (def[el]) {
 			rt = rt.replace(el, def[el]);
@@ -87,12 +96,12 @@ Date.prototype.getFormatedDate = function(format='yyyy-mm-dd') {
 	});
 	return rt.replaceAll('$', '');
 }
-Date.prototype.getFormatedTime = function(format='hh:MM:SS') {
+Date.prototype.getFormatedTime = function (format = 'hh:MM:SS') {
 	let am_pm = false;
-	let _am_pm = this.getHours() >=12 ? 'pm' : 'am';
+	let _am_pm = this.getHours() >= 12 ? 'pm' : 'am';
 	const def = {
 		HH: ('0' + this.getHours()).substr(-2),
-		hh: ('0' + ((this.getHours()>12) ? (this.getHours() -12) : this.getHours())).substr(-2),
+		hh: ('0' + ((this.getHours() > 12) ? (this.getHours() - 12) : this.getHours())).substr(-2),
 		MM: ('0' + this.getMinutes()).substr(-2),
 		SS: ('0' + this.getSeconds()).substr(-2),
 		a: _am_pm,
@@ -103,9 +112,9 @@ Date.prototype.getFormatedTime = function(format='hh:MM:SS') {
 	if (format.includes('A') || format.includes('a')) {
 		am_pm = true;
 	}
-	format.forEach(el=>{
+	format.forEach(el => {
 		if (def[el]) {
-			if (am_pm && el=='HH') {
+			if (am_pm && el == 'HH') {
 				rt = rt.replace(el, def.hh);
 			} else {
 				rt = rt.replace(el, def[el]);
@@ -114,9 +123,9 @@ Date.prototype.getFormatedTime = function(format='hh:MM:SS') {
 	});
 	return rt.replaceAll('$', '');
 }
-Date.prototype.getFormated = function(format='yyyy-mm-dd hh:MM:SS') {
+Date.prototype.getFormated = function (format = 'yyyy-mm-dd hh:MM:SS') {
 	let am_pm = false;
-	let _am_pm = this.getHours() >=12 ? 'pm' : 'am';
+	let _am_pm = this.getHours() >= 12 ? 'pm' : 'am';
 	const def = {
 		yy: this.getFullYear() % 100,
 		yyyy: this.getFullYear(),
@@ -125,7 +134,7 @@ Date.prototype.getFormated = function(format='yyyy-mm-dd hh:MM:SS') {
 		ddd: this.toDateString().split(' ')[0],
 		dd: ('0' + this.getDate()).substr(-2),
 		HH: ('0' + this.getHours()).substr(-2),
-		hh: ('0' + ((this.getHours()>12) ? (this.getHours() -12) : this.getHours())).substr(-2),
+		hh: ('0' + ((this.getHours() > 12) ? (this.getHours() - 12) : this.getHours())).substr(-2),
 		MM: ('0' + this.getMinutes()).substr(-2),
 		SS: ('0' + this.getSeconds()).substr(-2),
 		a: _am_pm,
@@ -140,10 +149,10 @@ Date.prototype.getFormated = function(format='yyyy-mm-dd hh:MM:SS') {
 		am_pm = true;
 		rt = rt.replace('a', def.a);
 	}
-	format = format.filter(el => (el!='a' && el!='A'));;
-	format.forEach(el=>{
+	format = format.filter(el => (el != 'a' && el != 'A'));;
+	format.forEach(el => {
 		if (def[el]) {
-			if (am_pm && el=='HH') {
+			if (am_pm && el == 'HH') {
 				rt = rt.replace(el, def.hh);
 			} else {
 				rt = rt.replace(el, def[el]);
@@ -158,7 +167,7 @@ Date.prototype.getFormated = function(format='yyyy-mm-dd hh:MM:SS') {
  * @var	l	:	length
  * @var c	:	Case (upper|lower) 
  **/
-function allowType(e, o = 'number', l = false, c=false) {
+function allowType(e, o = 'number', l = false, c = false) {
 	let val = e.target.value;
 	const devn = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
 	switch (o) {
@@ -207,18 +216,18 @@ function allowType(e, o = 'number', l = false, c=false) {
 			val = val.replaceAll(/[^0-9.]/gmi, '');
 			break;
 	}
-	if (c=='upper') {
+	if (c == 'upper') {
 		val = val.toUpperCase();
-	} else if (c=='lower') {
+	} else if (c == 'lower') {
 		val = val.toLowerCase();
-	} else if (c=='title') {
+	} else if (c == 'title') {
 		val = val.toTitleCase();
 	}
 	e.target.value = val;
 }
 
 async function addUnitOption(el, text) {
-	const unit = await Prompt({text});
+	const unit = await Prompt({ text });
 	if (unit && unit.trim()) {
 		$(el).append(`<option value="${unit}">${unit}</option>`).val(unit).trigger('change');
 	}
@@ -248,7 +257,7 @@ function getProducts(pro_id = false) {
 		data: data,
 		async: false,
 		success: res => {
-			if (res.status===200) {returnRes = res.data}
+			if (res.status === 200) { returnRes = res.data }
 		},
 		error: () => {
 			//
@@ -268,7 +277,7 @@ function editProduct(pro_id) {
 		$('[name="pro_unit"]', parent).val(product.pro_unit);
 		$('[name="pro_hsn"]', parent).val(product.pro_hsn);
 		$('[name="pro_gst"]', parent).val(product.pro_gst);
-		if (product.pro_gst_included==1) {
+		if (product.pro_gst_included == 1) {
 			$('#gst_included').prop('checked', true);
 		} else {
 			$('#gst_excluded').prop('checked', true);
@@ -298,7 +307,7 @@ async function deleteProduct(pro_id) {
 		$.ajax({
 			url: 'includes/api/products',
 			method: 'POST',
-			data: {delete_product: true, pro_id: pro_id},
+			data: { delete_product: true, pro_id: pro_id },
 			success: res => {
 				if ('undefined' !== typeof productListTable) {
 					productListTable.ajax.reload();
@@ -320,7 +329,7 @@ function getStockList(options = {}) {
 		data: data,
 		async: false,
 		success: res => {
-			if (res.status===200) {returnRes = res.data}
+			if (res.status === 200) { returnRes = res.data }
 		},
 		error: () => {
 			//
@@ -329,7 +338,7 @@ function getStockList(options = {}) {
 	return returnRes;
 }
 
-$('#product-form').on('submit', function(e) {
+$('#product-form').on('submit', function (e) {
 	e.preventDefault();
 	const form = $(this);
 	const btn = $('#productAddModal button[type="submit"]');
@@ -349,7 +358,7 @@ $('#product-form').on('submit', function(e) {
 		error: () => {
 			//
 		},
-		complete: function() {
+		complete: function () {
 			btn.stopLoading();
 		}
 	});
@@ -377,7 +386,7 @@ function addCategory() {
 	$('#categoryAddModal').modal('show');
 }
 
-$('#category-form').on('submit', function(e) {
+$('#category-form').on('submit', function (e) {
 	e.preventDefault();
 	const form = $(this);
 	const btn = $('#categoryAddModal button[type="submit"]');
@@ -421,10 +430,10 @@ function addSubCategory() {
 	$('[name="sc_cat_id"]').val($('[name="pro_cat_id"]').val());
 	$('#subCategoryAddModal').modal('show');
 }
-$('[name="pro_cat_id"]').on('change', function() {
+$('[name="pro_cat_id"]').on('change', function () {
 	renderSubCategories(this.value);
 });
-$('#sub-category-form').on('submit', function(e) {
+$('#sub-category-form').on('submit', function (e) {
 	e.preventDefault();
 	const form = $(this);
 	const btn = $('#subCategoryAddModal button[type="submit"]');
@@ -466,7 +475,7 @@ function addBrand() {
 	$('#brand-form').trigger('reset');
 	$('#brandAddModal').modal('show');
 }
-$('#brand-form').on('submit', function(e) {
+$('#brand-form').on('submit', function (e) {
 	e.preventDefault();
 	const form = $(this);
 	const btn = $('#brandAddModal button[type="submit"]');
@@ -518,7 +527,7 @@ function editSupplier(sup_id) {
 	$.ajax({
 		url: 'includes/api/suppliers',
 		method: 'POST',
-		data: {get_suppliers: true, sup_id},
+		data: { get_suppliers: true, sup_id },
 		success: res => {
 			const supplier = res.data;
 			if (Object.keys(supplier).length) {
@@ -539,7 +548,7 @@ function editSupplier(sup_id) {
 		}
 	});
 }
-$('#supplier-form').on('submit', function(e) {
+$('#supplier-form').on('submit', function (e) {
 	e.preventDefault();
 	const form = $(this);
 	const btn = $('#supplierAddModal button[type="submit"]');
@@ -551,7 +560,7 @@ $('#supplier-form').on('submit', function(e) {
 		success: res => {
 			$('#supplier-form').trigger('reset');
 			$('#supplierAddModal').modal('hide');
-			if ('undefined'!== typeof supplierListTable) {
+			if ('undefined' !== typeof supplierListTable) {
 				supplierListTable.ajax.reload();
 			}
 			resetSupplierForm();
@@ -572,7 +581,7 @@ async function deleteSupplier(sup_id) {
 		$.ajax({
 			url: 'includes/api/suppliers',
 			method: 'POST',
-			data: {delete_supplier: true, sup_id},
+			data: { delete_supplier: true, sup_id },
 			success: res => {
 				if ('undefined' !== typeof supplierListTable) {
 					supplierListTable.ajax.reload();
@@ -580,7 +589,7 @@ async function deleteSupplier(sup_id) {
 				resetSupplierForm();
 				$('#supplierAddModal').modal('hide');
 				setTimeout(() => {
-					Alert({type: 'success', text: translate('supplier_deleted')});
+					Alert({ type: 'success', text: translate('supplier_deleted') });
 				}, 200);
 			}
 		});
@@ -623,7 +632,7 @@ function editCustomer(cus_id) {
 	$.ajax({
 		url: 'includes/api/customers',
 		method: 'POST',
-		data: {get_customers: true, cus_id},
+		data: { get_customers: true, cus_id },
 		success: res => {
 			const customer = res.data;
 			if (Object.keys(customer).length) {
@@ -652,7 +661,7 @@ async function deleteCustomer(cus_id) {
 		$.ajax({
 			url: 'includes/api/customers',
 			method: 'POST',
-			data: {delete_customer: true, cus_id},
+			data: { delete_customer: true, cus_id },
 			success: res => {
 				if ('undefined' !== typeof customerListTable) {
 					customerListTable.ajax.reload();
@@ -660,14 +669,14 @@ async function deleteCustomer(cus_id) {
 				resetProductForm();
 				$('#customerAddModal').modal('hide');
 				setTimeout(() => {
-					Alert({type: 'success', text: translate('customer_deleted')});
+					Alert({ type: 'success', text: translate('customer_deleted') });
 				}, 200);
 			}
 		});
 	}
 }
 
-$('#customer-form').on('submit', function(e){
+$('#customer-form').on('submit', function (e) {
 	e.preventDefault();
 	const form = $(this);
 	const modal = $('#customerAddModal');
@@ -678,7 +687,7 @@ $('#customer-form').on('submit', function(e){
 		method: 'POST',
 		data: form.serialize(),
 		success: res => {
-			if ('undefined'!== typeof customerListTable) {
+			if ('undefined' !== typeof customerListTable) {
 				customerListTable.ajax.reload();
 			}
 			renderCustomer(res.data.cus_id);
@@ -725,7 +734,7 @@ function editUser(u_id) {
 	$.ajax({
 		url: 'includes/api/users',
 		method: 'POST',
-		data: {get_users: true, u_id},
+		data: { get_users: true, u_id },
 		success: res => {
 			const user = res.data;
 			if (Object.keys(user).length) {
@@ -738,7 +747,7 @@ function editUser(u_id) {
 				$('[name="u_mobile"]', parent).val(user.u_mobile);
 				$('[name="u_email"]', parent).val(user.u_email);
 				$('[name="u_role"]', parent).val(user.u_role);
-				if (user.u_type!=='primary') {
+				if (user.u_type !== 'primary') {
 					parent.find('.modal-footer').prepend(`<button type="button" class="delete-btn btn btn-sm btn-danger me-auto" onclick="deleteUser(${user.u_id})">${translate('delete_user')}</button>`);
 				}
 				parent.modal('show');
@@ -756,24 +765,24 @@ async function deleteUser(u_id) {
 		$.ajax({
 			url: 'includes/api/users',
 			method: 'POST',
-			data: {delete_user: true, u_id},
+			data: { delete_user: true, u_id },
 			success: res => {
 				if ('undefined' !== typeof usersListTable) {
 					usersListTable.ajax.reload();
 				}
 				resetUserForm();
 				$('#userAddModal').modal('hide');
-				setTimeout(()=>{
-					Alert({type: 'success', text: translate('user_deleted')});
+				setTimeout(() => {
+					Alert({ type: 'success', text: translate('user_deleted') });
 				}, 200);
 			},
 			error: res => {
-				Alert({type: 'warning', text: translate('unable_to_delete_user')});
+				Alert({ type: 'warning', text: translate('unable_to_delete_user') });
 			}
 		});
 	}
 }
-$('#user-form').on('submit', function(e){
+$('#user-form').on('submit', function (e) {
 	e.preventDefault();
 	const form = $(this);
 	const modal = $('#userAddModal');
@@ -786,7 +795,7 @@ $('#user-form').on('submit', function(e){
 		data: form.serialize(),
 		success: res => {
 			$('#user-form-error').text('').slideUp();
-			if ('undefined'!== typeof usersListTable) {
+			if ('undefined' !== typeof usersListTable) {
 				usersListTable.ajax.reload();
 			}
 			modal.modal('hide');
@@ -814,7 +823,7 @@ function editEmployee(emp_id) {
 	$.ajax({
 		url: 'includes/api/employees',
 		method: 'POST',
-		data: {get_employees: true, emp_id},
+		data: { get_employees: true, emp_id },
 		success: res => {
 			const employee = res.data;
 			if (Object.keys(employee).length) {
@@ -829,14 +838,14 @@ function editEmployee(emp_id) {
 				$('[name="emp_joined"]', parent).val(employee.emp_joined);
 				$('[name="emp_gender"]', parent).val(employee.emp_gender);
 				$('[name="emp_address"]', parent).val(employee.emp_address);
-				
+
 				parent.find('.modal-footer').prepend(`<button type="button" class="delete-btn btn btn-sm btn-danger me-auto" onclick="deleteEmployee(${employee.emp_id})">${translate('delete_employee')}</button>`);
 				parent.modal('show');
 			}
 		}
 	});
 }
-$('#employee-form').on('submit', function(e){
+$('#employee-form').on('submit', function (e) {
 	e.preventDefault();
 	const form = $(this);
 	const modal = $('#employeeAddModal');
@@ -847,7 +856,7 @@ $('#employee-form').on('submit', function(e){
 		method: 'POST',
 		data: form.serialize(),
 		success: res => {
-			if ('undefined'!== typeof employeeListTable) {
+			if ('undefined' !== typeof employeeListTable) {
 				employeeListTable.ajax.reload();
 			}
 			modal.modal('hide');
@@ -867,15 +876,15 @@ async function deleteEmployee(emp_id) {
 		$.ajax({
 			url: 'includes/api/employees',
 			method: 'POST',
-			data: {delete_employee: true, emp_id},
+			data: { delete_employee: true, emp_id },
 			success: res => {
 				if ('undefined' !== typeof employeeListTable) {
 					employeeListTable.ajax.reload();
 				}
 				resetEmployeeForm();
 				$('#employeeAddModal').modal('hide');
-				setTimeout(()=>{
-					Alert({type: 'success', text: translate('employee_deleted')});
+				setTimeout(() => {
+					Alert({ type: 'success', text: translate('employee_deleted') });
 				}, 200);
 			}
 		});
@@ -896,7 +905,7 @@ function editExpense(exp_id) {
 	$.ajax({
 		url: 'includes/api/expenses',
 		method: 'POST',
-		data: {get_expenses: true, exp_id},
+		data: { get_expenses: true, exp_id },
 		success: res => {
 			const expense = res.data;
 			if (Object.keys(expense).length) {
@@ -904,20 +913,20 @@ function editExpense(exp_id) {
 				$('#expenseAddModalLabel').text(translate('update_expense'));
 				$('#expense-form-action').attr('name', 'update_expense').val(expense.exp_id);
 				$('[name="exp_to"]', parent).val(expense.exp_to),
-				$('[name="exp_date"]', parent).val(expense.exp_date),
-				$('[name="exp_date"]', parent).val(new Date(expense.exp_date).getFormated('yyyy-mm-dd')),
-				$('[name="exp_amount"]', parent).val(expense.exp_amount),
-				$('[name="exp_for"]', parent).val(expense.exp_for),
-				$('[name="exp_paymode"]', parent).val(expense.exp_paymode),
-				$('[name="exp_desc"]', parent).val(expense.exp_desc),
-				parent.find('.modal-footer').prepend(`<button type="button" class="delete-btn btn btn-sm btn-danger me-auto" onclick="deleteExpense(${expense.exp_id})">${translate('delete_expense')}</button>`);
+					$('[name="exp_date"]', parent).val(expense.exp_date),
+					$('[name="exp_date"]', parent).val(new Date(expense.exp_date).getFormated('yyyy-mm-dd')),
+					$('[name="exp_amount"]', parent).val(expense.exp_amount),
+					$('[name="exp_for"]', parent).val(expense.exp_for),
+					$('[name="exp_paymode"]', parent).val(expense.exp_paymode),
+					$('[name="exp_desc"]', parent).val(expense.exp_desc),
+					parent.find('.modal-footer').prepend(`<button type="button" class="delete-btn btn btn-sm btn-danger me-auto" onclick="deleteExpense(${expense.exp_id})">${translate('delete_expense')}</button>`);
 				$('#expenseAddModal').modal('show');
 			}
 		}
 	});
 }
 
-$('#expense-form').on('submit', function(e){
+$('#expense-form').on('submit', function (e) {
 	e.preventDefault();
 	const form = $(this);
 	const modal = $('#expenseAddModal');
@@ -928,7 +937,7 @@ $('#expense-form').on('submit', function(e){
 		method: 'POST',
 		data: form.serialize(),
 		success: res => {
-			if ('undefined'!== typeof expensesListTable) {
+			if ('undefined' !== typeof expensesListTable) {
 				expensesListTable.ajax.reload();
 			}
 			modal.modal('hide');
@@ -949,7 +958,7 @@ async function deleteExpense(exp_id) {
 		$.ajax({
 			url: 'includes/api/expenses',
 			method: 'POST',
-			data: {delete_expense: true, exp_id},
+			data: { delete_expense: true, exp_id },
 			success: res => {
 				if ('undefined' !== typeof expensesListTable) {
 					expensesListTable.ajax.reload();
@@ -957,7 +966,7 @@ async function deleteExpense(exp_id) {
 				resetExpenseForm();
 				$('#expenseAddModal').modal('hide');
 				setTimeout(() => {
-					Alert({type: 'success', text: translate('expense_deleted')});
+					Alert({ type: 'success', text: translate('expense_deleted') });
 				}, 200);
 			}
 		});
@@ -979,15 +988,15 @@ function viewBooking(bok_id) {
 }
 function printBooking(bok_id) {
 	const booking = window.open(`booking?bok_id=${bok_id}`, '_blank');
-	booking.addEventListener('load', function(){
-	    booking.print();
-	    if (browserName()!='Firefox') {
-	    	setTimeout(()=>{
+	booking.addEventListener('load', function () {
+		booking.print();
+		if (browserName() != 'Firefox') {
+			setTimeout(() => {
 				booking.close();
 			}, 1);
-	    } else {
-	    	booking.close();
-	    }
+		} else {
+			booking.close();
+		}
 	});
 }
 async function cloneBookingProduct() {
@@ -1007,10 +1016,10 @@ function deleteBookingProduct(el) {
 function countBookingProduct() {
 	const products = $('.booking-product');
 	for (let i = 0; i < products.length; i++) {
-		$('td:first-child', products[i]).text(i+1);
+		$('td:first-child', products[i]).text(i + 1);
 	}
 }
-function findProductStockPrice(el){
+function findProductStockPrice(el) {
 	const parent = $(el).closest('.booking-product');
 	const optn = $('option:selected', el);
 	const product = getProducts(optn.val());
@@ -1037,10 +1046,10 @@ function calcBookingTotal() {
 	$('#bok_total_amount').val(total_amount.toFixed(2));
 	$('#bok_balance_amount').val((total_amount - Number(advance)).toFixed(2));
 }
-$('#booking-form').on('submit', function(e){
+$('#booking-form').on('submit', function (e) {
 	e.preventDefault();
 	if (!$('[name="bok_delivery_date"]').val()) {
-		return Alert({type: 'warning', text: translate('select_delivery_date')});
+		return Alert({ type: 'warning', text: translate('select_delivery_date') });
 	}
 	const form = $(this);
 	const modal = $('#bookingAddModal');
@@ -1053,7 +1062,7 @@ $('#booking-form').on('submit', function(e){
 		success: res => {
 			const bok_id = res.data.bok_id;
 			if (bok_id) {
-				if ('undefined'!== typeof bookingListTable) {
+				if ('undefined' !== typeof bookingListTable) {
 					bookingListTable.ajax.reload();
 				}
 				modal.modal('hide');
@@ -1071,7 +1080,7 @@ function editBooking(bok_id) {
 		url: 'includes/api/bookings',
 		method: 'POST',
 		async: false,
-		data: {get_bookings: true, bok_id},
+		data: { get_bookings: true, bok_id },
 		success: res => {
 			const booking = res.data;
 			if (Object.keys(booking).length) {
@@ -1085,14 +1094,14 @@ function editBooking(bok_id) {
 				$('[name="bok_delivery_date"]', parent).val(booking.bok_delivery_date);
 				details.forEach((product, i) => {
 					const bok_product = $('.booking-product', parent);
-					$('td:first-child', bok_product[i]).text(i+1);
+					$('td:first-child', bok_product[i]).text(i + 1);
 					$('[name="bkd_id[]"]', bok_product[i]).val(product.bkd_id);
 					$('[name="bkd_pro_id[]"]', bok_product[i]).val(product.bkd_pro_id);
 					$('[name="bkd_pro_qty[]"]', bok_product[i]).val(product.bkd_pro_qty);
 					$('[name="bkd_pro_rate[]"]', bok_product[i]).val(product.bkd_pro_rate);
 					$('td:nth-child(5) input', bok_product[i]).val(product.bkd_subtotal);
 
-					if (i < (details.length-1)) {
+					if (i < (details.length - 1)) {
 						cloneBookingProduct();
 					}
 				});
@@ -1103,7 +1112,7 @@ function editBooking(bok_id) {
 	});
 }
 function deliveryStockCheck(pro_id, booked_qty) {
-	const stockList = getStockList({pro_id});
+	const stockList = getStockList({ pro_id });
 	let total_qty = 0;
 	const stock = [];
 	const maxStock = stockList.filter(st => {
@@ -1126,13 +1135,13 @@ function deliveryStockCheck(pro_id, booked_qty) {
 				remainQty = Number(remainQty) - Number(st.st_remain);
 			}
 			stock.push(st);
-			if (remainQty===0) {
+			if (remainQty === 0) {
 				break;
 			}
 		};
 	}
 	if (total_qty >= booked_qty) {
-		return {pro_id, total_qty, stock};
+		return { pro_id, total_qty, stock };
 	}
 	return false;
 }
@@ -1141,11 +1150,11 @@ function deliverBooking(bok_id) {
 		url: 'includes/api/bookings',
 		method: 'POST',
 		async: false,
-		data: {get_bookings: true, bok_id},
+		data: { get_bookings: true, bok_id },
 		success: res => {
 			const booking = res.data;
 			if (Object.keys(booking).length) {
-				const products = {booking, stock: []};
+				const products = { booking, stock: [] };
 				let inStock = true;
 				let stockItemsCount = 0;
 				const details = booking.bok_details;
@@ -1154,13 +1163,13 @@ function deliverBooking(bok_id) {
 					const booked_qty = pro.bkd_pro_qty;
 					const stock = deliveryStockCheck(pro.bkd_pro_id, booked_qty);
 					if (!stock) {
-						Alert({type: 'warning', text: translate('low_stock_for_delivery').replace('%s', pro.pro_name_alt)});
+						Alert({ type: 'warning', text: translate('low_stock_for_delivery').replace('%s', pro.pro_name_alt) });
 						inStock = false;
 						break;
 					};
 					stock.booked_qty = Number(booked_qty);
 					stockItemsCount += stock.stock.length;
-					products.stock.push(stock);				
+					products.stock.push(stock);
 				}
 				if (inStock) {
 					const parent = $('#billingAddModal');
@@ -1200,7 +1209,7 @@ function deliverBooking(bok_id) {
 						</div>
 					</div>`);
 					$('.bill-advance-list', parent).append(advance);
-					HSCore.components.HSFlatpickr.init($('.js-flatpickr:last-child', advance)[0], {dateFormat: 'Y-m-d'});
+					HSCore.components.HSFlatpickr.init($('.js-flatpickr:last-child', advance)[0], { dateFormat: 'Y-m-d' });
 					let count = 0;
 					products.stock.forEach(bok_item => {
 						bok_item.stock.forEach(pro => {
@@ -1210,7 +1219,7 @@ function deliverBooking(bok_id) {
 							$('[name="bds_pro_qty[]"]', billing_product[count]).val(pro.booked_qty);
 							const bkd_product = details.filter(e => e.bkd_pro_id == bok_item.pro_id)[0];
 							$('[name="bds_pro_rate[]"]', billing_product[count]).val(bkd_product.bkd_pro_rate);
-							if (count < (stockItemsCount-1)) {
+							if (count < (stockItemsCount - 1)) {
 								cloneBillProduct();
 							}
 							count++;
@@ -1233,13 +1242,13 @@ async function deleteBooking(bok_id) {
 		$.ajax({
 			url: 'includes/api/bookings',
 			method: 'POST',
-			data: {delete_booking: true, bok_id},
+			data: { delete_booking: true, bok_id },
 			success: res => {
 				if ('undefined' !== typeof bookingListTable) {
 					bookingListTable.ajax.reload();
 				}
 				setTimeout(() => {
-					Alert({type: 'success', text: translate('booking_deleted')});
+					Alert({ type: 'success', text: translate('booking_deleted') });
 				}, 200);
 			}
 		});
@@ -1261,10 +1270,10 @@ function viewPurchase(po_id) {
 }
 function printPurchase(po_id) {
 	const purchase = window.open(`po?po_id=${po_id}`, '_blank');
-	purchase.addEventListener('load', function(){
-	    purchase.print();
-	    if (browserName()!='Firefox') {
-			setTimeout(()=>{
+	purchase.addEventListener('load', function () {
+		purchase.print();
+		if (browserName() != 'Firefox') {
+			setTimeout(() => {
 				purchase.close();
 			}, 1);
 		} else {
@@ -1288,10 +1297,10 @@ function deletePurchaseProduct(el) {
 function countPurchaseProduct() {
 	const products = $('.purchase-product');
 	for (let i = 0; i < products.length; i++) {
-		$('td:first-child', products[i]).text(i+1);
+		$('td:first-child', products[i]).text(i + 1);
 	}
 }
-function findPurchaseProductStockPrice(el){
+function findPurchaseProductStockPrice(el) {
 	const parent = $(el).closest('.purchase-product');
 	const optn = $('option:selected', el);
 	const product = getProducts(optn.val());
@@ -1337,7 +1346,7 @@ function calcPurchaseTotal() {
 		const subtotal = Number(qty) * Number(price);
 		const discount_rate = $('[name="pod_pro_discount[]"]', products[i]).val();
 		const discount_isflat = Boolean(Number($('[name="pod_pro_discount_isflat[]"]', products[i]).val()));
-		let discount,taxes;
+		let discount, taxes;
 		if (discount_isflat) {
 			discount = Number(discount_rate);
 		} else {
@@ -1370,11 +1379,11 @@ function calcPurchaseTotal() {
 	$('#po_fees_total').val(fees.toFixed(2));
 	$('#po_total').val(grand_total.toFixed(2));
 }
-$('#purchase-form').on('submit', function(e){
+$('#purchase-form').on('submit', function (e) {
 	e.preventDefault();
 	if (!$('[name="po_expected_by"]').val()) {
 		$('[name="po_expected_by"]').focus()[0].scrollIntoView();
-		return Alert({type: 'warning', text: translate('select_expected_date')});
+		return Alert({ type: 'warning', text: translate('select_expected_date') });
 	}
 	const form = $(this);
 	const modal = $('#purchaseAddModal');
@@ -1385,7 +1394,7 @@ $('#purchase-form').on('submit', function(e){
 		method: 'POST',
 		data: form.serialize(),
 		success: res => {
-			if ('undefined'!== typeof purchaseListTable) {
+			if ('undefined' !== typeof purchaseListTable) {
 				purchaseListTable.ajax.reload();
 			}
 			modal.modal('hide');
@@ -1405,9 +1414,9 @@ async function receivePurchaseOrder(po_id) {
 		$.ajax({
 			url: 'includes/api/purchase',
 			method: 'POST',
-			data: {receive_purchase: po_id},
+			data: { receive_purchase: po_id },
 			success: res => {
-				if ('undefined'!== typeof purchaseListTable) {
+				if ('undefined' !== typeof purchaseListTable) {
 					purchaseListTable.ajax.reload();
 				}
 			},
@@ -1435,10 +1444,10 @@ function viewBill(bill_id) {
 }
 function printBill(bill_id) {
 	const invoice = window.open(`invoice?bill_id=${bill_id}`, '_blank');
-	invoice.addEventListener('load', function(){
-	    invoice.print();
-	    if (browserName()!='Firefox') {
-			setTimeout(()=>{
+	invoice.addEventListener('load', function () {
+		invoice.print();
+		if (browserName() != 'Firefox') {
+			setTimeout(() => {
 				invoice.close();
 			}, 1);
 		} else {
@@ -1463,7 +1472,7 @@ function deleteBillProduct(el) {
 function countBillProduct() {
 	const products = $('.billing-product');
 	for (let i = 0; i < products.length; i++) {
-		$('td:first-child', products[i]).text(i+1);
+		$('td:first-child', products[i]).text(i + 1);
 	}
 }
 
@@ -1523,7 +1532,7 @@ function addBillAdvance(el) {
 		</div>
 	</div>`);
 	$(el).closest('.bill-advance-section').find('.bill-advance-list').append(advance);
-	HSCore.components.HSFlatpickr.init($('.js-flatpickr:last-child', advance)[0], {dateFormat: 'Y-m-d'});
+	HSCore.components.HSFlatpickr.init($('.js-flatpickr:last-child', advance)[0], { dateFormat: 'Y-m-d' });
 }
 
 function removeBillAdvance(el) {
@@ -1531,12 +1540,12 @@ function removeBillAdvance(el) {
 	calcBillTotal();
 }
 
-function findBillProductStockPrice(el){
+function findBillProductStockPrice(el) {
 	const parent = $(el).closest('.billing-product');
 	const optn = $('option:selected', el);
 	const st_id = optn.attr('pro-stock-id');
 	$('[name="bds_st_id[]"]', parent).val(st_id);
-	const product = getStockList({st_id});
+	const product = getStockList({ st_id });
 	if (!Array.isArray(product) && 'object' === typeof product) {
 		$('[name="bds_pro_qty[]"]', parent).val(product.st_remain);
 		$('[name="bds_pro_qty[]"]', parent).attr('max', product.st_remain);
@@ -1575,7 +1584,7 @@ function calcBillTotal() {
 		const subtotal = Number(qty) * Number(price);
 		const discount_rate = $('[name="bds_discount[]"]', products[i]).val();
 		const discount_isflat = Boolean(Number($('[name="bds_discount_isflat[]"]', products[i]).val()));
-		let discount,taxes;
+		let discount, taxes;
 		if (discount_isflat) {
 			discount = Number(discount_rate);
 		} else {
@@ -1615,7 +1624,7 @@ function calcBillTotal() {
 	$('#bill_balance', parent).val((grand_total - advance).toFixed(2));
 }
 
-$('#billing-form').on('submit', async function(e){
+$('#billing-form').on('submit', async function (e) {
 	e.preventDefault();
 	let isValid = true;
 	const save_type = $('#billing-form-type').val();
@@ -1624,7 +1633,7 @@ $('#billing-form').on('submit', async function(e){
 			isValid = false;
 			el.focus();
 			el.scrollIntoView();
-			return Alert({type: 'warning', text: translate('select_advance_or_payment_received_date')});
+			return Alert({ type: 'warning', text: translate('select_advance_or_payment_received_date') });
 		}
 	});
 	const form = $(this);
@@ -1632,13 +1641,13 @@ $('#billing-form').on('submit', async function(e){
 	let btn = $(`button[type="submit"][name="${save_type}"]`, modal);
 	if (isValid) {
 		let save;
-		if (save_type=='invoice') {
+		if (save_type == 'invoice') {
 			save = await Confirm({
 				text: translate('confirm_save_bill'),
 				cancelText: translate('cancel'),
 				confirmText: translate('save'),
 			});
-		} else if (save_type=='quotation') {
+		} else if (save_type == 'quotation') {
 			save = await Confirm({
 				text: translate('confirm_save_quotation'),
 				cancelText: translate('cancel'),
@@ -1654,15 +1663,15 @@ $('#billing-form').on('submit', async function(e){
 				success: res => {
 					const bill_id = res.data.bill_id;
 					if (bill_id) {
-						if ($('[name="billing_from"]', modal).val()=='booking') {
+						if ($('[name="billing_from"]', modal).val() == 'booking') {
 							if ('undefined' !== typeof bookingListTable) {
 								bookingListTable.ajax.reload();
 							}
 							setTimeout(() => {
-								Alert({type: 'success', text: translate('booking_delivered')});
+								Alert({ type: 'success', text: translate('booking_delivered') });
 							}, 200);
 						}
-						if ('undefined'!== typeof billingListTable) {
+						if ('undefined' !== typeof billingListTable) {
 							billingListTable.ajax.reload();
 						}
 						modal.modal('hide');
@@ -1691,7 +1700,7 @@ function receiveBillAmount(bill_id) {
 	$.ajax({
 		url: 'includes/api/billing',
 		method: 'POST',
-		data: {get_billing: true, bill_id},
+		data: { get_billing: true, bill_id },
 		success: res => {
 			const bill = res.data;
 			const advlist = JSON.parse(bill.bill_advance);
@@ -1730,7 +1739,7 @@ function receiveBillAmount(bill_id) {
 					</div>
 				</div>`);
 				parent.find('.bill-advance-list').append(advance);
-				HSCore.components.HSFlatpickr.init($('.js-flatpickr', advance)[0], {dateFormat: 'Y-m-d'});
+				HSCore.components.HSFlatpickr.init($('.js-flatpickr', advance)[0], { dateFormat: 'Y-m-d' });
 			});
 
 			$('#receive-bill-amount-received', parent).val(Number(bill.bill_paid).toFixed(2));
@@ -1740,7 +1749,7 @@ function receiveBillAmount(bill_id) {
 	});
 }
 
-$('#receive-bill-amount-form').on('submit', function(e){
+$('#receive-bill-amount-form').on('submit', function (e) {
 	e.preventDefault();
 	const form = $(this);
 	const modal = $('#receiveBillAmount');
@@ -1753,7 +1762,7 @@ $('#receive-bill-amount-form').on('submit', function(e){
 		success: res => {
 			const bill_id = res.data.bill_id;
 			if (bill_id) {
-				if ('undefined'!== typeof billingListTable) {
+				if ('undefined' !== typeof billingListTable) {
 					billingListTable.ajax.reload();
 				}
 				modal.modal('hide');
@@ -1773,7 +1782,7 @@ function addSowing() {
 	$('[name="sw_date"]', parent).val(new Date().getFormated('yyyy-mm-dd'));
 	parent.modal('show');
 }
-function cloneSowingProduct(){
+function cloneSowingProduct() {
 	const sowingProduct = $('.sowing-product:first-child');
 	const cloned = sowingProduct.clone();
 	cloned.find('input').val('');
@@ -1789,7 +1798,7 @@ function deleteSowingProduct(el) {
 function countSowingProduct() {
 	const products = $('.sowing-product');
 	for (let i = 0; i < products.length; i++) {
-		$('td:first-child', products[i]).text(i+1);
+		$('td:first-child', products[i]).text(i + 1);
 	}
 }
 function findSowingProductStockPrice(el) {
@@ -1846,21 +1855,21 @@ function countSowingSeeds() {
 	let seeds = 0;
 	for (let i = 0; i < products.length; i++) {
 		const product = $('[name="swd_pro_id[]"] option:selected', products[i]);
-		if (product.attr('pro-type')==='seed') {
+		if (product.attr('pro-type') === 'seed') {
 			seeds++;
 		}
 	}
 	return seeds;
 }
-$('#sowing-form').on('submit', async function(e){
+$('#sowing-form').on('submit', async function (e) {
 	e.preventDefault();
 	const seeds = countSowingSeeds();
 	if (!$('[name="sw_date"]').val()) {
-		return Alert({type: 'warning', text: translate('select_sowing_date')});
+		return Alert({ type: 'warning', text: translate('select_sowing_date') });
 	} else if (!seeds) {
-		return Alert({type: 'warning', text: translate('select_seed_for_sowing')});
+		return Alert({ type: 'warning', text: translate('select_seed_for_sowing') });
 	} else if (seeds > 1) {
-		return Alert({type: 'warning', text: translate('select_only_one_seed_for_sowing')});
+		return Alert({ type: 'warning', text: translate('select_only_one_seed_for_sowing') });
 	} else {
 		const form = $(this);
 		const modal = $('#sowingAddModal');
@@ -1877,7 +1886,7 @@ $('#sowing-form').on('submit', async function(e){
 				method: 'POST',
 				data: form.serialize(),
 				success: res => {
-					if ('undefined'!== typeof sowingListTable) {
+					if ('undefined' !== typeof sowingListTable) {
 						sowingListTable.ajax.reload();
 					}
 					modal.modal('hide');
@@ -1905,24 +1914,24 @@ function editEmployeeAdvance(ead_id) {
 	$.ajax({
 		url: 'includes/api/advance',
 		method: 'POST',
-		data: {get_advance: true, ead_id},
+		data: { get_advance: true, ead_id },
 		success: res => {
 			const advance = res.data;
 			if (Object.keys(advance).length) {
 				const parent = $('#employeeAdvanceAddModal');
 				$('#employeeAdvanceAddModalLabel').text(translate('update_advance_borrowing'));
 				$('#advance-form-action').attr('name', 'update_advance').val(advance.ead_id),
-				$('[name="ead_date"]', parent).val(advance.ead_date),
-				$('[name="ead_emp_id"]', parent).val(advance.ead_emp_id),
-				$('[name="ead_amount"]', parent).val(advance.ead_amount),
-				$('[name="ead_reason"]', parent).val(advance.ead_reason),
-				parent.find('.modal-footer').prepend(`<button type="button" class="delete-btn btn btn-sm btn-danger me-auto" onclick="deleteEmployeeAdvance(${advance.ead_id})">${translate('delete_advance_borrowing')}</button>`);
+					$('[name="ead_date"]', parent).val(advance.ead_date),
+					$('[name="ead_emp_id"]', parent).val(advance.ead_emp_id),
+					$('[name="ead_amount"]', parent).val(advance.ead_amount),
+					$('[name="ead_reason"]', parent).val(advance.ead_reason),
+					parent.find('.modal-footer').prepend(`<button type="button" class="delete-btn btn btn-sm btn-danger me-auto" onclick="deleteEmployeeAdvance(${advance.ead_id})">${translate('delete_advance_borrowing')}</button>`);
 				parent.modal('show');
 			}
 		}
 	});
 }
-$('#advance-form').on('submit', function(e){
+$('#advance-form').on('submit', function (e) {
 	e.preventDefault();
 	const form = $(this);
 	const modal = $('#employeeAdvanceAddModal');
@@ -1933,7 +1942,7 @@ $('#advance-form').on('submit', function(e){
 		method: 'POST',
 		data: form.serialize(),
 		success: res => {
-			if ('undefined'!== typeof advanceListTable) {
+			if ('undefined' !== typeof advanceListTable) {
 				advanceListTable.ajax.reload();
 			}
 			modal.modal('hide');
@@ -1954,7 +1963,7 @@ async function deleteEmployeeAdvance(ead_id) {
 		$.ajax({
 			url: 'includes/api/advance',
 			method: 'POST',
-			data: {delete_advance: true, ead_id},
+			data: { delete_advance: true, ead_id },
 			success: res => {
 				if ('undefined' !== typeof advanceListTable) {
 					advanceListTable.ajax.reload();
@@ -1962,7 +1971,7 @@ async function deleteEmployeeAdvance(ead_id) {
 				resetExpenseForm();
 				$('#employeeAdvanceAddModal').modal('hide');
 				setTimeout(() => {
-					Alert({type: 'success', text: translate('advance_borrowing_deleted')});
+					Alert({ type: 'success', text: translate('advance_borrowing_deleted') });
 				}, 200);
 			}
 		});
@@ -1977,7 +1986,7 @@ function getBusiness(biz_id) {
 	$.ajax({
 		url: 'includes/api/business',
 		method: 'POST',
-		data: {get_businesses: true, biz_id},
+		data: { get_businesses: true, biz_id },
 		async: false,
 		success: res => {
 			data = res.data;
@@ -2113,7 +2122,7 @@ async function clearBizData(biz_id) {
 		$.ajax({
 			url: 'includes/api/business',
 			method: 'POST',
-			data: {clear_biz_data: biz_id},
+			data: { clear_biz_data: biz_id },
 			success: res => {
 				if ('undefined' !== typeof businessListTable) {
 					businessListTable.ajax.reload();
@@ -2121,14 +2130,14 @@ async function clearBizData(biz_id) {
 				resetExpenseForm();
 				$('#businessPreviewModal').modal('hide');
 				setTimeout(() => {
-					Alert({type: 'success', text: translate('nursery_data_cleared')});
+					Alert({ type: 'success', text: translate('nursery_data_cleared') });
 				}, 200);
 			}
 		});
 	}
 }
 
-function renewSubscription(biz_id, preview_biz=false) {
+function renewSubscription(biz_id, preview_biz = false) {
 	const biz = getBusiness(biz_id);
 	const form = $('#subscription-renewal-form');
 	form.trigger('reset');
@@ -2156,13 +2165,13 @@ function calcSubReceived() {
 	const sub_type = $('[name="sub_type"]', parent).val();
 	const biz_renewal_charges = $('[name="biz_renewal_charges"]', parent);
 	const sub_received = $('[name="sub_received"]', parent);
-	if (sub_type=='new') {
+	if (sub_type == 'new') {
 		if (Number(biz_renewal_charges.val())) {
 			sub_received.val(Number(biz_renewal_charges.val()).toFixed(2));
 		}
 	}
 }
-$('#subscription-renewal-form').on('submit', function(e){
+$('#subscription-renewal-form').on('submit', function (e) {
 	e.preventDefault();
 	const form = $(this);
 	const parent = $('#subscriptionRenewalModal');
@@ -2174,12 +2183,12 @@ $('#subscription-renewal-form').on('submit', function(e){
 		method: 'POST',
 		data: form.serialize(),
 		success: res => {
-			if ('undefined'!== typeof businessListTable) {
+			if ('undefined' !== typeof businessListTable) {
 				businessListTable.ajax.reload();
 			}
 			parent.modal('hide');
 			$('#businessPreviewModal').modal('hide');
-			if (preview_biz=='true') {
+			if (preview_biz == 'true') {
 				viewBusiness($('[name="sub_biz_id"]', parent).val());
 			}
 		},

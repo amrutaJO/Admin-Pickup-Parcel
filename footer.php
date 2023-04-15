@@ -34,10 +34,10 @@
 	<div class="offcanvas-body">
 		<!-- Step -->
 		<ul class="step step-icon-sm step-avatar-sm">
-					</ul>
+		</ul>
 		<!-- End Step -->
-					<h5 class="text-center text-muted">No Activities performed yet.</h5>
-			</div>
+		<h5 class="text-center text-muted">No Activities performed yet.</h5>
+	</div>
 </div>
 <!-- End Activity -->
 <!-- All Modals -->
@@ -74,7 +74,7 @@
 											<input type="hidden" name="bds_st_id[]" value="">
 											<select name="bds_pro_id[]" class="form-select form-select-sm" required onchange="findBillProductStockPrice(this)">
 												<option value="" pro-stock-id="" pro-gst="0" pro-gst-included="0">Select product</option>
-																							</select>
+											</select>
 										</td>
 										<td>
 											<input type="text" name="bds_pro_lot_no[]" class="form-control form-control-sm text-center" onfocus="this.select()">
@@ -107,7 +107,7 @@
 									<tr>
 										<th colspan="8">
 											<a href="javascript:;" class="link-primary" onclick="cloneBillProduct()">
-												<i class="bi-plus-circle-fill me-1"></i> Add product											</a>
+												<i class="bi-plus-circle-fill me-1"></i> Add product </a>
 										</th>
 									</tr>
 								</tfoot>
@@ -125,8 +125,8 @@
 								<div class="input-group input-group-sm">
 									<select name="bill_cus_id" class="form-select rounded-1" required>
 										<option value="">Select customer</option>
-																			</select>
-									<button class="btn p-0 border-0" type="button" onclick="addCustomer()" >
+									</select>
+									<button class="btn p-0 border-0" type="button" onclick="addCustomer()">
 										<i class="bi bi-plus-circle-fill p-1 ms-1 text-primary"></i>
 									</button>
 								</div>
@@ -164,7 +164,7 @@
 							</div>
 							<div class="col-12 bill-fees-section">
 								<label class="form-label">
-									Extra charges									<button class="btn border-0 p-0" onclick="addBillFees(this)" type="button">
+									Extra charges <button class="btn border-0 p-0" onclick="addBillFees(this)" type="button">
 										<i class="bi bi-plus-circle-fill p-1 ms-1 text-primary"></i>
 									</button>
 								</label>
@@ -190,7 +190,7 @@
 							</div>
 							<div class="col-12 bill-advance-section">
 								<label class="form-label">
-									Advance / Received amount									<button class="btn border-0 p-0" onclick="addBillAdvance(this)" type="button">
+									Advance / Received amount <button class="btn border-0 p-0" onclick="addBillAdvance(this)" type="button">
 										<i class="bi bi-plus-circle-fill p-1 ms-1 text-primary"></i>
 									</button>
 								</label>
@@ -280,7 +280,7 @@
 					</div>
 					<div class="col-12 bill-advance-section">
 						<label class="form-label">
-							Advance / Received amount							<button class="btn border-0 p-0" onclick="addBillAdvance(this)" type="button">
+							Advance / Received amount <button class="btn border-0 p-0" onclick="addBillAdvance(this)" type="button">
 								<i class="bi bi-plus-circle-fill p-1 ms-1 text-primary"></i>
 							</button>
 						</label>
@@ -324,7 +324,7 @@
 		</div>
 	</div>
 </div>
-	
+
 <div class="modal fade" id="bookingAddModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="bookingAddModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-fullscreen">
 		<div class="modal-content">
@@ -354,7 +354,7 @@
 										<input type="hidden" name="bkd_id[]" value="">
 										<select name="bkd_pro_id[]" class="form-select form-select-sm" required onchange="findProductStockPrice(this)">
 											<option value="" pro-stock-id="">Select product</option>
-																					</select>
+										</select>
 									</td>
 									<td>
 										<input type="text" name="bkd_pro_qty[]" class="form-control form-control-sm text-center" placeholder="0" required oninput="allowType(event, 'number'),calcBookingTotal()" onfocus="this.select()">
@@ -372,7 +372,7 @@
 								<tr>
 									<th colspan="6">
 										<a href="javascript:;" class="link-primary" onclick="cloneBookingProduct()">
-											<i class="bi-plus-circle me-1"></i> Add product										</a>
+											<i class="bi-plus-circle me-1"></i> Add product </a>
 									</th>
 								</tr>
 							</tfoot>
@@ -386,8 +386,8 @@
 								<div class="input-group input-group-sm">
 									<select name="bok_cus_id" class="form-select rounded-1" required>
 										<option value="">Select customer</option>
-																			</select>
-									<button class="btn p-0 border-0" type="button" onclick="addCustomer()" >
+									</select>
+									<button class="btn p-0 border-0" type="button" onclick="addCustomer()">
 										<i class="bi bi-plus-circle-fill p-1 ms-1 text-primary"></i>
 									</button>
 								</div>
@@ -428,7 +428,7 @@
 		</div>
 	</div>
 </div>
-	
+
 <div class="modal fade" id="expenseAddModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="expenseAddModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered">
 		<div class="modal-content border shadow">
@@ -444,7 +444,7 @@
 								<label for="" class="form-label required">Given to whom</label>
 								<input type="text" name="exp_to" class="form-control form-control-sm" required title="Required field" list="exp-to-list" autocomplete="off">
 								<datalist id="exp-to-list">
-																	</datalist>
+								</datalist>
 							</div>
 							<div class="col-12">
 								<input type="hidden" id="expense-form-action" name="add_expense" value="">
@@ -455,8 +455,7 @@
 									<span class="input-group-text">
 										<i class="bi-calendar-week"></i>
 									</span>
-									<input type="text" name="exp_date" class="js-flatpickr form-control" placeholder="Expense date"
-									       data-hs-flatpickr-options='{
+									<input type="text" name="exp_date" class="js-flatpickr form-control" placeholder="Expense date" data-hs-flatpickr-options='{
 									         "dateFormat": "Y-m-d"
 									       }' required value="2023-04-14" title="Required field">
 								</div>
@@ -470,7 +469,7 @@
 								<label for="" class="form-label required">Expense for</label>
 								<input type="text" name="exp_for" class="form-control form-control-sm" required title="Required field" list="exp-for-list" autocomplete="off">
 								<datalist id="exp-for-list">
-																	</datalist>
+								</datalist>
 							</div>
 						</div>
 					</div>
@@ -495,7 +494,7 @@
 		</div>
 	</div>
 </div>
-	
+
 <div class="modal fade" id="purchaseAddModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="purchaseAddModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-fullscreen">
 		<div class="modal-content">
@@ -526,7 +525,7 @@
 									<td class="text-start" width="30%">
 										<select name="pod_pro_id[]" class="form-select form-select-sm" required onchange="findPurchaseProductStockPrice(this)">
 											<option value="" pro-gst="0" pro-gst-included="0">Select product</option>
-																					</select>
+										</select>
 									</td>
 									<td>
 										<input type="text" name="pod_pro_lot[]" class="form-control form-control-sm text-center" onfocus="this.select()">
@@ -556,7 +555,7 @@
 								<tr>
 									<th colspan="8">
 										<a href="javascript:;" class="link-primary" onclick="clonePurchaseProduct()">
-											<i class="bi-plus-circle-fill me-1"></i> Add product										</a>
+											<i class="bi-plus-circle-fill me-1"></i> Add product </a>
 									</th>
 								</tr>
 							</tfoot>
@@ -570,8 +569,8 @@
 								<div class="input-group input-group-sm">
 									<select name="po_sup_id" class="form-select rounded-1" required>
 										<option value="">Select supplier</option>
-																			</select>
-									<button class="btn p-0 border-0" type="button" onclick="addSupplier()" >
+									</select>
+									<button class="btn p-0 border-0" type="button" onclick="addSupplier()">
 										<i class="bi bi-plus-circle-fill p-1 ms-1 text-primary"></i>
 									</button>
 								</div>
@@ -609,7 +608,7 @@
 							</div>
 							<div class="col-12 po-fees-section">
 								<label class="form-label">
-									Extra charges									<button class="btn border-0 p-0" onclick="addFees(this)" type="button">
+									Extra charges <button class="btn border-0 p-0" onclick="addFees(this)" type="button">
 										<i class="bi bi-plus-circle-fill p-1 ms-1 text-primary"></i>
 									</button>
 								</label>
@@ -653,7 +652,7 @@
 		</div>
 	</div>
 </div>
-	
+
 <div class="modal fade" id="sowingAddModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="sowingAddModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-fullscreen">
 		<div class="modal-content">
@@ -683,7 +682,7 @@
 									<td class="text-start" width="30%">
 										<select name="swd_pro_id[]" class="form-select form-select-sm" required onchange="findSowingProductStockPrice(this)">
 											<option value="">Select product</option>
-																					</select>
+										</select>
 									</td>
 									<td>
 										<input type="text" name="swd_pro_cost_price[]" class="form-control form-control-sm text-center" placeholder="0.00" readonly tabindex="-1">
@@ -704,7 +703,7 @@
 								<tr>
 									<th colspan="7">
 										<a href="javascript:;" class="link-primary" onclick="cloneSowingProduct()">
-											<i class="bi-plus-circle-fill me-1"></i> Add product										</a>
+											<i class="bi-plus-circle-fill me-1"></i> Add product </a>
 									</th>
 								</tr>
 							</tfoot>
@@ -718,8 +717,8 @@
 								<div class="input-group input-group-sm">
 									<select name="sw_pro_id" class="form-select rounded-1" required onchange="selectSowingProduct(this.value)">
 										<option value="">Select product</option>
-																			</select>
-									<button class="btn p-0 border-0" type="button" onclick="addProduct()" >
+									</select>
+									<button class="btn p-0 border-0" type="button" onclick="addProduct()">
 										<i class="bi bi-plus-circle-fill p-1 ms-1 text-primary"></i>
 									</button>
 								</div>
@@ -796,7 +795,7 @@
 								<div class="input-group input-group-sm">
 									<select class="form-select rounded-1" name="pro_unit" id="product-units">
 										<option value="">Select</option>
-																			</select>
+									</select>
 									<button class="btn p-0 border-0" type="button" onclick="addUnitOption('#product-units', 'Unit')">
 										<i class="bi bi-plus-circle-fill p-1 ms-1 text-primary"></i>
 									</button>
@@ -838,8 +837,8 @@
 								<div class="input-group input-group-sm">
 									<select name="pro_cat_id" id="pro_cat_id" class="form-select rounded-1">
 										<option value="">Select</option>
-																			</select>
-									<button class="btn p-0 border-0" type="button" onclick="addCategory()" >
+									</select>
+									<button class="btn p-0 border-0" type="button" onclick="addCategory()">
 										<i class="bi bi-plus-circle-fill p-1 ms-1 text-primary"></i>
 									</button>
 								</div>
@@ -850,7 +849,7 @@
 									<select name="pro_sc_id" class="form-select rounded-1">
 										<option value="">Select</option>
 									</select>
-									<button class="btn p-0 border-0" type="button" onclick="addSubCategory()" >
+									<button class="btn p-0 border-0" type="button" onclick="addSubCategory()">
 										<i class="bi bi-plus-circle-fill p-1 ms-1 text-primary"></i>
 									</button>
 								</div>
@@ -860,8 +859,8 @@
 								<div class="input-group input-group-sm">
 									<select name="pro_br_id" class="form-select rounded-1">
 										<option value="">Select</option>
-																			</select>
-									<button class="btn p-0 border-0" type="button" onclick="addBrand()" >
+									</select>
+									<button class="btn p-0 border-0" type="button" onclick="addBrand()">
 										<i class="bi bi-plus-circle-fill p-1 ms-1 text-primary"></i>
 									</button>
 								</div>
@@ -871,8 +870,8 @@
 								<div class="input-group input-group-sm">
 									<select name="pro_sup_id" class="form-select rounded-1">
 										<option value="">Select</option>
-																			</select>
-									<button class="btn p-0 border-0" type="button" onclick="addSupplier()" >
+									</select>
+									<button class="btn p-0 border-0" type="button" onclick="addSupplier()">
 										<i class="bi bi-plus-circle-fill p-1 ms-1 text-primary"></i>
 									</button>
 								</div>
@@ -949,7 +948,7 @@
 						<label for="" class="form-label">Category name</label>
 						<select name="sc_cat_id" class="form-select rounded-1">
 							<option value="">Select</option>
-													</select>
+						</select>
 					</div>
 					<div class="col-12">
 						<label for="" class="form-label">Sub category name</label>
@@ -1034,7 +1033,7 @@
 		</div>
 	</div>
 </div>
-	
+
 <div class="modal fade" id="employeeAdvanceAddModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="employeeAdvanceAddModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
 		<div class="modal-content border shadow">
@@ -1052,10 +1051,17 @@
 								<input type="text" name="ead_date" class="form-control form-control-sm js-flatpickr w-100" data-hs-flatpickr-options='{"dateFormat": "Y-m-d"}'>
 							</div>
 							<div class="col-12">
+								<label for="" class="form-label required">Poly House Type (only show on daily weiges)</label>
+								<select name="ead_emp_id" class="form-control form-control-sm" required>
+									<option value="">Poly House 1</option>
+									<option value="">Poly House 2</option>
+								</select>
+							</div>
+							<div class="col-12">
 								<label for="" class="form-label required">Employee</label>
 								<select name="ead_emp_id" class="form-control form-control-sm" required>
 									<option value="">Select employee</option>
-																	</select>
+								</select>
 							</div>
 							<div class="col-12">
 								<label for="" class="form-label required">Given amount</label>
@@ -1063,10 +1069,19 @@
 							</div>
 						</div>
 					</div>
+
 					<div class="col-12 col-md-6">
+						<div class="">
+							<label for="" class="form-label">Employee Type</label>
+							<select id="empt" class="form-control form-control-sm">
+								<option value="dailyweiges">Daily Weiges</option>
+								<option value="staff">Staff</option>
+							</select>
+						</div>
 						<label for="" class="form-label">Taken for what</label>
 						<textarea name="ead_reason" class="form-control form-control-sm" rows="5"></textarea>
 					</div>
+
 				</form>
 			</div>
 			<div class="modal-footer pt-0 border-top-0">
@@ -1076,7 +1091,7 @@
 		</div>
 	</div>
 </div>
-	
+
 <div class="modal fade" id="employeeAddModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="employeeAddModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered">
 		<div class="modal-content border shadow">
@@ -1089,9 +1104,23 @@
 					<div class="col-12 col-md-6">
 						<div class="row g-3">
 							<div class="col-12">
+								<label for="" class="form-label">Branches</label>
+								<select name="" class="form-control form-control-sm">
+									<option value="">Branch 1</option>
+									<option value="">Branch 2</option>
+								</select>
+							</div>
+							<div class="col-12">
 								<input type="hidden" id="employee-form-action" name="add_employee" value="">
 								<label for="" class="form-label">Employee name</label>
 								<input type="text" name="emp_name" class="form-control form-control-sm" required>
+							</div>
+							<div class="col-12">
+								<label for="" class="form-label">Employee Type</label>
+								<select id="empt" class="form-control form-control-sm">
+									<option value="dailyweiges">Daily Weiges</option>
+									<option value="staff">Staff</option>
+								</select>
 							</div>
 							<div class="col-12">
 								<label for="" class="form-label">Mobile number</label>
@@ -1102,7 +1131,7 @@
 								<input type="email" name="emp_email" class="form-control form-control-sm">
 							</div>
 							<div class="col-12">
-								<label for="" class="form-label">Per day salary</label>
+								<label for="" class="form-label" id="sal">Per day salary</label>
 								<input type="text" name="emp_salary" class="form-control form-control-sm" oninput="allowType(event, 'number')">
 							</div>
 						</div>
@@ -1123,8 +1152,25 @@
 								</select>
 							</div>
 							<div class="col-12">
+								<label for="" class="form-label">Department (will shown on staff select)</label>
+								<select name="" class="form-control form-control-sm">
+									<option value="">D1</option>
+									<option value="">D2</option>
+								</select>
+							</div>
+							<div class="col-12">
 								<label for="" class="form-label">Address</label>
 								<textarea name="emp_address" class="form-control form-control-sm" rows="5"></textarea>
+							</div>
+							<div class="d-flex justify-content-around perdaymonth align-items-center">
+								<input type="radio" class="d-none" name="salper" id="perday">
+								<label for="perday">
+									<button class="btn btn-sm btn-outline-primary">Day</button>
+								</label>
+								<input type="radio" class="d-none" name="salper" id="permonth">
+								<label for="perday">
+									<button class="btn btn-sm btn-outline-primary">Month</button>
+								</label>
 							</div>
 						</div>
 					</div>
@@ -1137,7 +1183,7 @@
 		</div>
 	</div>
 </div>
-	
+
 <div class="modal fade" id="customerAddModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="customerAddModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
 		<div class="modal-content border shadow">
@@ -1221,7 +1267,7 @@
 					<div class="col-12 col-md-6">
 						<label for="" class="form-label">User role</label>
 						<select name="u_role" class="form-control form-control-sm">
-														<option value="staff">Staff</option>
+							<option value="staff">Staff</option>
 							<option value="admin">Admin</option>
 						</select>
 					</div>
@@ -1250,124 +1296,124 @@
 	</div>
 </div>
 <script>
-function Alert(options={}){
-	const BSAction = {
-		success: '<i class="bi bi-check-circle display-1 text-success"></i>',
-		error: '<i class="bi bi-x-circle display-1 text-danger"></i>',
-		warning: '<i class="bi bi-exclamation-circle display-1 text-warning"></i>',
-		info: '<i class="bi bi-info-circle display-1 text-info"></i>',
-		question: '<i class="bi bi-question-circle display-1 text-muted"></i>',
-	}
-	const modal = $('#alertModal');
-	const icon = modal.find('.modal-title .alertIcon');
-	const text = modal.find('.modal-title .alertText');
-	const okBtn = modal.find('.modal-footer .alertOkBtn');
-	const cancelBtn = modal.find('.modal-footer .alertCancelBtn');
-	icon.html('');
-	text.html('');
-	cancelBtn.remove();
-	if (options.type && BSAction[options.type]) {
-		icon.html(BSAction[options.type]);
-	}
-	if ('string' === typeof options) {
-		text.html(options);
-	} else if ('object' === typeof options && options.text) {
-		text.html(options.text);
-	} else {
-		text.html(translate('alert'));
-	}
-	if (options.callback) {
-		okBtn.on('click', function(e) {
-			options.callback(e);
-			$(this).unbind("click");
-		})
-	}
-	if (options.confirmText) {
-		okBtn.text(options.confirmText);
-	} else {
-		okBtn.text(translate('ok'));
-	}
-	modal.modal('show');
-}
-async function Prompt(options={}){
-	const modal = $('#alertModal');
-	const icon = modal.find('.modal-title .alertIcon');
-	const text = modal.find('.modal-title .alertText');
-	const okBtn = modal.find('.modal-footer .alertOkBtn');
-	modal.find('.modal-footer .alertCancelBtn').remove();
-	icon.html('');
-	text.html('');
-	if ('string' === typeof options) {
-		icon.html(`<h5>${options}</h5>`);
-	} else if ('object' === typeof options && options.text) {
-		icon.html(`<h5>${options.text}</h5>`);
-	} else {
-		icon.html(`<h5>${translate('prompt')}</h5>`);
-	}
-	modal.find('.modal-footer').prepend(`<button type="button" data-bs-dismiss="modal" class="btn btn-sm alertCancelBtn btn-secondary">${translate('cancel')}</button>`);
-	text.html('<input type="text" class="form-control promptInput">');
-	const cancelBtn = modal.find('.modal-footer .alertCancelBtn');
-	modal.modal('show');
-	return await new Promise((resolve, reject) => {
-		okBtn.on('click', function(){
-			resolve(modal.find('.promptInput').val());
-			$(this).unbind('click');
-		});
-		cancelBtn.on('click', function(){
-			resolve(null);
-		});
-	});
-}
-async function Confirm(options={}){
-	const modal = $('#alertModal');
-	const icon = modal.find('.modal-title .alertIcon');
-	const text = modal.find('.modal-title .alertText');
-	const okBtn = modal.find('.modal-footer .alertOkBtn');
-	modal.find('.modal-footer .alertCancelBtn').remove();
-	icon.html('');
-	text.html('');
-	if ('string' === typeof options) {
-		icon.html(`<h5>${options}</h5>`);
-	} else if ('object' === typeof options && options.text) {
-		icon.html(`<h5>${options.text}</h5>`);
-	} else {
-		icon.html(`<h5>${translate('confirm')}</h5>`);
-	}
-	if (options.confirmText) {
-		okBtn.text(options.confirmText);
-	}
-	let cancelText = translate('cancel');
-	if (options.cancelText) {
-		cancelText = options.cancelText;
-	}
-	modal.find('.modal-footer').prepend(`<button type="button" data-bs-dismiss="modal" class="btn btn-sm alertCancelBtn btn-secondary">${cancelText}</button>`);
-	const cancelBtn = modal.find('.modal-footer .alertCancelBtn');
-	modal.modal('show');
-	if (options.onOk || options.onCancel) {
-		if (options.onOk) {
+	function Alert(options = {}) {
+		const BSAction = {
+			success: '<i class="bi bi-check-circle display-1 text-success"></i>',
+			error: '<i class="bi bi-x-circle display-1 text-danger"></i>',
+			warning: '<i class="bi bi-exclamation-circle display-1 text-warning"></i>',
+			info: '<i class="bi bi-info-circle display-1 text-info"></i>',
+			question: '<i class="bi bi-question-circle display-1 text-muted"></i>',
+		}
+		const modal = $('#alertModal');
+		const icon = modal.find('.modal-title .alertIcon');
+		const text = modal.find('.modal-title .alertText');
+		const okBtn = modal.find('.modal-footer .alertOkBtn');
+		const cancelBtn = modal.find('.modal-footer .alertCancelBtn');
+		icon.html('');
+		text.html('');
+		cancelBtn.remove();
+		if (options.type && BSAction[options.type]) {
+			icon.html(BSAction[options.type]);
+		}
+		if ('string' === typeof options) {
+			text.html(options);
+		} else if ('object' === typeof options && options.text) {
+			text.html(options.text);
+		} else {
+			text.html(translate('alert'));
+		}
+		if (options.callback) {
 			okBtn.on('click', function(e) {
-				options.onOk(e);
+				options.callback(e);
 				$(this).unbind("click");
-			});
+			})
 		}
-		if (options.onCancel) {
-			cancelBtn.on('click', function(e) {
-				options.onCancel(e);
-				$(this).unbind("click");
-			});
+		if (options.confirmText) {
+			okBtn.text(options.confirmText);
+		} else {
+			okBtn.text(translate('ok'));
 		}
-	} else {
+		modal.modal('show');
+	}
+	async function Prompt(options = {}) {
+		const modal = $('#alertModal');
+		const icon = modal.find('.modal-title .alertIcon');
+		const text = modal.find('.modal-title .alertText');
+		const okBtn = modal.find('.modal-footer .alertOkBtn');
+		modal.find('.modal-footer .alertCancelBtn').remove();
+		icon.html('');
+		text.html('');
+		if ('string' === typeof options) {
+			icon.html(`<h5>${options}</h5>`);
+		} else if ('object' === typeof options && options.text) {
+			icon.html(`<h5>${options.text}</h5>`);
+		} else {
+			icon.html(`<h5>${translate('prompt')}</h5>`);
+		}
+		modal.find('.modal-footer').prepend(`<button type="button" data-bs-dismiss="modal" class="btn btn-sm alertCancelBtn btn-secondary">${translate('cancel')}</button>`);
+		text.html('<input type="text" class="form-control promptInput">');
+		const cancelBtn = modal.find('.modal-footer .alertCancelBtn');
+		modal.modal('show');
 		return await new Promise((resolve, reject) => {
-			okBtn.on('click', function(){
-				resolve(true);
+			okBtn.on('click', function() {
+				resolve(modal.find('.promptInput').val());
 				$(this).unbind('click');
 			});
-			cancelBtn.on('click', function(){
-				resolve(false);
+			cancelBtn.on('click', function() {
+				resolve(null);
 			});
 		});
 	}
-}
+	async function Confirm(options = {}) {
+		const modal = $('#alertModal');
+		const icon = modal.find('.modal-title .alertIcon');
+		const text = modal.find('.modal-title .alertText');
+		const okBtn = modal.find('.modal-footer .alertOkBtn');
+		modal.find('.modal-footer .alertCancelBtn').remove();
+		icon.html('');
+		text.html('');
+		if ('string' === typeof options) {
+			icon.html(`<h5>${options}</h5>`);
+		} else if ('object' === typeof options && options.text) {
+			icon.html(`<h5>${options.text}</h5>`);
+		} else {
+			icon.html(`<h5>${translate('confirm')}</h5>`);
+		}
+		if (options.confirmText) {
+			okBtn.text(options.confirmText);
+		}
+		let cancelText = translate('cancel');
+		if (options.cancelText) {
+			cancelText = options.cancelText;
+		}
+		modal.find('.modal-footer').prepend(`<button type="button" data-bs-dismiss="modal" class="btn btn-sm alertCancelBtn btn-secondary">${cancelText}</button>`);
+		const cancelBtn = modal.find('.modal-footer .alertCancelBtn');
+		modal.modal('show');
+		if (options.onOk || options.onCancel) {
+			if (options.onOk) {
+				okBtn.on('click', function(e) {
+					options.onOk(e);
+					$(this).unbind("click");
+				});
+			}
+			if (options.onCancel) {
+				cancelBtn.on('click', function(e) {
+					options.onCancel(e);
+					$(this).unbind("click");
+				});
+			}
+		} else {
+			return await new Promise((resolve, reject) => {
+				okBtn.on('click', function() {
+					resolve(true);
+					$(this).unbind('click');
+				});
+				cancelBtn.on('click', function() {
+					resolve(false);
+				});
+			});
+		}
+	}
 </script><!-- End Create a new user Modal -->
 <!-- ========== END SECONDARY CONTENTS ========== -->
 <!-- JS Implementing Plugins -->
@@ -1385,100 +1431,100 @@ async function Confirm(options={}){
 <script src="assets/js/BSSelect.min.js"></script>
 <script src="assets/js/main.js"></script>
 <script>
-	$('.table-responsive').on('show.bs.dropdown', function(){
+	$('.table-responsive').on('show.bs.dropdown', function() {
 		$(this).css('overflow', 'inherit');
 	});
-	$('.table-responsive').on('hide.bs.dropdown', function(){
+	$('.table-responsive').on('hide.bs.dropdown', function() {
 		$(this).css('overflow', 'auto');
 	});
-	$.fn.dataTable.Api.register('sum()', function () {
-	    return this.flatten().reduce(function(a, b) {
-	        if ( typeof a === 'string' ) {
-	            a = a.replace(/[^\d.-]/g, '') * 1;
-	        }
-	        if ( typeof b === 'string' ) {
-	            b = b.replace(/[^\d.-]/g, '') * 1;
-	        }
-	 
-	        return a + b;
-	    }, 0 );
-	}),
-	$.fn.dataTable.moment = function (format, locale) {
-	     var types = $.fn.dataTable.ext.type;
-	     // Add type detection
-	     types.detect.unshift(function (d) {
-	         return moment(d, format, locale, true).isValid() ?
-	            'moment-' + format :
-	            null;
-	     });
-	     // Add sorting method - use an integer for the sorting
-	     types.order['moment-' + format + '-pre'] = function (d) {
-	         return moment(d, format, locale, true).unix();
-	     };
-	},
-	$.fn.dataTable.moment('DD MMM YYYY'),
-	$.fn.dataTable.defaults.aLengthMenu = [
-		[10, 25, 50, 100, 500, -1],
-		[10, 25, 50, 100, 500, translate('all')],
-	];
+	$.fn.dataTable.Api.register('sum()', function() {
+			return this.flatten().reduce(function(a, b) {
+				if (typeof a === 'string') {
+					a = a.replace(/[^\d.-]/g, '') * 1;
+				}
+				if (typeof b === 'string') {
+					b = b.replace(/[^\d.-]/g, '') * 1;
+				}
+
+				return a + b;
+			}, 0);
+		}),
+		$.fn.dataTable.moment = function(format, locale) {
+			var types = $.fn.dataTable.ext.type;
+			// Add type detection
+			types.detect.unshift(function(d) {
+				return moment(d, format, locale, true).isValid() ?
+					'moment-' + format :
+					null;
+			});
+			// Add sorting method - use an integer for the sorting
+			types.order['moment-' + format + '-pre'] = function(d) {
+				return moment(d, format, locale, true).unix();
+			};
+		},
+		$.fn.dataTable.moment('DD MMM YYYY'),
+		$.fn.dataTable.defaults.aLengthMenu = [
+			[10, 25, 50, 100, 500, -1],
+			[10, 25, 50, 100, 500, translate('all')],
+		];
 	const dtLang = $.fn.dataTable.defaults.oLanguage;
 	dtLang.sLengthMenu = 'Show _MENU_ entries',
-	dtLang.sLoadingRecords = translate('loading'),
-	dtLang.sEmptyTable = dtLang.sZeroRecords = `<div class="text-center p-4"><img class="mb-3" src="./assets/svg/illustrations/oc-error.svg" alt="Image Description" style="width: 10rem;" data-hs-theme-appearance="default"><img class="mb-3" src="./assets/svg/illustrations-light/oc-error.svg" alt="Image Description" style="width: 10rem;" data-hs-theme-appearance="dark"><p class="mb-0">${translate('no_data_to_show')}</p></div>`,
-	dtLang.sInfo = 'Showing page _PAGE_ of _PAGES_', 
-	dtLang.sInfoEmpty = translate('no_data_to_show'),
-	dtLang.sInfoFiltered = ' - filtered from _MAX_ records',
-	dtLang.sSearch = translate('search'),
-	dtLang.oPaginate = {
-		sFirst: translate('first'),
-		sLast: translate('last'),
-		sNext: translate('next'),
-		sPrevious: translate('previous')
-	},
-	dtLang.buttons = {
-		copySuccess: {
-	        1: translate('copied_one_row'),
-	        _: translate('copied_n_rows')
-	    },
-	    copyTitle: translate('copy_to_clipboard')
-	},
-	$.fn.dataTableExt.buttons.csvHtml5.charset = 'UTF-8',
-	$.fn.dataTableExt.buttons.csvHtml5.bom = true;
+		dtLang.sLoadingRecords = translate('loading'),
+		dtLang.sEmptyTable = dtLang.sZeroRecords = `<div class="text-center p-4"><img class="mb-3" src="./assets/svg/illustrations/oc-error.svg" alt="Image Description" style="width: 10rem;" data-hs-theme-appearance="default"><img class="mb-3" src="./assets/svg/illustrations-light/oc-error.svg" alt="Image Description" style="width: 10rem;" data-hs-theme-appearance="dark"><p class="mb-0">${translate('no_data_to_show')}</p></div>`,
+		dtLang.sInfo = 'Showing page _PAGE_ of _PAGES_',
+		dtLang.sInfoEmpty = translate('no_data_to_show'),
+		dtLang.sInfoFiltered = ' - filtered from _MAX_ records',
+		dtLang.sSearch = translate('search'),
+		dtLang.oPaginate = {
+			sFirst: translate('first'),
+			sLast: translate('last'),
+			sNext: translate('next'),
+			sPrevious: translate('previous')
+		},
+		dtLang.buttons = {
+			copySuccess: {
+				1: translate('copied_one_row'),
+				_: translate('copied_n_rows')
+			},
+			copyTitle: translate('copy_to_clipboard')
+		},
+		$.fn.dataTableExt.buttons.csvHtml5.charset = 'UTF-8',
+		$.fn.dataTableExt.buttons.csvHtml5.bom = true;
 	const pdf = $.fn.dataTableExt.buttons.pdfHtml5;
 	pdf.footer = true,
-	pdf.orientation = 'landscape',
-	pdf.exportOptions = {
-		// columns: ':visible',
-		search: 'applied',
-		order: 'applied'
-	},
-	$.fn.dataTableExt.buttons.print.footer = true,
-	// to print current page only
-	$.fn.dataTableExt.buttons.print.exportOptions = {
-        modifier: {
-            page: 'current'
-        }
-    },
-	pdf.customize = function(doc) {
-		doc.defaultStyle.font = 'NotoSans';
-		doc.pageMargins= [ 20, 40, 20, 40 ];
-		doc.content[1].table.widths = Array(doc.content[1].table.body[0].length + 1).join('*').split('');
-		const body = doc.content[1].table.body;
-		for (let i = 0; i < Object.values(body).length; i++) {
-			for (let j = 0; j < Object.values(body[i]).length; j++) {
-				// body[i][j].color = '#000'; // change font color
-				// body[i][j].fillColor = '#fff'; // change background color of cell
-				body[i][j].alignment = 'left'; // text alignment
+		pdf.orientation = 'landscape',
+		pdf.exportOptions = {
+			// columns: ':visible',
+			search: 'applied',
+			order: 'applied'
+		},
+		$.fn.dataTableExt.buttons.print.footer = true,
+		// to print current page only
+		$.fn.dataTableExt.buttons.print.exportOptions = {
+			modifier: {
+				page: 'current'
 			}
-		}
-	};
-	$(document).ready(function(){
+		},
+		pdf.customize = function(doc) {
+			doc.defaultStyle.font = 'NotoSans';
+			doc.pageMargins = [20, 40, 20, 40];
+			doc.content[1].table.widths = Array(doc.content[1].table.body[0].length + 1).join('*').split('');
+			const body = doc.content[1].table.body;
+			for (let i = 0; i < Object.values(body).length; i++) {
+				for (let j = 0; j < Object.values(body[i]).length; j++) {
+					// body[i][j].color = '#000'; // change font color
+					// body[i][j].fillColor = '#fff'; // change background color of cell
+					body[i][j].alignment = 'left'; // text alignment
+				}
+			}
+		};
+	$(document).ready(function() {
 		// const excel = $.fn.dataTableExt.buttons.excelHtml5;
 		// const csv = $.fn.dataTableExt.buttons.csvHtml5;
 		// const print = $.fn.dataTableExt.buttons.print;
 		$.fn.startLoading = function(e) {
 			let spinner = `<span class="spinner-border spinner-border-sm" role="status"><span class="visually-hidden">${translate('saving')}...</span></span> `;
-			if (undefined===e) {
+			if (undefined === e) {
 				e = spinner + translate('saving');
 			} else {
 				e = spinner + e;
@@ -1486,7 +1532,7 @@ async function Confirm(options={}){
 			return this.html(e).prop('disabled', true);
 		}
 		$.fn.stopLoading = function(e) {
-			if (undefined===e) {
+			if (undefined === e) {
 				e = translate('save');
 			}
 			return this.html(e).prop('disabled', false);
@@ -1519,20 +1565,20 @@ async function Confirm(options={}){
 			// INITIALIZATION OF STICKY BLOCKS
 			// =======================================================
 			new HSStickyBlock('.js-sticky-block', {
-			  targetSelector: document.getElementById('header').classList.contains('navbar-fixed') ? '#header' : null
+				targetSelector: document.getElementById('header').classList.contains('navbar-fixed') ? '#header' : null
 			})
 
 
 			// SCROLLSPY
 			// =======================================================
 			new bootstrap.ScrollSpy(document.body, {
-			  target: '#navbarSettings',
-			  offset: 100
+				target: '#navbarSettings',
+				offset: 100
 			})
 			if (document.querySelector('#navbarVerticalNavMenu')) {
 				new HSScrollspy('#navbarVerticalNavMenu', {
-				  breakpoint: 'lg',
-				  scrollOffset: -20
+					breakpoint: 'lg',
+					scrollOffset: -20
 				})
 			}
 			let page = location.pathname.split('/').slice(-1)[0];
@@ -1542,7 +1588,7 @@ async function Confirm(options={}){
 			document.querySelectorAll('#navbarVerticalMenu .nav-link').forEach(el => {
 				el.classList.remove('active');
 			});
-			const active = document.querySelector('#navbarVerticalMenu a[href="'+page+'"]');
+			const active = document.querySelector('#navbarVerticalMenu a[href="' + page + '"]');
 			if (active) {
 				active.classList.add('active');
 				if (active.parentNode.classList.contains('collapse')) {
@@ -1551,7 +1597,7 @@ async function Confirm(options={}){
 					active.closest('.collapse').classList.add('show');
 				}
 			}
-			
+
 			new HSSideNav('.js-navbar-vertical-aside').init();
 			const HSFormSearchInstance = new HSFormSearch('.js-form-search')
 			if (HSFormSearchInstance.collection.length) {
@@ -1560,10 +1606,10 @@ async function Confirm(options={}){
 				})
 				document.querySelector('.js-form-search-mobile-toggle').addEventListener('click', e => {
 					let dataOptions = JSON.parse(e.currentTarget.getAttribute('data-hs-form-search-options')),
-					$menu = document.querySelector(dataOptions.dropMenuElement)
+						$menu = document.querySelector(dataOptions.dropMenuElement)
 					$menu.classList.add('top-0')
 					$menu.style.left = 0
-			  })
+				})
 			}
 		});
 		const $dropdownBtn = document.getElementById('selectThemeDropdown') // Dropdowon trigger

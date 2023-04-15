@@ -1,73 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
-	--scroll-thumb: rgba(189,197,209,.6);
-	--scroll-track: rgba(189,197,209,.15);
+	--scroll-thumb: rgba(189, 197, 209, .6);
+	--scroll-track: rgba(189, 197, 209, .15);
 	--scroll-size: .6125rem;
 }
-*{
+
+* {
 	scroll-behavior: smooth;
 	scrollbar-width: thin;
 	scrollbar-color: var(--scroll-thumb) var(--scroll-track);
 }
+
 *::-webkit-scrollbar {
 	width: var(--scroll-size);
 	height: var(--scroll-size);
 }
+
 *::-webkit-scrollbar-thumb {
 	background: var(--scroll-thumb);
 	border-radius: calc(var(--scroll-size) / 2);
 }
+
 *::-webkit-scrollbar-track {
 	background: var(--scroll-track);
 	border-radius: calc(var(--scroll-size) / 2);
 }
+
 .scrollbar-sm::-webkit-scrollbar {
 	width: calc(var(--scroll-size) / 1.2) !important;
 	height: calc(var(--scroll-size) / 1.2) !important;
 }
+
 .scrollbar-sm::-webkit-scrollbar-thumb {
 	border-radius: calc(var(--scroll-size) / 1.2 / 2) !important;
 }
+
 .scrollbar-sm::-webkit-scrollbar-track {
 	border-radius: calc(var(--scroll-size) / 1.2 / 2) !important;
 }
+
 body[lang="mr"] {
 	font-family: 'Noto Sans', sans-serif;
 	font-weight: 500;
 }
+
 .pagination {
 	justify-content: end;
 }
+
 .cursor-pointer {
 	cursor: pointer;
 }
-table.dataTable thead > tr > th.sorting_asc::before,
-table.dataTable thead > tr > th.sorting_desc::after {
+
+table.dataTable thead>tr>th.sorting_asc::before,
+table.dataTable thead>tr>th.sorting_desc::after {
 	color: #377dff;
 }
+
 body[lang="mr"] .table tbody td {
 	font-size: .85rem;
 }
+
 label.required::after {
 	content: '*';
 	margin-left: 5px;
 	color: red;
 }
+
 .form-check-input:checked[type="radio"] {
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e") !important;
 }
-.flatpickr-custom-form-control[readonly], .form-control[readonly] {
-  background-color: rgba(128, 128, 128, 0.1) !important;
+
+.flatpickr-custom-form-control[readonly],
+.form-control[readonly] {
+	background-color: rgba(128, 128, 128, 0.1) !important;
 }
+
 .overflow-x-auto {
 	overflow-x: auto;
 }
+
 .overflow-y-auto {
 	overflow-y: auto;
 }
+
 .overflow-x-hidden {
 	overflow-x: hidden;
 }
+
 .overflow-y-hidden {
 	overflow-y: hidden;
 }
@@ -78,18 +99,21 @@ label.required::after {
 	left: 0;
 	z-index: 1;
 }
+
 .table-col-2-fixed-start tr:nth-child(1) th:nth-child(2),
 .table-col-2-fixed-start td:nth-child(2) {
 	position: sticky;
 	left: 0;
 	z-index: 1;
 }
+
 .table-col-2-fixed-start-offset-1 tr:nth-child(1) th:nth-child(2),
 .table-col-2-fixed-start-offset-1 td:nth-child(2) {
 	position: sticky;
 	left: 50.95px;
 	z-index: 1;
 }
+
 .table-col-1-fixed-start.shadow-end tr:nth-child(1) th:nth-child(1),
 .table-col-1-fixed-start.shadow-end td:nth-child(1),
 .table-col-2-fixed-start.shadow-end tr:nth-child(1) th:nth-child(2),
@@ -104,22 +128,27 @@ label.required::after {
 	padding-left: 0;
 	padding-right: 0;
 }
+
 .table-col-last-ps-0 th:last-child,
 .table-col-last-ps-0 td:last-child {
 	padding-left: 0;
 }
+
 .table-col-last-pe-0 th:last-child,
 .table-col-last-pe-0 td:last-child {
 	padding-right: 0;
 }
+
 .table-td-2-primary-bold tbody td:nth-child(2) {
 	color: #377dff !important;
 	font-weight: bolder;
 }
+
 .table-td-3-danger-bold tbody td:nth-child(3) {
 	color: #ed4c78 !important;
 	font-weight: bolder;
 }
+
 .rupee:before,
 .rupee-after:after {
 	display: inline-block;
@@ -133,13 +162,21 @@ label.required::after {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
 .rupee:before {
 	content: '\F7EC';
 }
+
 .rupee-after:after {
 	content: '\F7EC';
 }
+
 .rounded-end-1 {
-	border-top-right-radius: var(--bs-border-radius-sm)!important;
-	border-bottom-right-radius: var(--bs-border-radius-sm)!important;
+	border-top-right-radius: var(--bs-border-radius-sm) !important;
+	border-bottom-right-radius: var(--bs-border-radius-sm) !important;
+}
+
+.perdaymonth input[type="radio"]:checked+label button {
+	background-color: #377dff !important;
+	color: white !important;
 }
