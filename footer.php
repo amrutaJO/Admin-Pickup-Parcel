@@ -1648,3 +1648,11 @@
 </body>
 
 </html>
+<script>
+	let customerListTable = false;
+	customerListTable = $('#data-table').DataTable({
+		data: {
+
+		}
+	});
+</script>
