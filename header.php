@@ -31,7 +31,10 @@ if (isset($_POST['change_lang'])) {
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Title -->
-	<title><?= translate('dashboard') ?> | <?= translate('title') ?></title> <!-- Favicons -->
+	<title>
+		<?= translate('dashboard') ?> |
+		<?= translate('title') ?>
+	</title> <!-- Favicons -->
 	<link rel="shortcut icon" href="assets/img/logos/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/logos/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/logos/favicon-32x32.png">
@@ -211,7 +214,7 @@ if (isset($_POST['change_lang'])) {
 	</script>
 </head>
 
-<body class="has-navbar-vertical-aside navbar-vertical-aside-show-xl footer-offset" lang="<?= $lang ?>">
+<body class="has-navbar-vertical-aside navbar-vertical-aside-show-xl footer-offset" lang="en">
 	<script src="assets/js/hs.theme-appearance.js"></script>
 	<script src="assets/vendor/hs-navbar-vertical-aside/dist/hs-navbar-vertical-aside-mini-cache.js"></script>
 	<!-- ========== HEADER ========== -->
@@ -353,7 +356,8 @@ if (isset($_POST['change_lang'])) {
 													<i class="bi-check2-all dropdown-item-icon"></i> Mark all as read
 												</a>
 												<a class="dropdown-item" href="#">
-													<i class="bi-toggle-off dropdown-item-icon"></i> Disable notifications
+													<i class="bi-toggle-off dropdown-item-icon"></i> Disable
+													notifications
 												</a>
 												<a class="dropdown-item" href="#">
 													<i class="bi-gift dropdown-item-icon"></i> What's new?
@@ -434,7 +438,8 @@ if (isset($_POST['change_lang'])) {
 															<!-- End Col -->
 															<div class="col ms-n2">
 																<h5 class="mb-1">Anne Richard</h5>
-																<p class="text-body fs-5">accepted your invitation to join Notion</p>
+																<p class="text-body fs-5">accepted your invitation to
+																	join Notion</p>
 															</div>
 															<!-- End Col -->
 															<small class="col-auto text-muted text-cap">1dy</small>
@@ -541,32 +546,104 @@ if (isset($_POST['change_lang'])) {
 							<div class="nav-item">
 								<a class="nav-link" href="customers.php">
 									<i class="bi-people nav-icon"></i>
-									<span class="nav-link-title">Customers</span>
+									<span class="nav-link-title">User Management</span>
 								</a>
 							</div>
 							<!-- <div class="nav-item">
-							<a class="nav-link dropdown-toggle " href="#navbarVerticalMenuPagesProductsMenu" role="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalMenuPagesProductsMenu" aria-expanded="false" aria-controls="navbarVerticalMenuPagesProductsMenu">
-								<i class="bi-suit-club nav-icon"></i>
-								<span class="nav-link-title">Inventory</span>
-							</a>
-							<div id="navbarVerticalMenuPagesProductsMenu" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
-								<a class="nav-link " href="products">Products</a>
-								<a class="nav-link " href="sowing">Sowing</a>
-								<a class="nav-link " href="">Category</a>
-								<a class="nav-link " href="">Sub Category</a>
-								<a class="nav-link " href="">Brand</a>
-							</div>
-						</div> -->
+								<a class="nav-link" href="customers.php">
+									<i class="bi-people nav-icon"></i>
+									<span class="nav-link-title">Sub Admin</span>
+								</a>
+							</div> -->
 							<div class="nav-item">
-								<a class="nav-link" href="products.php">
+								<a class="nav-link dropdown-toggle " href="#subadmin" role="button" data-bs-toggle="collapse" data-bs-target="#subadmin" aria-expanded="false" aria-controls="subadmin">
+									<i class="bi-people nav-icon"></i>
+									<span class="nav-link-title">Sub Admin</span>
+								</a>
+								<div id="subadmin" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
+									<a class="nav-link " href="createsubadmin.php">Create Sub Admin</a>
+									<a class="nav-link " href="sowing">Create Staff</a>
+									<a class="nav-link " href="">Department</a>
+									<a class="nav-link " href="">Permissions</a>
+									<a class="nav-link " href="">Branches</a>
+								</div>
+							</div>
+							<div class="nav-item">
+								<a class="nav-link dropdown-toggle " href="#inventory" role="button" data-bs-toggle="collapse" data-bs-target="#inventory" aria-expanded="false" aria-controls="inventory">
 									<i class="bi-suit-club nav-icon"></i>
 									<span class="nav-link-title">Inventory</span>
+								</a>
+								<div id="inventory" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
+									<a class="nav-link " href="products.php">Add Product</a>
+									<a class="nav-link " href="">Purchase</a>
+									<a class="nav-link " href="">Supplier</a>
+									<a class="nav-link " href="">Stocktakes</a>
+								</div>
+							</div>
+							<div class="nav-item">
+								<a class="nav-link" href="index.php">
+									<i class="bi-flower2 nav-icon"></i>
+									<span class="nav-link-title">Booking Dashboard</span>
 								</a>
 							</div>
 							<div class="nav-item">
 								<a class="nav-link" href="sowing.php">
 									<i class="bi-flower2 nav-icon"></i>
-									<span class="nav-link-title">Sowing</span>
+									<span class="nav-link-title">Bookings</span>
+								</a>
+							</div>
+							<div class="nav-item">
+								<a class="nav-link" href="sowing.php">
+									<i class="bi-flower2 nav-icon"></i>
+									<span class="nav-link-title">Sells Department</span>
+								</a>
+							</div>
+							<div class="nav-item">
+								<a class="nav-link" href="sowing.php">
+									<i class="bi-flower2 nav-icon"></i>
+									<span class="nav-link-title">Sowing Department</span>
+								</a>
+							</div>
+							<div class="nav-item">
+								<a class="nav-link" href="sowing.php">
+									<i class="bi-flower2 nav-icon"></i>
+									<span class="nav-link-title">Production Department</span>
+								</a>
+							</div>
+							<div class="nav-item">
+								<a class="nav-link" href="sowing.php">
+									<i class="bi-flower2 nav-icon"></i>
+									<span class="nav-link-title">Dispatch Department</span>
+								</a>
+							</div>
+							<div class="nav-item">
+								<a class="nav-link" href="sowing.php">
+									<i class="bi-flower2 nav-icon"></i>
+									<span class="nav-link-title">Transport Department</span>
+								</a>
+							</div>
+							<div class="nav-item">
+								<a class="nav-link" href="sowing.php">
+									<i class="bi-flower2 nav-icon"></i>
+									<span class="nav-link-title">HR Management</span>
+								</a>
+							</div>
+							<div class="nav-item">
+								<a class="nav-link" href="sowing.php">
+									<i class="bi-flower2 nav-icon"></i>
+									<span class="nav-link-title">Accounts Department</span>
+								</a>
+							</div>
+							<div class="nav-item">
+								<a class="nav-link" href="sowing.php">
+									<i class="bi-flower2 nav-icon"></i>
+									<span class="nav-link-title">Ledger Management</span>
+								</a>
+							</div>
+							<div class="nav-item">
+								<a class="nav-link" href="sowing.php">
+									<i class="bi-flower2 nav-icon"></i>
+									<span class="nav-link-title">Custum Push</span>
 								</a>
 							</div>
 							<div class="nav-item">
@@ -599,7 +676,7 @@ if (isset($_POST['change_lang'])) {
 									<span class="nav-link-title">Employee</span>
 								</a>
 								<div id="navbarVerticalMenuPagesEmployeesMenu" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
-									<a class="nav-link " href="employees">View All</a>
+									<a class="nav-link " href="employees.php">View All</a>
 									<div>
 										<div class="nav-item">
 											<a class="nav-link" href="attendance.php">Attendance</a>
@@ -646,11 +723,13 @@ if (isset($_POST['change_lang'])) {
 								<div class="dropdown-menu navbar-dropdown-menu navbar-dropdown-menu-borderless" aria-labelledby="selectThemeDropdown">
 									<a class="dropdown-item" href="#" data-icon="bi-moon-stars" data-value="auto">
 										<i class="bi-moon-stars me-2"></i>
-										<span class="text-truncate" title="auto (system default)">auto (System default)</span>
+										<span class="text-truncate" title="auto (system default)">auto (System
+											default)</span>
 									</a>
 									<a class="dropdown-item" href="#" data-icon="bi-brightness-high" data-value="default">
 										<i class="bi-brightness-high me-2"></i>
-										<span class="text-truncate" title="Default (light mode)">Default (light mode)</span>
+										<span class="text-truncate" title="Default (light mode)">Default (light
+											mode)</span>
 									</a>
 									<a class="dropdown-item active" href="#" data-icon="bi-moon" data-value="dark">
 										<i class="bi-moon me-2"></i>
@@ -670,7 +749,8 @@ if (isset($_POST['change_lang'])) {
 									<span class="dropdown-header">Help</span>
 									<a class="dropdown-item" href="#">
 										<i class="bi-journals dropdown-item-icon"></i>
-										<span class="text-truncate" title="Resources &amp; tutorials">Resources & tutorials</span>
+										<span class="text-truncate" title="Resources &amp; tutorials">Resources &
+											tutorials</span>
 									</a>
 									<a class="dropdown-item" href="#">
 										<i class="bi-gift dropdown-item-icon"></i>
