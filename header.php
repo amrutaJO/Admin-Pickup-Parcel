@@ -131,7 +131,7 @@ if (isset($_POST['change_lang'])) {
 	</script>
 </head>
 
-<body class="has-navbar-vertical-aside navbar-vertical-aside-show-xl footer-offset" lang="en">
+<body class="has-navbar-vertical-aside navbar-vertical-aside-show-xl footer-offset" lang="<?= $lang ?>">
 	<script src="assets/js/hs.theme-appearance.js"></script>
 	<script src="assets/vendor/hs-navbar-vertical-aside/dist/hs-navbar-vertical-aside-mini-cache.js"></script>
 	<!-- ========== HEADER ========== -->
@@ -158,7 +158,7 @@ if (isset($_POST['change_lang'])) {
 						<div class="input-group-prepend input-group-text">
 							<i class="bi-search"></i>
 						</div>
-						<input type="search" class="js-form-search form-control" placeholder="Search here" aria-label="Search here" data-hs-form-search-options='{
+						<input type="search" class="js-form-search form-control" placeholder="<?= translate('search_here')?>" aria-label="Search here" data-hs-form-search-options='{
 											 "clearIcon": "#clearSearchResultsIcon",
 											 "dropMenuElement": "#searchDropdownMenu",
 											 "dropMenuOffset": 20,
@@ -258,7 +258,7 @@ if (isset($_POST['change_lang'])) {
 							<div class="card">
 								<!-- Header -->
 								<div class="card-header card-header-content-between">
-									<h4 class="card-title mb-0">Notification</h4>
+									<h4 class="card-title mb-0"><?= translate('notification')?></h4>
 									<!-- Unfold -->
 									<div class="dropdown">
 										<button type="button" class="btn btn-icon btn-sm btn-ghost-secondary rounded-circle" id="navbarNotificationsDropdownSettings" data-bs-toggle="dropdown" aria-expanded="false">
@@ -415,14 +415,14 @@ if (isset($_POST['change_lang'])) {
 														<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="profile.php">
 								<i class="bi-person-fill me-1 align-middle"></i>
-								Profile							</a>
+								<?= translate('profile')?>						</a>
 														<a class="dropdown-item" href="settings.php">
 								<i class="bi bi-gear-fill me-1 align-middle"></i>
-								Settings							</a>
+								<?= translate('settings')?>						</a>
 														<div class="dropdown-divider"></div>
 							<a class="dropdown-item text-danger" href="?logout">
 								<i class="bi bi-box-arrow-right me-1 align-middle"></i>
-								Logout							</a>
+								<?= translate('logout')?>					</a>
 						</div>
 					</div>
 					<!-- End Account -->
@@ -454,14 +454,14 @@ if (isset($_POST['change_lang'])) {
 					<div class="nav-item">
 						<a class="nav-link" href="./">
 							<i class="bi-house-door nav-icon"></i>
-							<span class="nav-link-title">Dashboard</span>
+							<span class="nav-link-title"><?= translate('dashboard')?></span>
 						</a>
 					</div>
 					<div id="navbarVerticalMenuPagesMenu">
 																	<div class="nav-item">
 							<a class="nav-link" href="customers.php">
 								<i class="bi-people nav-icon"></i>
-								<span class="nav-link-title">Customers</span>
+								<span class="nav-link-title"><?= translate('customers')?></span>
 							</a>
 						</div>
 																		<!-- <div class="nav-item">
@@ -480,55 +480,55 @@ if (isset($_POST['change_lang'])) {
 						<div class="nav-item">
 							<a class="nav-link" href="products.php">
 								<i class="bi-suit-club nav-icon"></i>
-								<span class="nav-link-title">Inventory</span>
+								<span class="nav-link-title"><?= translate('inventory')?></span>
 							</a>
 						</div>
 						<div class="nav-item">
 							<a class="nav-link" href="sowing.php">
 								<i class="bi-flower2 nav-icon"></i>
-								<span class="nav-link-title">Sowing</span>
+								<span class="nav-link-title"><?= translate('sowing')?></span>
 							</a>
 						</div>
 																		<div class="nav-item">
 							<a class="nav-link" href="purchase.php">
 								<i class="bi-cart-plus nav-icon"></i>
-								<span class="nav-link-title">Purchase</span>
+								<span class="nav-link-title"><?= translate('purchase')?></span>
 							</a>
 						</div>
 																		<div class="nav-item">
 							<a class="nav-link" href="billing.php">
 								<i class="bi-cash-coin nav-icon"></i>
-								<span class="nav-link-title">Billing</span>
+								<span class="nav-link-title"><?= translate('billing')?></span>
 							</a>
 						</div>
 																		<div class="nav-item">
 							<a class="nav-link" href="bookings.php">
 								<i class="bi-tags nav-icon"></i>
-								<span class="nav-link-title">Bookings</span>
+								<span class="nav-link-title"><?= translate('bookings')?></span>
 							</a>
 						</div>
 																		<div class="nav-item">
 							<a class="nav-link" href="suppliers.php">
 								<i class="bi-truck nav-icon"></i>
-								<span class="nav-link-title">Suppliers</span>
+								<span class="nav-link-title"><?= translate('suppliers')?></span>
 							</a>
 						</div>
 																		<div class="nav-item">
 							<a class="nav-link dropdown-toggle " href="#navbarVerticalMenuPagesEmployeesMenu" role="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalMenuPagesEmployeesMenu" aria-expanded="false" aria-controls="navbarVerticalMenuPagesEmployeesMenu">
 								<i class="bi-people nav-icon"></i>
-								<span class="nav-link-title">Employee</span>
+								<span class="nav-link-title"><?= translate('employee')?></span>
 							</a>
 							<div id="navbarVerticalMenuPagesEmployeesMenu" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
-								<a class="nav-link " href="employees">View All</a>
+								<a class="nav-link " href="employees"><?= translate('viewall')?></a>
 								<div>
 									<div class="nav-item">
-										<a class="nav-link" href="attendance.php">Attendance</a>
+										<a class="nav-link" href="attendance.php"><?= translate('attendance')?></a>
 									</div>
 									<div class="nav-item">
-										<a class="nav-link" href="advance.php">Advance / Borrowing</a>
+										<a class="nav-link" href="advance.php"><?= translate('advance')?> / <?= translate('booking')?></a>
 									</div>
 									<div class="nav-item">
-										<a class="nav-link" href="salary.php">Salary</a>
+										<a class="nav-link" href="salary.php"><?= translate('salary')?></a>
 									</div>
 								</div>
 							</div>
@@ -536,19 +536,19 @@ if (isset($_POST['change_lang'])) {
 																		<div class="nav-item">
 							<a class="nav-link" href="expenses.php">
 								<i class="bi-currency-exchange nav-icon"></i>
-								<span class="nav-link-title">Expenses</span>
+								<span class="nav-link-title"><?= translate('expenses')?></span>
 							</a>
 						</div>
 																		<div class="nav-item">
 							<a class="nav-link" href="reports.php">
 								<i class="bi-stickies nav-icon"></i>
-								<span class="nav-link-title">Reports</span>
+								<span class="nav-link-title"><?= translate('reports')?></span>
 							</a>
 						</div>
 																		<div class="nav-item">
 							<a class="nav-link" href="users.php">
 								<i class="bi-person-bounding-box nav-icon"></i>
-								<span class="nav-link-title">Users</span>
+								<span class="nav-link-title"><?= translate('users')?></span>
 							</a>
 						</div>
 																</div>
@@ -566,15 +566,15 @@ if (isset($_POST['change_lang'])) {
 							<div class="dropdown-menu navbar-dropdown-menu navbar-dropdown-menu-borderless" aria-labelledby="selectThemeDropdown">
 								<a class="dropdown-item" href="#" data-icon="bi-moon-stars" data-value="auto">
 									<i class="bi-moon-stars me-2"></i>
-									<span class="text-truncate" title="auto (system default)">auto (System default)</span>
+									<span class="text-truncate" title="auto (system default)"><?= translate('auto')?> (<?= translate('system_default')?>)</span>
 								</a>
 								<a class="dropdown-item" href="#" data-icon="bi-brightness-high" data-value="default">
 									<i class="bi-brightness-high me-2"></i>
-									<span class="text-truncate" title="Default (light mode)">Default (light mode)</span>
+									<span class="text-truncate" title="Default (light mode)"><?= translate('default')?> <?= translate('light_mode')?></span>
 								</a>
 								<a class="dropdown-item active" href="#" data-icon="bi-moon" data-value="dark">
 									<i class="bi-moon me-2"></i>
-									<span class="text-truncate" title="dark mode">dark mode</span>
+									<span class="text-truncate" title="dark mode"><?= translate('dark_mode')?></span>
 								</a>
 							</div>
 						</div>
@@ -587,19 +587,19 @@ if (isset($_POST['change_lang'])) {
 								<i class="bi-info-circle"></i>
 							</button>
 							<div class="dropdown-menu navbar-dropdown-menu-borderless" aria-labelledby="otherLinksDropdown">
-								<span class="dropdown-header">Help</span>
+								<span class="dropdown-header"><?= translate('help')?></span>
 								<a class="dropdown-item" href="#">
 									<i class="bi-journals dropdown-item-icon"></i>
-									<span class="text-truncate" title="Resources &amp; tutorials">Resources & tutorials</span>
+									<span class="text-truncate" title="Resources &amp; tutorials"><?= translate('resources')?></span>
 								</a>
 								<a class="dropdown-item" href="#">
 									<i class="bi-gift dropdown-item-icon"></i>
-									<span class="text-truncate" title="What's new?">What's new?</span>
+									<span class="text-truncate" title="What's new?"><?= translate('whatsnew')?></span>
 								</a>
 								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" href="#">
 									<i class="bi-chat-left-dots dropdown-item-icon align-middle"></i>
-									<span class="text-truncate" title="Contact us">Contact us</span>
+									<span class="text-truncate" title="Contact us"><?= translate('contact')?></span>
 								</a>
 							</div>
 						</div>
@@ -612,12 +612,12 @@ if (isset($_POST['change_lang'])) {
 								<i class="bi bi-translate"></i>
 							</button>
 							<div class="dropdown-menu navbar-dropdown-menu-borderless" aria-labelledby="selectLanguageDropdown">
-								<span class="dropdown-header">Select language</span>
+								<span class="dropdown-header"><?= translate('select_language')?></span>
 								<a class="dropdown-item" href="javascript:void(0)" onclick="changeLanguage('en')">
-									<span class="text-truncate" title="English">English</span>
+									<span class="text-truncate" title="English"><?= translate('english')?></span>
 								</a>
 								<a class="dropdown-item" href="javascript:void(0)" onclick="changeLanguage('mr')">
-									<span class="text-truncate" title="Marathi (मराठी)">Marathi (मराठी)</span>
+									<span class="text-truncate" title="Marathi (मराठी)"><?= translate('marathi')?></span>
 								</a>
 							</div>
 						</div>
