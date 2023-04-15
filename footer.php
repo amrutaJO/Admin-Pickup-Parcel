@@ -11,7 +11,7 @@
 				<ul class="list-inline list-separator">
 					<li class="list-inline-item">
 						<?= translate('title') ?> |
-						<span><?= translate('paarsh')?> &copy; 2022</span>
+						<span><?= translate('paarsh') ?> &copy; 2022</span>
 					</li>
 				</ul>
 				<!-- End List Separator -->
@@ -28,7 +28,7 @@
 <!-- Activity -->
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasActivityStream" aria-labelledby="offcanvasActivityStreamLabel">
 	<div class="offcanvas-header">
-		<h4 id="offcanvasActivityStreamLabel" class="mb-0"><?= translate('daily_activity')?></h4>
+		<h4 id="offcanvasActivityStreamLabel" class="mb-0"><?= translate('daily_activity') ?></h4>
 		<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 	</div>
 	<div class="offcanvas-body">
@@ -1225,7 +1225,26 @@
 								<label for="" class="form-label">Address</label>
 								<textarea name="cus_address" class="form-control form-control-sm" rows="5"></textarea>
 							</div>
+
 						</div>
+					</div>
+					<div class="col-12 col-md-6">
+					    <label for="" class="form-label">Taluka</label>
+						<select name="" class="form-control form-control-sm">
+							<option value="nashik">Nashik</option>
+							<option value="dindori">Igatpuri</option>
+							<option value="malegoan">Malegoan</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+					<div class="col-12 col-md-6">
+					    <label for="" class="form-label">District</label>
+						<select name="" class="form-control form-control-sm">
+							<option value="nashik">Nashik</option>
+							<option value="dindori">Igatpuri</option>
+							<option value="malegoan">Malegoan</option>
+							<option value="other">Other</option>
+						</select>
 					</div>
 				</form>
 			</div>
