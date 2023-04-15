@@ -10,8 +10,8 @@
 				<!-- List Separator -->
 				<ul class="list-inline list-separator">
 					<li class="list-inline-item">
-						Nursery Solution |
-						<span>Paarsh Infotech Pvt. Ltd. &copy; 2022</span>
+						<?= translate('title') ?> |
+						<span><?= translate('paarsh')?> &copy; 2022</span>
 					</li>
 				</ul>
 				<!-- End List Separator -->
@@ -28,7 +28,7 @@
 <!-- Activity -->
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasActivityStream" aria-labelledby="offcanvasActivityStreamLabel">
 	<div class="offcanvas-header">
-		<h4 id="offcanvasActivityStreamLabel" class="mb-0">Daily Activity</h4>
+		<h4 id="offcanvasActivityStreamLabel" class="mb-0"><?= translate('daily_activity')?></h4>
 		<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 	</div>
 	<div class="offcanvas-body">
