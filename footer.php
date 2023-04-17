@@ -343,7 +343,7 @@
 									<th class="text-start" width="20%">Product</th>
 									<th class="text-start" width="20%">Variety</th>
 									<th class="text-start" width="20%">Tray Size</th>
-									<th>Sowing <br/> Destination</th>
+									<th>Sowing <br /> Destination</th>
 									<th>Quantity</th>
 									<th width="20%">Rate</th>
 									<th>Amount</th>
@@ -1721,11 +1721,3 @@
 </body>
 
 </html>
-<script>
-	let customerListTable = false;
-	customerListTable = $('#data-table').DataTable({
-		data: {
-
-		}
-	});
-</script>
