@@ -593,10 +593,15 @@ if (isset($_POST['change_lang'])) {
 								</a>
 							</div>
 							<div class="nav-item">
-								<a class="nav-link" href="sowing.php">
-									<i class="bi-flower2 nav-icon"></i>
-									<span class="nav-link-title">Sells Department</span>
+								<a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="collapse" data-bs-target="#sales" aria-expanded="false" aria-controls="sales">
+									<i class="bi-suit-club nav-icon"></i>
+									<span class="nav-link-title">Sales Department</span>
 								</a>
+								<div id="sales" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
+									<a class="nav-link " href="projection.php">projection Management
+									</a>
+									
+								</div>
 							</div>
 							<div class="nav-item">
 								<a class="nav-link" href="sowing.php">
