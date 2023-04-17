@@ -340,9 +340,12 @@
 							<thead align="center">
 								<tr>
 									<th>#</th>
-									<th class="text-start" width="40%">Product</th>
+									<th class="text-start" width="20%">Product</th>
+									<th class="text-start" width="20%">Variety</th>
+									<th class="text-start" width="20%">Tray Size</th>
+									<th>Sowing <br/> Destination</th>
 									<th>Quantity</th>
-									<th>Rate</th>
+									<th width="20%">Rate</th>
 									<th>Amount</th>
 									<th></th>
 								</tr>
@@ -350,11 +353,35 @@
 							<tbody align="center">
 								<tr class="booking-product">
 									<td>1</td>
-									<td class="text-start" width="40%">
+									<td class="text-start" width="20%">
 										<input type="hidden" name="bkd_id[]" value="">
 										<select name="bkd_pro_id[]" class="form-select form-select-sm" required onchange="findProductStockPrice(this)">
 											<option value="" pro-stock-id="">Select product</option>
+											<option value="" pro-stock-id="">RI GOURD</option>
+											<option value="" pro-stock-id="">BI GOURD</option>
+											<option value="" pro-stock-id="">CHILLI</option>
 										</select>
+									</td>
+									<td class="text-start" width="20%">
+										<input type="hidden" name="" value="">
+										<select name="" class="form-select form-select-sm" required>
+											<option value="" pro-stock-id="">Select Variety</option>
+											<option value="" pro-stock-id="">NAGA</option>
+											<option value="" pro-stock-id="">N-48</option>
+											<option value="" pro-stock-id="">US 730</option>
+										</select>
+									</td>
+									<td class="text-start" width="20%">
+										<input type="hidden" name="" value="">
+										<select name="" class="form-select form-select-sm" required>
+											<option value="" pro-stock-id="">Select Tray</option>
+											<option value="" pro-stock-id="">125</option>
+											<option value="" pro-stock-id="">60 GIFFY</option>
+											<option value="" pro-stock-id="">70</option>
+										</select>
+									</td>
+									<td class="text-start" width="20%">
+										<input type="text" class="form-control form-control-sm text-center" name="" value="">
 									</td>
 									<td>
 										<input type="text" name="bkd_pro_qty[]" class="form-control form-control-sm text-center" placeholder="0" required oninput="allowType(event, 'number'),calcBookingTotal()" onfocus="this.select()">
@@ -382,10 +409,12 @@
 						<div class="row g-3">
 							<div class="col-12">
 								<input type="hidden" id="booking-form-action" name="add_booking" value="">
-								<label for="" class="form-label required">Customer</label>
+								<label for="" class="form-label required">Farmer</label>
 								<div class="input-group input-group-sm">
 									<select name="bok_cus_id" class="form-select rounded-1" required>
-										<option value="">Select customer</option>
+										<option value="">Select Farmer</option>
+										<option value="">Tushar (+91 9307362845)</option>
+										<option value="">Tushar (+91 4282523183)</option>
 									</select>
 									<button class="btn p-0 border-0" type="button" onclick="addCustomer()">
 										<i class="bi bi-plus-circle-fill p-1 ms-1 text-primary"></i>
@@ -416,6 +445,23 @@
 									</span>
 									<input type="text" name="bok_delivery_date" class="js-flatpickr form-control form-control-sm" data-hs-flatpickr-options='{"dateFormat": "Y-m-d"}' required title="Required field">
 								</div>
+							</div>
+							<div class="col-12">
+								<label for="" class="form-label">Due date</label>
+								<div class="input-group input-group-sm">
+									<span class="input-group-text">
+										<i class="bi-calendar-week"></i>
+									</span>
+									<input type="text" name="" class="js-flatpickr form-control form-control-sm" data-hs-flatpickr-options='{"dateFormat": "Y-m-d"}' required title="Required field">
+								</div>
+							</div>
+							<div class="col-12">
+								<label for="" class="form-label">Remark</label>
+								<textarea name="" class="form-control form-control-sm" rows="3"></textarea>
+							</div>
+							<div class="col-12">
+								<label for="" class="form-label">Home Delivery</label>
+								<textarea name="" class="form-control form-control-sm" rows="3"></textarea>
 							</div>
 						</div>
 					</div>
@@ -1205,7 +1251,7 @@
 						<div class="row g-3">
 							<div class="col-12">
 								<input type="hidden" id="customer-form-action" name="add_customer" value="">
-								<label for="" class="form-label required">Customer name</label>
+								<label for="" class="form-label required">Farmer name</label>
 								<input type="text" name="cus_name" class="form-control form-control-sm" required>
 							</div>
 							<div class="col-12">

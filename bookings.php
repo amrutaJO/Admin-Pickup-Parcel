@@ -41,15 +41,23 @@
 				<tr>
 					<th>Booking No.</th>
 					<th>Booking date</th>
+					<th>Booking By</th>
 					<th>Delivery date</th>
-					<th>Customer name</th>
+					<th>Farmer name</th>
+					<th>Address</th>
+					<th>Taluka</th>
+					<th>District</th>
+					<th>Mobile Number</th>
+					<th>Crop</th>
+					<th>Variety</th>
+					<th>Tray Size</th>
 					<th>Total quantity</th>
 					<th>Total amount</th>
 					<th>Advance amount</th>
-					<th>Balance amount</th>
-					<th>Received amount</th>
-					<th>Status</th>
-					<th>Action</th>
+					<th>Due Date</th>
+					<th>Sowing Destination</th>
+					<th>Remark</th>
+					<th>Home Delivery</th>
 				</tr>
 			</thead>
 			<tbody></tbody>

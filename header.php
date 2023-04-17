@@ -635,10 +635,15 @@ if (isset($_POST['change_lang'])) {
 								</a>
 							</div>
 							<div class="nav-item">
-								<a class="nav-link" href="sowing.php">
-									<i class="bi-flower2 nav-icon"></i>
+								<a class="nav-link dropdown-toggle " href="#Ledger_manage" role="button" data-bs-toggle="collapse" data-bs-target="#Ledger_manage" aria-expanded="false" aria-controls="Ledger_manage">
+									<i class="bi-suit-club nav-icon"></i>
 									<span class="nav-link-title">Ledger Management</span>
 								</a>
+								<div id="Ledger_manage" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
+									<a class="nav-link " href="sowing.php">Crop</a>
+									<a class="nav-link " href="">Variety</a>
+									<a class="nav-link " href="">Tray Size</a>
+								</div>
 							</div>
 							<div class="nav-item">
 								<a class="nav-link" href="sowing.php">
