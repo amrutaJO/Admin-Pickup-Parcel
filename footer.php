@@ -1152,8 +1152,9 @@
 								</select>
 							</div>
 							<div class="col-12">
-								<label for="" class="form-label">Department (will shown on staff select)</label>
-								<select name="" class="form-control form-control-sm">
+								<label for="" class="form-label">Department</label>
+								<select name="" id="dept"
+								 class="form-control form-control-sm">
 									<option value="">D1</option>
 									<option value="">D2</option>
 								</select>
