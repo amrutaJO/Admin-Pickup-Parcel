@@ -176,7 +176,16 @@ label.required::after {
 	border-bottom-right-radius: var(--bs-border-radius-sm) !important;
 }
 
-.perdaymonth input[type="radio"]:checked+label button {
+
+/* custum css */
+.perdaymonth input[type="radio"]:checked+label {
 	background-color: #377dff !important;
+	transition: all 0.3s;
 	color: white !important;
+}
+
+.perdaymonth input[type="radio"]+label {
+	transition: all 0.3s;
+	border-radius: 5px;
+	cursor: pointer;
 }

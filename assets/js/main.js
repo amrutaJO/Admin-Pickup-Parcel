@@ -1,13 +1,29 @@
 'use strict';
 function empt() {
-	let selectElement = document.getElementById("empt");
-	const selectedOption = selectElement.options[selectElement.selectedIndex];
-	console.log("Selected Option Value: " + selectedOption.value);
-	console.log("Selected Option Text: " + selectedOption.text);
+	const selectElement = document.querySelector('#emptype');
+	let deptstaff = document.getElementById("deptstaff");
+	selectElement.addEventListener('click', () => {
+		if (selectElement.value == 'staff') {
+			deptstaff.className = "col-12 d-block"
+		}
+		else {
+			deptstaff.className = "col-12 d-none"
+		}
+	});
 }
+empt();
 function persal() {
-	let perdaymonth = document.getElementsByClassName("perdaymonth")
+	let permonth = document.getElementById("permonth");
+	let perday = document.getElementById("perday");
+	let salchange = document.getElementById("salchange")
+	if (permonth.checked) {
+		salchange.innerText = "Month"
+	}
+	if (perday.checked) {
+		salchange.innerText = "Day"
+	}
 }
+window.addEventListener("click", persal);
 function browserName() {
 	let browser;
 	if ((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1) {

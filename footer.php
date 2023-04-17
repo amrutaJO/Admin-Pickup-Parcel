@@ -1117,7 +1117,8 @@
 							</div>
 							<div class="col-12">
 								<label for="" class="form-label">Employee Type</label>
-								<select id="empt" class="form-control form-control-sm">
+								<select id="emptype" class="form-control form-control-sm">
+									<option value="selectoption">Select Type</option>
 									<option value="dailyweiges">Daily Weiges</option>
 									<option value="staff">Staff</option>
 								</select>
@@ -1130,12 +1131,10 @@
 								<label for="" class="form-label">Email id</label>
 								<input type="email" name="emp_email" class="form-control form-control-sm">
 							</div>
-							<div class="col-12">
-								<label for="" class="form-label" id="sal">Per day salary</label>
-								<input type="text" name="emp_salary" class="form-control form-control-sm" oninput="allowType(event, 'number')">
-							</div>
+
 						</div>
 					</div>
+
 					<div class="col-12 col-md-6">
 						<div class="row g-3">
 							<div class="col-12">
@@ -1151,8 +1150,8 @@
 									<option value="other">Other</option>
 								</select>
 							</div>
-							<div class="col-12">
-								<label for="" class="form-label">Department (will shown on staff select)</label>
+							<div class="col-12 d-none" id="deptstaff">
+								<label for="" class="form-label">Department</label>
 								<select name="" class="form-control form-control-sm">
 									<option value="">D1</option>
 									<option value="">D2</option>
@@ -1162,15 +1161,24 @@
 								<label for="" class="form-label">Address</label>
 								<textarea name="emp_address" class="form-control form-control-sm" rows="5"></textarea>
 							</div>
-							<div class="d-flex justify-content-around perdaymonth align-items-center">
+
+						</div>
+					</div>
+					<div class="col-12 ">
+						<div class="row">
+							<div class="d-flex col-md-4 justify-content-between perdaymonth align-items-center">
+								<input type="radio" class="d-none" name="salper" id="permonth" checked>
+								<label class="px-3 py-2" for="permonth">
+									Month
+								</label>
 								<input type="radio" class="d-none" name="salper" id="perday">
-								<label for="perday">
-									<button class="btn btn-sm btn-outline-primary">Day</button>
+								<label class="px-3 py-2" for="perday">
+									Day
 								</label>
-								<input type="radio" class="d-none" name="salper" id="permonth">
-								<label for="perday">
-									<button class="btn btn-sm btn-outline-primary">Month</button>
-								</label>
+							</div>
+							<div class="col-md-8">
+								<label for="" class="form-label" id="sal">Per <span id="salchange"></span> salary</label>
+								<input type="text" name="emp_salary" class="form-control form-control-sm" oninput="allowType(event, 'number')">
 							</div>
 						</div>
 					</div>
@@ -1229,7 +1237,7 @@
 						</div>
 					</div>
 					<div class="col-12 col-md-6">
-					    <label for="" class="form-label">Taluka</label>
+						<label for="" class="form-label">Taluka</label>
 						<select name="" class="form-control form-control-sm">
 							<option value="nashik">Nashik</option>
 							<option value="dindori">Igatpuri</option>
@@ -1238,7 +1246,7 @@
 						</select>
 					</div>
 					<div class="col-12 col-md-6">
-					    <label for="" class="form-label">District</label>
+						<label for="" class="form-label">District</label>
 						<select name="" class="form-control form-control-sm">
 							<option value="nashik">Nashik</option>
 							<option value="dindori">Igatpuri</option>
