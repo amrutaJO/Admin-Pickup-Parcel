@@ -587,8 +587,8 @@ if (isset($_POST['change_lang'])) {
 								</a>
 							</div>
 							<div class="nav-item">
-								<a class="nav-link" href="sowing.php">
-									<i class="bi-flower2 nav-icon"></i>
+								<a class="nav-link" href="bookings.php">
+									<i class="bi-tags nav-icon"></i>
 									<span class="nav-link-title">Bookings</span>
 								</a>
 							</div>
@@ -656,12 +656,6 @@ if (isset($_POST['change_lang'])) {
 								<a class="nav-link" href="billing.php">
 									<i class="bi-cash-coin nav-icon"></i>
 									<span class="nav-link-title">Billing</span>
-								</a>
-							</div>
-							<div class="nav-item">
-								<a class="nav-link" href="bookings.php">
-									<i class="bi-tags nav-icon"></i>
-									<span class="nav-link-title">Bookings</span>
 								</a>
 							</div>
 							<div class="nav-item">
