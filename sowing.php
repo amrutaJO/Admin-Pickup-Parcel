@@ -8,11 +8,11 @@
 					Sowing </h1>
 			</div>
 			<!-- End Col -->
-			<!-- <div class="col-auto">
+			<div class="col-auto">
 				<a class="btn btn-sm btn-primary" href="javascript:void(0)" onclick="addSowing()">
 					<i class="bi-plus-circle me-1"></i>
 					Add New </a>
-			</div> -->
+			</div>
 			<!-- End Col -->
 		</div>
 		<!-- End Row -->
@@ -79,44 +79,20 @@
 					<td>Tomato</td>
 					<td>Taiwan-784</td>
 					<td>Taiwan-784/1</td>
-					<td><input type="text" class="form-control w-120px"></td>
-					<td><input type="text" class="form-control w-70px"></td>
-					<td>
-						<select class="form-control form-control-sm w-120px" name="" id="">
-							<option value="none">Select</option>
-							<option value="machine">5</option>
-							<option value="manual">2.3</option>
-						</select>
-					</td>
-					<td>
-						<select class="form-control form-control-sm w-120px" name="" id="">
-							<option value="none">Select</option>
-							<option value="machine">3500N</option>
-							<option value="manual">1500N</option>
-						</select>
-					</td>
-					<td><input type="text" class="form-control w-120px " value="00" disabled></td>
-					<td><input type="text" class="form-control w-120px"></td>
-					<td><input type="text" class="form-control w-120px"></td>
-					<td><input type="text" class="form-control w-70px"></td>
-					<td><input type="text" class="form-control w-120px" value="00" disabled></td>
-					<td>
-						<select class="form-control form-control-sm w-120px" name="" id="">
-							<option value="none">Select</option>
-							<option value="machine">Machine</option>
-							<option value="manual">Manual</option>
-						</select>
-					</td>
-					<td><input type="text" class="form-control w-70px"></td>
-					<td><input type="text" class="form-control w-120px"></td>
-					<td><input type="text" class="form-control "></td>
-					<td>
-						<select class="form-control form-control-sm w-120px" name="" id="">
-							<option value="none">Select</option>
-							<option value="machine">Good</option>
-							<option value="manual">Bad</option>
-						</select>
-					</td>
+					<td>85drg</td>
+					<td>A</td>
+					<td>5</td>
+					<td>3500N</td>
+					<td>00</td>
+					<td>2.5</td>
+					<td>GIFFY-684</td>
+					<td>56</td>
+					<td>00</td>
+					<td>Machine</td>
+					<td>Antop Hill</td>
+					<td>878</td>
+					<td>52</td>
+					<td>Good</td>
 				</tr>
 			</tbody>
 		</table>
