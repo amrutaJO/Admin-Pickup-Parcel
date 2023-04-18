@@ -1318,6 +1318,99 @@
 		</div>
 	</div>
 </div>
+
+<div class="modal fade" id="transportAddModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="transportAddModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+		<div class="modal-content border shadow">
+			<div class="modal-header">
+				<h5 class="modal-title" id="customerAddModalLabel">Add New Transport</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form action="" class="row g-3" id="transport-form">
+					<div class="col-12 col-md-6">
+						<label for="" class="form-label">Vehicle Name</label>
+						<div class="input-group input-group-sm w-100">
+							<select name="" class="form-control form-control-sm">
+								<option value="">select</option>
+								<option value="yodha">Tata yodha</option>
+
+							</select>
+							<button class="btn p-0 border-0" type="button" onclick="addVehicle()">
+								<i class="bi bi-plus-circle-fill p-1 ms-1 text-primary"></i>
+							</button>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+
+							<label for="" class="form-label">Vehicle Modal</label>
+							<input type="text" class="form-control form-control-sm" readonly placeholder="Vehicle Modal">
+						
+					</div>
+					<div class="col-12 col-md-6">
+						
+							<label for="" class="form-label" >Vehicle Number</label>
+							<input type="text" class="form-control form-control-sm" readonly placeholder="Vehicle Number">
+						
+					</div>
+
+					<div class="col-12 col-md-6">
+						
+							<label for="" class="form-label">Driver Name</label>
+							<input type="text" class="form-control form-control-sm" placeholder="Driver Name">
+						
+					</div>
+					<div class="col-12 col-md-6">
+							<label for="" class="form-label">Driver Mobile Number</label>
+							<input type="tel" class="form-control form-control-sm" placeholder="Contact Number">
+					</div>
+					<div class="col-12 col-md-6">
+							<label for="" class="form-label">Batch No</label>
+							<input type="tel" class="form-control form-control-sm" placeholder="Batch No">
+					</div>
+
+
+				</form>
+			</div>
+			<div class="modal-footer pt-0 border-top-0">
+				<button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button type="submit" form="customer-form" class="btn btn-sm btn-primary">Save</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal modal-sm fade" id="vehicleAddModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="transportAddModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+		<div class="modal-content border shadow-lg">
+			<div class="modal-header">
+				<h5 class="modal-title" id="customerAddModalLabel">Add New Vehicle</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form action="" class="row g-3" id="transport-form">
+					<div class="col-12 ">
+						<label for="" class="form-label">Vehicle Name</label>
+						<input type="text" class="form-control form-control-sm" placeholder="Vehicle Name">
+					</div>
+					<div class="col-12 col-md-6">
+						<label for="" class="form-label">Vehicle No.</label>
+						<input type="text" class="form-control form-control-sm" placeholder="Vehicle Number">
+					</div>
+					<div class="col-12 col-md-6">
+						<label for="" class="form-label">Vehicle Modal</label>
+						<input type="text" class="form-control form-control-sm" placeholder="Vehicle Modal">
+					</div>
+
+				</form>
+			</div>
+			<div class="modal-footer pt-0 border-top-0">
+				<button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button type="submit" form="customer-form" class="btn btn-sm btn-primary">Add</button>
+			</div>
+		</div>
+	</div>
+</div>
+
 <div class="modal fade" id="userAddModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="userAddModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered">
 		<div class="modal-content border shadow">
