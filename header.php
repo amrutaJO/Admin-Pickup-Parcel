@@ -652,8 +652,8 @@ if (isset($_POST['change_lang'])) {
 								</div>
 							</div>
 							<div class="nav-item">
-								<a class="nav-link" href="sowing.php">
-									<i class="bi-flower2 nav-icon"></i>
+								<a class="nav-link" href="custumpush.php">
+									<i class="bi-stickies nav-icon"></i>
 									<span class="nav-link-title">Custum Push</span>
 								</a>
 							</div>
