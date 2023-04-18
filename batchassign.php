@@ -5,7 +5,7 @@
 			<div class="col">
 				<h1 class="page-header-title d-flex align-items-center gap-3">
 					<a href="reports" class="link-dark"><i class="bi-arrow-left-circle-fill align-middle"></i></a>
-					<span>Dispatch Managament</span>
+					<span>Batch Assign Managament</span>
 				</h1>
 			</div>
 		</div>
@@ -39,12 +39,6 @@
 					<th>Tray Size</th>
 					<th>Qty</th>
 					<th>Batch No</th>
-					<th>Sale Type</th>
-					<th>Vehicle No</th>
-					<th>Payment Type</th>
-					<th>Remark</th>
-					<th>Extra Trey</th>
-					<th>Loaded Trays</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -60,27 +54,14 @@
                     <td>Saint</td>
                     <td>125</td>
                     <td>200</td>
-                    <td>1522/24 weak</td>
-                    <td>D5</td>
-                    <td><input type="text" class="form-control w-120px" ></td>
-                    <td>
-                    <select class="form-control form-control-sm w-120px" name="" id="">
-							<option value="none">Select
-                            </option>
-							<option value="cash">Cash</option>
-							<option value="transport">Transport</option>
-							<option value="transport">Credit</option>
-						</select>
-                    </td>
-                    <td><input type="text" class="form-control w-120px" ></td>
-                    <td><input type="text" class="form-control w-120px" ></td>
-                    <td><input type="number" class="form-control w-120px" ></td>
+                    <td><input type="text" class="form-control w-120px"></td>
                 </tr>
             </tbody>
 		</table>
 	</div>
 		<div class="data-table-footer"></div>
 </div>
+<!-- End Content -->
 <?php require_once __DIR__ . '/footer.php' ?>
 
 <script>

@@ -600,7 +600,7 @@ if (isset($_POST['change_lang'])) {
 								<div id="sales" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
 									<a class="nav-link " href="projection.php">Projection Management
 									</a>
-									<a class="nav-link " href="projection.php">Batch Assign / Batch Merge
+									<a class="nav-link " href="batchassign.php">Batch Assign / Batch Merge
 									</a>
 								</div>
 							</div>
