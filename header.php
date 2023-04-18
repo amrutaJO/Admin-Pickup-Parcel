@@ -582,7 +582,7 @@ if (isset($_POST['change_lang'])) {
 							</div>
 							<div class="nav-item">
 								<a class="nav-link" href="index.php">
-									<i class="bi-flower2 nav-icon"></i>
+									<i class="bi-tags nav-icon"></i>
 									<span class="nav-link-title">Booking Dashboard</span>
 								</a>
 							</div>
@@ -598,9 +598,10 @@ if (isset($_POST['change_lang'])) {
 									<span class="nav-link-title">Sales Department</span>
 								</a>
 								<div id="sales" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
-									<a class="nav-link " href="projection.php">projection Management
+									<a class="nav-link " href="projection.php">Projection Management
 									</a>
-									
+									<a class="nav-link " href="projection.php">Batch Assign / Batch Merge
+									</a>
 								</div>
 							</div>
 							<div class="nav-item">

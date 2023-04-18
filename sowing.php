@@ -1,20 +1,20 @@
-<?php require_once __DIR__."/header.php"?>
+<?php require_once __DIR__ . "/header.php" ?>
 <div class="content container-fluid">
 	<!-- Page Header -->
 	<div class="page-header">
 		<div class="row align-items-center">
 			<div class="col">
 				<h1 class="page-header-title">
-					Sowing				</h1>
-			</div>
-						<!-- End Col -->
-			<div class="col-auto">
-				<a class="btn btn-sm btn-primary" href="javascript:void(0)" onclick="addSowing()">
-					<i class="bi-plus-circle me-1"></i>
-					Add New				</a>
+					Sowing </h1>
 			</div>
 			<!-- End Col -->
-					</div>
+			<!-- <div class="col-auto">
+				<a class="btn btn-sm btn-primary" href="javascript:void(0)" onclick="addSowing()">
+					<i class="bi-plus-circle me-1"></i>
+					Add New </a>
+			</div> -->
+			<!-- End Col -->
+		</div>
 		<!-- End Row -->
 	</div>
 	<!-- End Page Header -->
@@ -23,7 +23,7 @@
 			<div class="col-12 col-md-3">
 				<div class="input-group input-group-sm">
 					<div class="input-group-text">
-					  <i class="bi-search"></i>
+						<i class="bi-search"></i>
 					</div>
 					<input type="search" class="form-control data-table-search" placeholder="Search here">
 				</div>
@@ -49,20 +49,129 @@
 		<table id="data-table" class="table table-bordered table-nowrap table-align-middle">
 			<thead class="thead-light" align="left">
 				<tr>
-					<th>Sowing No.</th>
+					<th>W</th>
 					<th>Sowing date</th>
-					<th>Product name</th>
-					<th>Stock</th>
+					<th>Projected date-ready for sale</th>
+					<th>Crop</th>
+					<th>Variety</th>
+					<th>Batch No.</th>
+					<th>Lot No.</th>
+					<th>Section</th>
+					<th>No. of PKT</th>
 					<th>Unit</th>
-					<th>Production cost</th>
-					<th>Selling price</th>
-					<th>Total price</th>
+					<th>Average</th>
+					<th>Tray No.</th>
+					<th>Tray size</th>
+					<th>Total tray</th>
+					<th>Gross Total</th>
+					<th>Sowing Type</th>
+					<th>Location</th>
+					<th>Bed No.</th>
+					<th>Germination %</th>
+					<th>Crop type</th>
 				</tr>
 			</thead>
-			<tbody></tbody>
+			<tbody>
+				<tr class="odd">
+					<td>1</td>
+					<td>15 Apr 2023</td>
+					<td>21-25 APR</td>
+					<td>Tomato</td>
+					<td>Taiwan-784</td>
+					<td>Taiwan-784/1</td>
+					<td><input type="text" class="form-control w-120px"></td>
+					<td><input type="text" class="form-control w-70px"></td>
+					<td>
+						<select class="form-control form-control-sm w-120px" name="" id="">
+							<option value="none">Select</option>
+							<option value="machine">5</option>
+							<option value="manual">2.3</option>
+						</select>
+					</td>
+					<td>
+						<select class="form-control form-control-sm w-120px" name="" id="">
+							<option value="none">Select</option>
+							<option value="machine">3500N</option>
+							<option value="manual">1500N</option>
+						</select>
+					</td>
+					<td><input type="text" class="form-control w-120px " value="00" disabled></td>
+					<td><input type="text" class="form-control w-120px"></td>
+					<td><input type="text" class="form-control w-120px"></td>
+					<td><input type="text" class="form-control w-70px"></td>
+					<td><input type="text" class="form-control w-120px" value="00" disabled></td>
+					<td>
+						<select class="form-control form-control-sm w-120px" name="" id="">
+							<option value="none">Select</option>
+							<option value="machine">Machine</option>
+							<option value="manual">Manual</option>
+						</select>
+					</td>
+					<td><input type="text" class="form-control w-70px"></td>
+					<td><input type="text" class="form-control w-120px"></td>
+					<td><input type="text" class="form-control "></td>
+					<td>
+						<select class="form-control form-control-sm w-120px" name="" id="">
+							<option value="none">Select</option>
+							<option value="machine">Good</option>
+							<option value="manual">Bad</option>
+						</select>
+					</td>
+				</tr>
+			</tbody>
 		</table>
 	</div>
 	<div class="data-table-footer"></div>
 </div>
 <!-- End Content -->
-<?php require_once __DIR__.'/footer.php' ?>
+<?php require_once __DIR__ . '/footer.php' ?>
+<script>
+	let sowingListTable = false;
+	sowingListTable = $('#data-table').DataTable({
+		lengthChange: true,
+		columnDefs: [{
+			// targets: [0,],
+			// orderable: false,
+		}],
+		order: [
+			[1, 'desc'],
+			[0, 'desc']
+		],
+		initComplete: function(settings, json) {
+			$('.dataTables_filter').hide();
+			$('.data-table-footer').append($('#data-table_wrapper .row:last-child()')).find('.previous').addClass('ms-md-auto');
+			$('.dataTables_info').before($('.dataTables_length').find('label').attr('class', 'd-inline-flex text-nowrap align-items-center gap-2'));
+			$('.data-table-search').on('input', function() {
+				sowingListTable.search(this.value).draw();
+			});
+			sowingListTable.buttons().container().find('.btn-secondary').removeClass('btn-secondary');
+			sowingListTable.buttons().container().appendTo($('.export-buttons'));
+		},
+		buttons: [{
+			extend: 'collection',
+			text: '<i class="bi bi-cloud-download-fill"></i>',
+			className: 'btn-sm btn-outline-primary',
+			buttons: [{
+					extend: 'copy',
+					text: '<i class="bi-clipboard2-check dropdown-item-icon"></i> Copy'
+				},
+				{
+					extend: 'excel',
+					text: '<i class="bi-filetype-xlsx dropdown-item-icon"></i> Excel'
+				},
+				{
+					extend: 'csv',
+					text: '<i class="bi-filetype-csv dropdown-item-icon"></i> CSV'
+				},
+				{
+					extend: 'pdf',
+					text: '<i class="bi-filetype-pdf dropdown-item-icon"></i> PDF'
+				},
+				{
+					extend: 'print',
+					text: '<i class="bi-printer dropdown-item-icon"></i> Print'
+				}
+			]
+		}],
+	});
+</script>
