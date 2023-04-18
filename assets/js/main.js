@@ -636,6 +636,15 @@ function addCustomer() {
 	$('#customerAddModal').modal('show');
 }
 
+function addTransport() {
+	resetCustomerForm();
+	$('#transportAddModal').modal('show');
+}
+function addVehicle() {
+	resetCustomerForm();
+	$('#vehicleAddModal').modal('show');
+}
+
 function resetCustomerForm() {
 	$('#customerAddModalLabel').text(translate('add_new_customer'));
 	$('#customer-form-action').attr('name', 'add_customer');
