@@ -1005,6 +1005,11 @@ function addBooking() {
 	$('.booking-product:not(:first-child)', parent).remove();
 	parent.modal('show');
 }
+function addDispatch() {
+	const parent = $('#dispatchAddModal')
+	$('#dispatch-form', parent).trigger('reset');
+	parent.modal('show');
+}
 function viewBooking(bok_id) {
 	const modal = $('#invoicePreviewModal');
 	modal.find('iframe').attr('src', `booking?bok_id=${bok_id}`);

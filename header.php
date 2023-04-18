@@ -618,7 +618,7 @@ if (isset($_POST['change_lang'])) {
 							</div>
 							<div class="nav-item">
 								<a class="nav-link" href="dispatch.php">
-									<i class="bi-flower2 nav-icon"></i>
+									<i class="bi-truck nav-icon"></i>
 									<span class="nav-link-title">Dispatch Department</span>
 								</a>
 							</div>

@@ -8,6 +8,11 @@
 					<span>Dispatch Managament</span>
 				</h1>
 			</div>
+			<div class="col-auto">
+				<a class="btn btn-sm btn-primary" href="javascript:void(0)" onclick="addDispatch()">
+					<i class="bi-plus-circle me-1"></i>
+					Add New </a>
+			</div>
 		</div>
 	</div>
 	<div class="reports-table-filters">
@@ -15,12 +20,12 @@
 			<div class="col-12 col-md-3">
 				<div class="input-group input-group-sm">
 					<div class="input-group-text">
-					  <i class="bi-search"></i>
+						<i class="bi-search"></i>
 					</div>
 					<input type="search" class="form-control reports-table-search" placeholder="Search here">
 				</div>
 			</div>
-			
+
 		</div>
 	</div>
 	<div class="table-responsive">
@@ -43,43 +48,35 @@
 					<th>Vehicle No</th>
 					<th>Payment Type</th>
 					<th>Remark</th>
-					<th>Extra Trey</th>
+					<th>Extra Tray</th>
 					<th>Loaded Trays</th>
 				</tr>
 			</thead>
 			<tbody>
-                <tr class="odd">
-                    <td>1</td>
-                    <td>18 Apr 2023</td>
-                    <td>5</td>
-                    <td>pandu</td>
-                    <td>dindori</td>
-                    <td>dindori</td>
-                    <td>+91-7789765565</td>
-                    <td>Flower</td>
-                    <td>Saint</td>
-                    <td>125</td>
-                    <td>200</td>
-                    <td>1522/24 weak</td>
-                    <td>D5</td>
-                    <td><input type="text" class="form-control w-120px" ></td>
-                    <td>
-                    <select class="form-control form-control-sm w-120px" name="" id="">
-							<option value="none">Select
-                            </option>
-							<option value="cash">Cash</option>
-							<option value="transport">Transport</option>
-							<option value="transport">Credit</option>
-						</select>
-                    </td>
-                    <td><input type="text" class="form-control w-120px" ></td>
-                    <td><input type="text" class="form-control w-120px" ></td>
-                    <td><input type="number" class="form-control w-120px" ></td>
-                </tr>
-            </tbody>
+				<tr class="odd">
+					<td>1</td>
+					<td>18 Apr 2023</td>
+					<td>5</td>
+					<td>pandu</td>
+					<td>dindori</td>
+					<td>dindori</td>
+					<td>+91-7789765565</td>
+					<td>Flower</td>
+					<td>Saint</td>
+					<td>125</td>
+					<td>200</td>
+					<td>1522/24 weak</td>
+					<td>D5</td>
+					<td>Self</td>
+					<td>Cash</td>
+					<td>Remark</td>
+					<td>5</td>
+					<td>24</td>
+				</tr>
+			</tbody>
 		</table>
 	</div>
-		<div class="data-table-footer"></div>
+	<div class="data-table-footer"></div>
 </div>
 <?php require_once __DIR__ . '/footer.php' ?>
 

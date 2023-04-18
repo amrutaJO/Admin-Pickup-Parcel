@@ -714,34 +714,56 @@
 							<thead align="center">
 								<tr>
 									<th>#</th>
-									<th class="text-start" width="30%">Product</th>
-									<th>Cost price</th>
-									<th>Available quantity</th>
-									<th>Quantity</th>
-									<th>Amount</th>
-									<th></th>
+									<th class="text-start" width="30%">Batch No.</th>
+									<th>Lot No.</th>
+									<th>Section</th>
+									<th>No. of Pkt</th>
+									<th>Unit</th>
+									<th>Tray No.</th>
+									<th>Tray size</th>
+									<th>Total Tray</th>
 								</tr>
 							</thead>
 							<tbody align="center">
 								<tr class="sowing-product">
 									<td>1</td>
 									<td class="text-start" width="30%">
-										<select name="swd_pro_id[]" class="form-select form-select-sm" required onchange="findSowingProductStockPrice(this)">
+										<select name="" class="form-select form-select-sm" required onchange="findSowingProductStockPrice(this)">
 											<option value="">Select product</option>
+											<option value="">Taiwan-784/1</option>
+											<option value="">SANIT/5</option>
 										</select>
 									</td>
 									<td>
-										<input type="text" name="swd_pro_cost_price[]" class="form-control form-control-sm text-center" placeholder="0.00" readonly tabindex="-1">
+										<input type="text" name="" class="form-control w-120px form-control-sm text-center">
 									</td>
 									<td>
-										<input type="text" class="swd-pro-avail-qty form-control form-control-sm text-center" placeholder="0" readonly tabindex="-1">
+										<input type="text" class=" form-control form-control-sm text-center">
 									</td>
 									<td>
-										<input type="text" name="swd_pro_qty[]" class="form-control form-control-sm text-center" placeholder="0" required oninput="allowType(event, 'number'),calcSowingTotal()" onfocus="this.select()">
+										<select class="form-control form-control-sm w-120px" name="" id="">
+											<option value="none">Select</option>
+											<option value="machine">5</option>
+											<option value="manual">2.3</option>
+										</select>
 									</td>
 									<td>
-										<input type="text" class="swd-pro-total form-control form-control-sm text-center" name="swd_total_amount[]" placeholder="0.00" readonly tabindex="-1">
+										<select class="form-control form-control-sm w-120px" name="" id="">
+											<option value="none">Select</option>
+											<option value="machine">3500N</option>
+											<option value="manual">1500N</option>
+										</select>
 									</td>
+									<td>
+										<input type="text" class="w-70px form-control form-control-sm text-center" name="">
+									</td>
+									<td>
+										<input type="text" class="w-70px form-control form-control-sm text-center" name="">
+									</td>
+									<td>
+										<input type="text" class="form-control form-control-sm text-center" name="">
+									</td>
+
 									<td></td>
 								</tr>
 							</tbody>
@@ -759,55 +781,42 @@
 						<div class="row g-3">
 							<div class="col-12">
 								<input type="hidden" id="sowing-form-action" name="add_sowing" value="">
-								<label class="form-label required">Select product for sowing</label>
+								<label class="form-label required">Sowing Type</label>
 								<div class="input-group input-group-sm">
-									<select name="sw_pro_id" class="form-select rounded-1" required onchange="selectSowingProduct(this.value)">
-										<option value="">Select product</option>
+									<select class="form-control form-control-sm w-120px" name="" id="">
+										<option value="none">Select</option>
+										<option value="machine">Machine</option>
+										<option value="manual">Manual</option>
 									</select>
-									<button class="btn p-0 border-0" type="button" onclick="addProduct()">
-										<i class="bi bi-plus-circle-fill p-1 ms-1 text-primary"></i>
-									</button>
 								</div>
 							</div>
-							<div class="col-12">
-								<label class="form-label">Sowing date</label>
-								<div class="input-group input-group-sm">
-									<span class="input-group-text">
-										<i class="bi bi-calendar-week"></i>
-									</span>
-									<input type="text" name="sw_date" class="js-flatpickr form-control" data-hs-flatpickr-options='{"dateFormat": "Y-m-d"}'>
-								</div>
+							<div class="col-12 col-md-6">
+								<label class="form-label">Average</label>
+								<input type="text" class="form-control" readonly placeholder="0.00">
+							</div>
+							<div class="col-12 col-md-6">
+								<label class="form-label">Gross Total</label>
+								<input type="text" class="form-control" readonly placeholder="0.00">
+							</div>
+							<div class="col-12 col-md-6">
+								<label class="form-label">Location</label>
+								<input type="text" class="form-control">
+							</div>
+							<div class="col-12 col-md-6">
+								<label class="form-label">Bed No.</label>
+								<input type="text" class="form-control">
 							</div>
 							<div class="col-12">
-								<label class="form-label">Old production cost</label>
-								<div class="input-group input-group-sm">
-									<span class="input-group-text">
-										<i class="bi bi-currency-rupee"></i>
-									</span>
-									<input type="text" name="sw_pro_cost_price" class="form-control" value="0.00" readonly tabindex="-1">
-								</div>
+								<label class="form-label">Germination %</label>
+								<input type="text" class="form-control">
 							</div>
 							<div class="col-12">
-								<label class="form-label">Selling price</label>
-								<div class="input-group input-group-sm">
-									<span class="input-group-text">
-										<i class="bi bi-currency-rupee"></i>
-									</span>
-									<input type="text" name="sw_pro_selling_price" class="form-control" value="0.00" oninput="allowType(event, 'decimal', 2),calcSowingTotal()" onfocus="this.select()" required>
-								</div>
-							</div>
-							<div class="col-12">
-								<label class="form-label">Total plants quantity</label>
-								<input type="text" name="sw_pro_qty" class="form-control form-control-sm" oninput="allowType(event, 'number'),calcSowingTotal()" onfocus="this.select()" required>
-							</div>
-							<div class="col-12">
-								<label class="form-label">New production cost</label>
-								<div class="input-group input-group-sm">
-									<span class="input-group-text">
-										<i class="bi bi-currency-rupee"></i>
-									</span>
-									<input type="text" name="sw_production_cost" class="form-control" value="0.00" readonly tabindex="-1">
-								</div>
+								<label class="form-label">Crop Type</label>
+								<select class="form-control" name="" id="">
+									<option value="none">Select</option>
+									<option value="machine">Good</option>
+									<option value="manual">Bad</option>
+								</select>
 							</div>
 						</div>
 					</div>
@@ -815,7 +824,7 @@
 			</div>
 			<div class="modal-footer pt-0 border-top-0">
 				<button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="submit" form="sowing-form" class="btn btn-sm btn-primary">Save</button>
+				<button type="submit" class="btn btn-sm btn-primary">Save</button>
 			</div>
 		</div>
 	</div>
@@ -1461,6 +1470,61 @@
 		</div>
 	</div>
 </div>
+
+<!-- custom modal -->
+<div class="modal fade" id="dispatchAddModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="dispatchAddModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+		<div class="modal-content border shadow">
+			<div class="modal-header">
+				<h4 class="modal-title" id="dispatchAddModalLabel">Add new dispatch</h4>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form action="" class="row g-3" id="dispatch-form">
+					<div class="col-12 col-md-4">
+						<label for="" class="form-label">Batch No.</label>
+						<select class="form-select form-select-sm" name="" id="">
+							<option value="">Select</option>
+							<option value="">1522/24 WEAK</option>
+							<option value="">SUPER SHIGRA/5</option>
+							<option value="">SAINT/95</option>
+						</select>
+					</div>
+					<div class="col-12 col-md-4">
+						<label for="" class="form-label">Vehicle No.</label>
+						<input type="text" name="" class="form-control form-control-sm">
+					</div>
+					<div class="col-12 col-md-4">
+						<label for="" class="form-label">Payment Type</label>
+						<select class="form-select form-select-sm" name="" id="">
+							<option value="">Select</option>
+							<option value="">Cash</option>
+							<option value="">Transport</option>
+							<option value="">Credit</option>
+						</select>
+					</div>
+					<div class="col-12 col-md-6">
+						<label for="" class="form-label">Loaded Trays</label>
+						<input type="text" name="sup_gst" class="form-control form-control-sm" oninput="allowType(event, 'alfanum', 17, 'upper')">
+					</div>
+					<div class="col-12 col-md-6">
+						<label for="" class="form-label">Extra Tray</label>
+						<input type="text" name="sup_gst" class="form-control form-control-sm" oninput="allowType(event, 'alfanum', 17, 'upper')">
+					</div>
+					<div class="col-12">
+						<label for="" class="form-label">Remark</label>
+						<input type="text" name="" class="form-control form-control-sm">
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer pt-0 border-top-0">
+				<button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button type="submit" form="dispatch-form" class="btn btn-sm btn-primary">Save</button>
+			</div>
+		</div>
+	</div>
+</div>
+
 <script>
 	function Alert(options = {}) {
 		const BSAction = {
