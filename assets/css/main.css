@@ -178,6 +178,7 @@ label.required::after {
 
 
 /* custum css */
+/* farmer add */
 .perdaymonth input[type="radio"]:checked+label {
 	background-color: #377dff !important;
 	transition: all 0.3s;
@@ -188,4 +189,13 @@ label.required::after {
 	transition: all 0.3s;
 	border-radius: 5px;
 	cursor: pointer;
+}
+
+/* sowing */
+.w-70px {
+	width: 70px !important;
+}
+
+.w-120px {
+	width: 120px !important;
 }
