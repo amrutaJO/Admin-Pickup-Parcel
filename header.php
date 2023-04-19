@@ -635,10 +635,25 @@ if (isset($_POST['change_lang'])) {
 								</a>
 							</div>
 							<div class="nav-item">
-								<a class="nav-link" href="sowing.php">
-									<i class="bi-flower2 nav-icon"></i>
-									<span class="nav-link-title">Accounts Department</span>
+								<a class="nav-link dropdown-toggle " href="#Accounts" role="button" data-bs-toggle="collapse" data-bs-target="#Accounts" aria-expanded="false" aria-controls="Accounts">
+									<i class="bi-suit-club nav-icon"></i>
+									<span class="nav-link-title">Accounts Management</span>
 								</a>
+								<div id="Accounts" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
+									<div class="badge bg-light text-secondary">MASTERS</div>
+									<a class="nav-link " href="">Create</a>
+									<a class="nav-link " href="">Alter</a>
+									<a class="nav-link " href="">Chart of Accounts</a>
+									<div class="badge bg-light text-secondary">TRANSACTIONS</div>
+									<a class="nav-link " href="">Vouchers</a>
+									<a class="nav-link " href="">Day Book</a>
+									<div class="badge bg-light text-secondary">UTILITIES</div>
+									<a class="nav-link " href="">Banking</a>
+									<div class="badge bg-light text-secondary">REPORTS</div>
+									<a class="nav-link " href="">Balance Sheet</a>
+									<a class="nav-link " href=""></a>
+
+								</div>
 							</div>
 							<div class="nav-item">
 								<a class="nav-link dropdown-toggle " href="#Ledger_manage" role="button" data-bs-toggle="collapse" data-bs-target="#Ledger_manage" aria-expanded="false" aria-controls="Ledger_manage">

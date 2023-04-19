@@ -1222,11 +1222,11 @@
 					<div class="col-12 ">
 						<div class="row">
 							<div class="d-flex col-md-4 justify-content-between perdaymonth align-items-center">
-								<input type="radio" class="d-none" name="salper" id="permonth" checked>
+								<input type="radio" class="d-none" name="salper" id="permonth" checked data-value="Month">
 								<label class="px-3 py-2" for="permonth">
 									Month
 								</label>
-								<input type="radio" class="d-none" name="salper" id="perday">
+								<input type="radio" class="d-none" name="salper" id="perday" data-value="Day">
 								<label class="px-3 py-2" for="perday">
 									Day
 								</label>
@@ -1343,30 +1343,30 @@
 					</div>
 					<div class="col-12 col-md-6">
 
-							<label for="" class="form-label">Vehicle Modal</label>
-							<input type="text" class="form-control form-control-sm" readonly placeholder="Vehicle Modal">
-						
+						<label for="" class="form-label">Vehicle Modal</label>
+						<input type="text" class="form-control form-control-sm" readonly placeholder="Vehicle Modal">
+
 					</div>
 					<div class="col-12 col-md-6">
-						
-							<label for="" class="form-label" >Vehicle Number</label>
-							<input type="text" class="form-control form-control-sm" readonly placeholder="Vehicle Number">
-						
+
+						<label for="" class="form-label">Vehicle Number</label>
+						<input type="text" class="form-control form-control-sm" readonly placeholder="Vehicle Number">
+
 					</div>
 
 					<div class="col-12 col-md-6">
-						
-							<label for="" class="form-label">Driver Name</label>
-							<input type="text" class="form-control form-control-sm" placeholder="Driver Name">
-						
+
+						<label for="" class="form-label">Driver Name</label>
+						<input type="text" class="form-control form-control-sm" placeholder="Driver Name">
+
 					</div>
 					<div class="col-12 col-md-6">
-							<label for="" class="form-label">Driver Mobile Number</label>
-							<input type="tel" class="form-control form-control-sm" placeholder="Contact Number">
+						<label for="" class="form-label">Driver Mobile Number</label>
+						<input type="tel" class="form-control form-control-sm" placeholder="Contact Number">
 					</div>
 					<div class="col-12 col-md-6">
-							<label for="" class="form-label">Batch No</label>
-							<input type="tel" class="form-control form-control-sm" placeholder="Batch No">
+						<label for="" class="form-label">Batch No</label>
+						<input type="tel" class="form-control form-control-sm" placeholder="Batch No">
 					</div>
 
 
