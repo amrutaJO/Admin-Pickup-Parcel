@@ -593,15 +593,13 @@ if (isset($_POST['change_lang'])) {
 								</a>
 							</div>
 							<div class="nav-item">
-								<a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="collapse" data-bs-target="#sales" aria-expanded="false" aria-controls="sales">
+								<a class="nav-link dropdown-toggle " href="#Sales" role="button" data-bs-toggle="collapse" data-bs-target="#Sales" aria-expanded="false" aria-controls="Sales">
 									<i class="bi-suit-club nav-icon"></i>
-									<span class="nav-link-title">Sales Department</span>
+									<span class="nav-link-title">Sales Management</span>
 								</a>
-								<div id="sales" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
-									<a class="nav-link " href="projection.php">Projection Management
-									</a>
-									<a class="nav-link " href="batchassign.php">Batch Assign / Batch Merge
-									</a>
+								<div id="Sales" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
+									<a class="nav-link " href="projection.php">Projection Management</a>
+									<a class="nav-link " href="batchassign">Batch Assign / Batch Merge</a>
 								</div>
 							</div>
 							<div class="nav-item">
@@ -651,8 +649,13 @@ if (isset($_POST['change_lang'])) {
 									<a class="nav-link " href="">Banking</a>
 									<div class="badge bg-light text-secondary">REPORTS</div>
 									<a class="nav-link " href="">Balance Sheet</a>
-									<a class="nav-link " href=""></a>
-
+									<a class="nav-link " href="">Profit & Loss A/c</a>
+									<a class="nav-link " href="">Stock Summary</a>
+									<a class="nav-link " href="">Ratio Analysis</a>
+									<div class="badge bg-light text-secondary">_</div>
+									<a class="nav-link " href="">Display More Reports</a>
+									<div class="badge bg-light text-secondary">_</div>
+									<a class="nav-link " href="">Quit</a>
 								</div>
 							</div>
 							<div class="nav-item">

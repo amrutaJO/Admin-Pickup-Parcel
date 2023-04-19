@@ -51,7 +51,7 @@
             </div>
         </div>
         <div class="col-md-7">
-            <div id="staff_selection" class="px-sm-4 ">
+            <div id="staff_selection" class="px-sm-4 d-none">
                 <div class="d-flex justify-content-between my-4 align-items-center">
                     <h3>Select Staff</h3>
                     <button class="btn btn-primary btn-sm">Send <i class="bi bi-chevron-right"></i></button>
@@ -79,7 +79,7 @@
                     </div>
                 </form>
             </div>
-            <div id="department_selection" class="px-sm-4">
+            <div id="department_selection" class="px-sm-4 d-none">
                 <div class="d-flex justify-content-between my-4 align-items-center">
                     <h3>Select Department</h3>
                     <button class="btn btn-primary btn-sm">Send <i class="bi bi-chevron-right"></i></button>
@@ -107,7 +107,7 @@
                     </div>
                 </form>
             </div>
-            <div id="farmer_selection" class="px-sm-4 ">
+            <div id="farmer_selection" class="px-sm-4 d-none ">
                 <div class="d-flex justify-content-between my-4 align-items-center">
                     <h3>Select Farmer</h3>
                     <button class="btn btn-primary btn-sm">Send <i class="bi bi-chevron-right"></i></button>

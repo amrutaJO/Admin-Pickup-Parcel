@@ -33,12 +33,18 @@ window.addEventListener("click", function () {
 	sendselect.addEventListener('click', function () {
 		if (sendselect.value == 'staff') {
 			staff.className = "px-sm-4 d-block"
+			department.className = "px-sm-4 d-none"
+			farmer.className = "px-sm-4 d-none"
 		}
 		else if (sendselect.value == 'department') {
 			department.className = "px-sm-4 d-block"
+			staff.className = "px-sm-4 d-none"
+			farmer.className = "px-sm-4 d-none"
 		}
 		else if (sendselect.value == 'farmer') {
 			farmer.className = "px-sm-4 d-block"
+			staff.className = "px-sm-4 d-none"
+			department.className = "px-sm-4 d-none"
 		}
 		else {
 			staff.className = "px-sm-4 d-none"

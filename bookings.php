@@ -5,13 +5,13 @@
 		<div class="row align-items-center">
 			<div class="col">
 				<h1 class="page-header-title">
-					Booking details </h1>
+					<?= translate('booking_details') ?></h1>
 			</div>
 			<!-- End Col -->
 			<div class="col-auto">
 				<a class="btn btn-sm btn-primary" href="javascript:void(0)" onclick="addBooking()">
 					<i class="bi-plus-circle me-1"></i>
-					Add New </a>
+					<?= translate('add_new_booking') ?></a>
 			</div>
 			<!-- End Col -->
 		</div>
@@ -39,25 +39,25 @@
 		<table id="booking-table" class="table table-bordered table-td-3-danger-bold table-nowrap table-align-middle">
 			<thead class="thead-light " align="left">
 				<tr>
-					<th>Booking No.</th>
-					<th>Booking date</th>
-					<th>Booking By</th>
-					<th>Delivery date</th>
-					<th>Farmer name</th>
-					<th>Address</th>
-					<th>Taluka</th>
-					<th>District</th>
-					<th>Mobile Number</th>
-					<th>Crop</th>
-					<th>Variety</th>
-					<th>Tray Size</th>
-					<th>Total quantity</th>
-					<th>Total amount</th>
-					<th>Advance amount</th>
-					<th>Due Date</th>
-					<th>Sowing Destination</th>
-					<th>Remark</th>
-					<th>Home Delivery</th>
+					<th><?= translate('booking_no') ?></th>
+					<th><?= translate('booking_date') ?></th>
+					<th><?= translate('booking_by') ?></th>
+					<th><?= translate('delivery_date') ?></th>
+					<th><?= translate('farmer_name') ?></th>
+					<th><?= translate('address') ?></th>
+					<th><?= translate('taluka') ?></th>
+					<th><?= translate('district') ?></th>
+					<th><?= translate('taluka') ?></th>
+					<th><?= translate('crop') ?></th>
+					<th><?= translate('variety') ?></th>
+					<th><?= translate('tray_size') ?></th>
+					<th><?= translate('total_quantity') ?></th>
+					<th><?= translate('total_amount') ?></th>
+					<th><?= translate('advance_amount') ?></th>
+					<th><?= translate('due_date') ?></th>
+					<th><?= translate('sowing_dest') ?></th>
+					<th><?= translate('remark') ?></th>
+					<th><?= translate('home_del') ?></th>
 				</tr>
 			</thead>
 			<tbody></tbody>
@@ -71,92 +71,92 @@
 	let bookingListTable = false;
 	bookingListTable = $('#booking-table').DataTable({
 		data: {},
-		columns: [{
-				data: 'bok_id',
-				render: function(data, type, row, meta) {
-					// return `<div class="text-start">
-					// 		<input type="checkbox" class="multi-check-item form-check-input mx-2" name="bok_id[]" value="${row.bok_id}">
-					// 	</div>`;
-					return row.bok_id;
-				}
-			},
-			{
-				data: 'bok_created',
-				render: function(data, type, row, meta) {
-					return new Date(row.bok_created).getFormated('dd mmm yyyy');
-				}
-			},
-			{
-				data: 'bok_delivery_date',
-				render: function(data, type, row, meta) {
-					return new Date(row.bok_delivery_date).getFormated('dd mmm yyyy');
-				}
-			},
-			{
-				data: 'cus_name',
-				render: function(data, type, row, meta) {
-					return `<strong class="cursor-pointer link-primary" onclick="viewBooking(${row.bok_id})">${row.cus_name}</strong>`;
-				}
-			},
-			{
-				data: 'bok_qty'
-			},
-			{
-				data: 'bok_total_amount'
-			},
-			{
-				data: 'bok_advance_amount',
-				render: function(data, type, row, meta) {
-					return Number(row.bok_advance_amount).toFixed(2);
-				}
-			},
-			{
-				data: 'bok_balance_amount',
-				render: function(data, type, row, meta) {
-					return Number(row.bok_balance_amount).toFixed(2);
-				}
-			},
-			{
-				data: 'bok_received_amount',
-				render: function(data, type, row, meta) {
-					return Number(row.bok_received_amount).toFixed(2);
-				}
-			},
-			{
-				data: 'bok_status_lang'
-			},
-			{
-				data: 'bok_id',
-				render: function(data, type, row, meta) {
-					if (row.bok_status != 'delivered') {
-						return `<div class="dropdown">
-							<button class="btn py-0 px-2 border-0" type="button" data-bs-toggle="dropdown">
-								<i class="bi-three-dots fs-3"></i>
-							</button>
-							<ul class="dropdown-menu dropdown-menu-end">
-								<li>
-									<button class="dropdown-item text-primary" onclick="editBooking(${row.bok_id})">
-										<i class="bi-pencil-square me-1 align-middle"></i> ${translate('update_booking')}
-									</button>
-								</li>
-								<li>
-									<button class="dropdown-item text-success" onclick="deliverBooking(${row.bok_id})">
-										<i class="bi-box-seam me-1 align-middle"></i> ${translate('deliver_booking')}
-									</button>
-								</li>
-								<li>
-									<button class="dropdown-item text-danger" onclick="deleteBooking(${row.bok_id})">
-										<i class="bi-trash me-1 align-middle"></i> ${translate('delete_booking')}
-									</button>
-								</li>
-							</ul>
-						</div>`;
-					} else {
-						return '';
-					}
-				}
-			}
-		],
+		// columns: [{
+		// 		data: 'bok_id',
+		// 		render: function(data, type, row, meta) {
+		// 			// return `<div class="text-start">
+		// 			// 		<input type="checkbox" class="multi-check-item form-check-input mx-2" name="bok_id[]" value="${row.bok_id}">
+		// 			// 	</div>`;
+		// 			return row.bok_id;
+		// 		}
+		// 	},
+		// 	{
+		// 		data: 'bok_created',
+		// 		render: function(data, type, row, meta) {
+		// 			return new Date(row.bok_created).getFormated('dd mmm yyyy');
+		// 		}
+		// 	},
+		// 	{
+		// 		data: 'bok_delivery_date',
+		// 		render: function(data, type, row, meta) {
+		// 			return new Date(row.bok_delivery_date).getFormated('dd mmm yyyy');
+		// 		}
+		// 	},
+		// 	{
+		// 		data: 'cus_name',
+		// 		render: function(data, type, row, meta) {
+		// 			return `<strong class="cursor-pointer link-primary" onclick="viewBooking(${row.bok_id})">${row.cus_name}</strong>`;
+		// 		}
+		// 	},
+		// 	{
+		// 		data: 'bok_qty'
+		// 	},
+		// 	{
+		// 		data: 'bok_total_amount'
+		// 	},
+		// 	{
+		// 		data: 'bok_advance_amount',
+		// 		render: function(data, type, row, meta) {
+		// 			return Number(row.bok_advance_amount).toFixed(2);
+		// 		}
+		// 	},
+		// 	{
+		// 		data: 'bok_balance_amount',
+		// 		render: function(data, type, row, meta) {
+		// 			return Number(row.bok_balance_amount).toFixed(2);
+		// 		}
+		// 	},
+		// 	{
+		// 		data: 'bok_received_amount',
+		// 		render: function(data, type, row, meta) {
+		// 			return Number(row.bok_received_amount).toFixed(2);
+		// 		}
+		// 	},
+		// 	{
+		// 		data: 'bok_status_lang'
+		// 	},
+		// 	{
+		// 		data: 'bok_id',
+		// 		render: function(data, type, row, meta) {
+		// 			if (row.bok_status != 'delivered') {
+		// 				return `<div class="dropdown">
+		// 					<button class="btn py-0 px-2 border-0" type="button" data-bs-toggle="dropdown">
+		// 						<i class="bi-three-dots fs-3"></i>
+		// 					</button>
+		// 					<ul class="dropdown-menu dropdown-menu-end">
+		// 						<li>
+		// 							<button class="dropdown-item text-primary" onclick="editBooking(${row.bok_id})">
+		// 								<i class="bi-pencil-square me-1 align-middle"></i> ${translate('update_booking')}
+		// 							</button>
+		// 						</li>
+		// 						<li>
+		// 							<button class="dropdown-item text-success" onclick="deliverBooking(${row.bok_id})">
+		// 								<i class="bi-box-seam me-1 align-middle"></i> ${translate('deliver_booking')}
+		// 							</button>
+		// 						</li>
+		// 						<li>
+		// 							<button class="dropdown-item text-danger" onclick="deleteBooking(${row.bok_id})">
+		// 								<i class="bi-trash me-1 align-middle"></i> ${translate('delete_booking')}
+		// 							</button>
+		// 						</li>
+		// 					</ul>
+		// 				</div>`;
+		// 			} else {
+		// 				return '';
+		// 			}
+		// 		}
+		// 	}
+		// ],
 		lengthChange: true,
 		columnDefs: [{
 			// targets: [0,],
