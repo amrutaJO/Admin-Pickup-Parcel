@@ -1,5 +1,5 @@
-'use strict';
-function empt() {
+// 'use strict';
+(function () {
 	const selectElement = document.querySelector('#emptype');
 	let deptstaff = document.getElementById("deptstaff");
 	selectElement.addEventListener('click', () => {
@@ -10,20 +10,51 @@ function empt() {
 			deptstaff.className = "col-12 d-none"
 		}
 	});
-}
-empt();
-function persal() {
+})();
+
+window.addEventListener("click", function () {
 	let permonth = document.getElementById("permonth");
 	let perday = document.getElementById("perday");
 	let salchange = document.getElementById("salchange")
 	if (permonth.checked) {
-		salchange.innerText = "Month"
+		salchange.innerText = permonth.getAttribute('data-value');
 	}
 	if (perday.checked) {
-		salchange.innerText = "Day"
+		salchange.innerText = perday.getAttribute('data-value');
 	}
-}
-window.addEventListener("click", persal);
+});
+
+(function () {
+	const sendselect = document.querySelector('#sendby');
+	let staff = document.getElementById("staff_selection");
+	let department = document.getElementById("department_selection")
+	let farmer = document.getElementById("farmer_selection");
+	console.log(sendselect);
+	sendselect.addEventListener('click', function () {
+		if (sendselect.value == 'staff') {
+			staff.className = "px-sm-4 d-block"
+			department.className = "px-sm-4 d-none"
+			farmer.className = "px-sm-4 d-none"
+		}
+		else if (sendselect.value == 'department') {
+			department.className = "px-sm-4 d-block"
+			staff.className = "px-sm-4 d-none"
+			farmer.className = "px-sm-4 d-none"
+		}
+		else if (sendselect.value == 'farmer') {
+			farmer.className = "px-sm-4 d-block"
+			staff.className = "px-sm-4 d-none"
+			department.className = "px-sm-4 d-none"
+		}
+		else {
+			staff.className = "px-sm-4 d-none"
+			department.className = "px-sm-4 d-none"
+			farmer.className = "px-sm-4 d-none"
+		}
+	});
+})();
+
+// ------------------------------custom js end
 function browserName() {
 	let browser;
 	if ((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1) {

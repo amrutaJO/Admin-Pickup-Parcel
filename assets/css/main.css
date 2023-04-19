@@ -199,3 +199,27 @@ label.required::after {
 .w-120px {
 	width: 120px !important;
 }
+
+/* custum push */
+.notify div {
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+.notify div:active {
+	transition: all 0.3s;
+	transform: scale(0.95);
+}
+
+.notify input[type="radio"]:checked~label div {
+	background-color: #377dff !important;
+	color: white;
+}
+
+.notifyselect input[type="checkbox"],
+.notifyselect input[type="radio"] {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	margin-top: 0px;
+}

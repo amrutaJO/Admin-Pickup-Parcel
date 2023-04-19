@@ -593,15 +593,13 @@ if (isset($_POST['change_lang'])) {
 								</a>
 							</div>
 							<div class="nav-item">
-								<a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="collapse" data-bs-target="#sales" aria-expanded="false" aria-controls="sales">
+								<a class="nav-link dropdown-toggle " href="#Sales" role="button" data-bs-toggle="collapse" data-bs-target="#Sales" aria-expanded="false" aria-controls="Sales">
 									<i class="bi-suit-club nav-icon"></i>
-									<span class="nav-link-title">Sales Department</span>
+									<span class="nav-link-title">Sales Management</span>
 								</a>
-								<div id="sales" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
-									<a class="nav-link " href="projection.php">Projection Management
-									</a>
-									<a class="nav-link " href="batchassign.php">Batch Assign / Batch Merge
-									</a>
+								<div id="Sales" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
+									<a class="nav-link " href="projection.php">Projection Management</a>
+									<a class="nav-link " href="batchassign">Batch Assign / Batch Merge</a>
 								</div>
 							</div>
 							<div class="nav-item">
@@ -635,10 +633,30 @@ if (isset($_POST['change_lang'])) {
 								</a>
 							</div>
 							<div class="nav-item">
-								<a class="nav-link" href="sowing.php">
-									<i class="bi-flower2 nav-icon"></i>
-									<span class="nav-link-title">Accounts Department</span>
+								<a class="nav-link dropdown-toggle " href="#Accounts" role="button" data-bs-toggle="collapse" data-bs-target="#Accounts" aria-expanded="false" aria-controls="Accounts">
+									<i class="bi-suit-club nav-icon"></i>
+									<span class="nav-link-title">Accounts Management</span>
 								</a>
+								<div id="Accounts" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
+									<div class="badge bg-light text-secondary">MASTERS</div>
+									<a class="nav-link " href="">Create</a>
+									<a class="nav-link " href="">Alter</a>
+									<a class="nav-link " href="">Chart of Accounts</a>
+									<div class="badge bg-light text-secondary">TRANSACTIONS</div>
+									<a class="nav-link " href="">Vouchers</a>
+									<a class="nav-link " href="">Day Book</a>
+									<div class="badge bg-light text-secondary">UTILITIES</div>
+									<a class="nav-link " href="">Banking</a>
+									<div class="badge bg-light text-secondary">REPORTS</div>
+									<a class="nav-link " href="">Balance Sheet</a>
+									<a class="nav-link " href="">Profit & Loss A/c</a>
+									<a class="nav-link " href="">Stock Summary</a>
+									<a class="nav-link " href="">Ratio Analysis</a>
+									<div class="badge bg-light text-secondary">_</div>
+									<a class="nav-link " href="">Display More Reports</a>
+									<div class="badge bg-light text-secondary">_</div>
+									<a class="nav-link " href="">Quit</a>
+								</div>
 							</div>
 							<div class="nav-item">
 								<a class="nav-link dropdown-toggle " href="#Ledger_manage" role="button" data-bs-toggle="collapse" data-bs-target="#Ledger_manage" aria-expanded="false" aria-controls="Ledger_manage">
@@ -652,8 +670,8 @@ if (isset($_POST['change_lang'])) {
 								</div>
 							</div>
 							<div class="nav-item">
-								<a class="nav-link" href="sowing.php">
-									<i class="bi-flower2 nav-icon"></i>
+								<a class="nav-link" href="custumpush.php">
+									<i class="bi-stickies nav-icon"></i>
 									<span class="nav-link-title">Custum Push</span>
 								</a>
 							</div>
