@@ -72,6 +72,10 @@ $_dictionary = array(
 		'en' => 'Register here',
 		'mr' => 'येथे रजिस्टर करा',
 	],
+	'tray_size' => [
+		'en' => 'Tray Size',
+		'mr' => 'ट्रे आकार',
+	],
 	'registration_date' => [
 		'en' => 'Registration date',
 		'mr' => 'नोंदणी दिनांक',
@@ -340,6 +344,10 @@ $_dictionary = array(
 		'en' => 'Home',
 		'mr' => 'होम',
 	],
+	'home_del' => [
+		'en' => 'Home Delivery',
+		'mr' => 'घरपोच',
+	],
 	'staff' => [
 		'en' => 'Staff',
 		'mr' => 'स्टाफ',
@@ -393,6 +401,7 @@ $_dictionary = array(
 		'en' => 'Customer name',
 		'mr' => 'ग्राहकाचे नाव',
 	],
+
 	'add_new_customer' => [
 		'en' => 'Add new customer',
 		'mr' => 'नवीन ग्राहक जोडा',
@@ -949,6 +958,10 @@ $_dictionary = array(
 		'en' => 'Renew',
 		'mr' => 'नूतनीकरण करा',
 	],
+	'projection' => [
+		'en' => 'Projection',
+		'mr' => 'प्रक्षेपण',
+	],
 	// misc
 	'ok' => [
 		'en' => "OK",
@@ -967,7 +980,7 @@ $_dictionary = array(
 		'mr' => 'अ.क्रं.',
 	],
 	'duration' => [
-		'en' => "Duraiton",
+		'en' => "Duraition",
 		'mr' => 'कालावधी',
 	],
 	'select_duration' => [
@@ -997,6 +1010,10 @@ $_dictionary = array(
 	'date' => [
 		'en' => "Date",
 		'mr' => 'तारीख',
+	],
+	'due_date' => [
+		'en' => "Due Date",
+		'mr' => 'देय तारीख',
 	],
 	'from_date' => [
 		'en' => "From Date",
@@ -1082,9 +1099,9 @@ $_dictionary = array(
 		'en' => 'Borrowing',
 		'mr' => 'उसने',
 	],
-	'borrowing' => [
-		'en' => 'Borrowing',
-		'mr' => 'उसने',
+	'address' => [
+		'en' => 'Address',
+		'mr' => 'पत्ता',
 	],
 	'borrowing_details' => [
 		'en' => 'Borrowing details',
@@ -1177,6 +1194,10 @@ $_dictionary = array(
 	'messages' => [
 		'en' => 'Messages',
 		'mr' => 'मॅसेजेस',
+	],
+	'crop' => [
+		'en' => 'crop',
+		'mr' => 'पीक',
 	],
 	'search' => [
 		'en' => 'Search',
@@ -1558,6 +1579,10 @@ $_dictionary = array(
 		'en' => "Placed",
 		'mr' => 'ऑर्डर केले',
 	],
+	'farmer_name' => [
+		'en' => "Farmer Name",
+		'mr' => 'शेतकऱ्याचे नाव',
+	],
 	'received' => [
 		'en' => "Received",
 		'mr' => 'मिळाले',
@@ -1578,6 +1603,10 @@ $_dictionary = array(
 	'booking_no' => [
 		'en' => "Booking No.",
 		'mr' => 'बुकिंग नं.',
+	],
+	'booking_by' => [
+		'en' => "Booking By.",
+		'mr' => 'बुकिंग द्वारे.',
 	],
 	'booked' => [
 		'en' => "Booked",
@@ -1743,6 +1772,14 @@ $_dictionary = array(
 	'sowing' => [
 		'en' => "Sowing",
 		'mr' => 'पेरणी',
+	],
+	'sowing_dest' => [
+		'en' => "Sowing Destination",
+		'mr' => 'पेरणी स्थान',
+	],
+	'remark' => [
+		'en' => "Remark",
+		'mr' => 'टिप्पणी',
 	],
 	'sowing_no' => [
 		'en' => "Sowing No.",
@@ -2106,6 +2143,10 @@ $_dictionary = array(
 	'address' => [
 		'en' => "Address",
 		'mr' => 'पत्ता',
+	],
+	'variety' => [
+		'en' => "Variety",
+		'mr' => 'विविधता',
 	],
 	'description' => [
 		'en' => "Description",

@@ -5,13 +5,13 @@
 		<div class="row align-items-center">
 			<div class="col">
 				<h1 class="page-header-title">
-					Customers </h1>
+					<?= translate('customer')?> </h1>
 			</div>
 			<!-- End Col -->
 			<div class="col-auto">
 				<a class="btn btn-sm btn-primary" href="javascript:void(0)" onclick="addCustomer()">
 					<i class="bi-plus-circle me-1"></i>
-					Add New </a>
+					<?= translate('add_new_customer')?> </a>
 			</div>
 			<!-- End Col -->
 		</div>
@@ -39,12 +39,12 @@
 		<table id="customer-table" class="table table-bordered table-nowrap table-align-middle">
 			<thead class="thead-light" align="left">
 				<tr>
-					<th>id</th>
-					<th>Customer name</th>
-					<th>Mobile number</th>
-					<th>Email id</th>
-					<th>Gender</th>
-					<th>Address</th>
+					<th><?= translate('sr_no')?></th>
+					<th><?= translate('customer_name')?></th>
+					<th><?= translate('mobile_no')?></th>
+					<th><?= translate('email_id')?></th>
+					<th><?= translate('gender')?></th>
+					<th><?= translate('address')?></th>
 				</tr>
 			</thead>
 			<tbody></tbody>

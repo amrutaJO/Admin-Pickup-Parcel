@@ -5,7 +5,7 @@
 			<div class="col">
 				<h1 class="page-header-title d-flex align-items-center gap-3">
 					<a href="reports" class="link-dark"><i class="bi-arrow-left-circle-fill align-middle"></i></a>
-					<span>Projections</span>
+					<span><?= translate('projection')?></span>
 				</h1>
 			</div>
 		</div>
@@ -37,25 +37,24 @@
 		<table id="booking-table" class="table table-bordered table-td-3-danger-bold table-nowrap table-align-middle">
 			<thead class="thead-light " align="left">
 				<tr>
-					<th>Booking No.</th>
-					<th>Booking date</th>
-					<th>Booking By</th>
-					<th>Delivery date</th>
-					<th>Farmer name</th>
-					<th>Address</th>
-					<th>Taluka</th>
-					<th>District</th>
-					<th>Mobile Number</th>
-					<th>Crop</th>
-					<th>Variety</th>
-					<th>Tray Size</th>
-					<th>Total quantity</th>
-					<th>Total amount</th>
-					<th>Advance amount</th>
-					<th>Due Date</th>
-					<th>Sowing Destination</th>
-					<th>Remark</th>
-					<th>Home Delivery</th>
+					<th><?= translate('booking_no')?></th>
+					<th><?= translate('booking_date')?></th>
+					<th><?= translate('booking_by')?></th>
+					<th><?= translate('delivery_date')?></th>
+					<th><?= translate('farmer_name')?></th>
+					<th><?= translate('address')?></th>
+					<th><?= translate('taluka')?></th>
+					<th><?= translate('district')?></th>
+					<th><?= translate('mobile_no')?></th>
+					<th><?= translate('crop')?></th>
+					<th><?= translate('variety')?></th>
+					<th><?= translate('tray_size')?></th>
+					<th><?= translate('total_quantity')?></th>
+					<th><?= translate('total_amount')?></th>
+					<th><?= translate('due_date')?></th>
+					<th><?= translate('sowing_dest')?></th>
+					<th><?= translate('remark')?></th>
+					<th><?= translate('home_del')?></th>
 				</tr>
 			</thead>
 			<tbody></tbody>
@@ -70,7 +69,7 @@
 				<form id="date-range-form" class="row g-3 mt-0">
 					<div class="col-12">
 						<input type="hidden" name="show" value="bookings-all">
-						<label class="form-label">Duraiton</label>
+						<label class="form-label"><?= translate('duration')?></label>
 						<select class="form-select form-select-sm" id="report-date-range" onchange="rangeSelect(this.value)">
 							<option value="">Select Duraiton</option>
 							<option value="">1-5 Days</option>
