@@ -20,6 +20,10 @@ $_dictionary = array(
 		'en' => 'Name',
 		'mr' => 'नाव',
 	],
+	'send' => [
+		'en' => 'send',
+		'mr' => 'पाठवा ',
+	],
 	'fname' => [
 		'en' => 'First Name',
 		'mr' => 'तुमचे नाव',
@@ -64,6 +68,10 @@ $_dictionary = array(
 		'en' => 'Gender',
 		'mr' => 'लिंग',
 	],
+	'germination' => [
+		'en' => 'Germination',
+		'mr' => 'उगवण',
+	],
 	'register' => [
 		'en' => 'Register',
 		'mr' => 'रजिस्टर',
@@ -71,6 +79,10 @@ $_dictionary = array(
 	'register_here' => [
 		'en' => 'Register here',
 		'mr' => 'येथे रजिस्टर करा',
+	],
+	'tray_num' => [
+		'en' => 'Tray Num',
+		'mr' => 'ट्रे नं ',
 	],
 	'tray_size' => [
 		'en' => 'Tray Size',
@@ -232,6 +244,10 @@ $_dictionary = array(
 		'en' => 'Login here',
 		'mr' => 'येथे लॉगिन करा',
 	],
+	'send_by' => [
+		'en' => 'Send By',
+		'mr' => 'सेंड बाय ',
+	],
 	'business' => [
 		'en' => 'Business',
 		'mr' => 'व्यवसाय',
@@ -368,9 +384,21 @@ $_dictionary = array(
 		'en' => 'Revenue',
 		'mr' => 'महसूल',
 	],
+	'pr_date-ready-sale' => [
+		'en' => 'projected date- ready for sale',
+		'mr' => 'प्रक्षेपित तारीख-विक्रीसाठी तयार',
+	],
 	'total_revenue' => [
 		'en' => 'Total Revenue',
 		'mr' => 'एकूण महसूल',
+	],
+	'total_tray' => [
+		'en' => 'Total Tray',
+		'mr' => 'एकूण ट्रे ',
+	],
+	'gross_total' => [
+		'en' => 'gross Total',
+		'mr' => 'एकूण ग्रॉस ',
 	],
 	'yearly_revenue' => [
 		'en' => 'Yearly Revenue',
@@ -389,9 +417,21 @@ $_dictionary = array(
 		'en' => 'Customer',
 		'mr' => 'ग्राहक',
 	],
+	'custom_push' => [
+		'en' => 'Custom Push',
+		'mr' => 'कस्टम पुश ',
+	],
 	'customers' => [
 		'en' => 'Customers',
 		'mr' => 'ग्राहक',
+	],
+	'select' => [
+		'en' => 'Select',
+		'mr' => 'निवडा',
+	],
+	'dpt' => [
+		'en' => 'Department',
+		'mr' => 'विभाग ',
 	],
 	'select_customer' => [
 		'en' => 'Select customer',
@@ -434,6 +474,14 @@ $_dictionary = array(
 	'labour_name' => [
 		'en' => 'Labour name',
 		'mr' => 'कामगाराचे नाव',
+	],
+	'location' => [
+		'en' => 'Location',
+		'mr' => 'स्थान',
+	],
+	'bed_no' => [
+		'en' => 'bed no',
+		'mr' => 'बेड नं ',
 	],
 	'employees' => [
 		'en' => 'Employees',
@@ -691,6 +739,10 @@ $_dictionary = array(
 	'seeds' => [
 		'en' => 'Seeds',
 		'mr' => 'बिया',
+	],
+	'qty' => [
+		'en' => 'qty',
+		'mr' => 'प्रमाण',
 	],
 	'fertilizer_feed' => [
 		'en' => 'Fertilizer / Feed',
@@ -1007,6 +1059,10 @@ $_dictionary = array(
 		'en' => "Apply",
 		'mr' => 'लागू करा',
 	],
+	'average' => [
+		'en' => "Average",
+		'mr' => 'सरासरी',
+	],
 	'date' => [
 		'en' => "Date",
 		'mr' => 'तारीख',
@@ -1042,6 +1098,10 @@ $_dictionary = array(
 	'remaining_quantity' => [
 		'en' => 'Remaining quantity',
 		'mr' => 'उर्वरित संख्या',
+	],
+	'batch_no' => [
+		'en' => 'Batch No.',
+		'mr' => 'बॅच नं ',
 	],
 	'rate' => [
 		'en' => 'Rate',
@@ -1179,6 +1239,10 @@ $_dictionary = array(
 		'en' => 'Notification',
 		'mr' => 'नोटिफिकेशन',
 	],
+	'notification_type' => [
+		'en' => 'Notification Type',
+		'mr' => 'नोटिफिकेशन प्रकार',
+	],
 	'daily_activity' => [
 		'en' => 'Daily Activity',
 		'mr' => 'दैनंदिन हालचाली',
@@ -1198,6 +1262,10 @@ $_dictionary = array(
 	'crop' => [
 		'en' => 'crop',
 		'mr' => 'पीक',
+	],
+	'crop_type' => [
+		'en' => 'crop type',
+		'mr' => 'पीक प्रकार',
 	],
 	'search' => [
 		'en' => 'Search',
@@ -1406,6 +1474,26 @@ $_dictionary = array(
 		'en' => 'No share',
 		'mr' => 'माहित नाही',
 	],
+	'vehicle' => [
+		'en' => 'Vehicle',
+		'mr' => 'वाहन',
+	],
+	'vehicle_name' => [
+		'en' => 'Vehicle Name',
+		'mr' => 'वाहनाचे नाव',
+	],
+	'driver_name' => [
+		'en' => 'Driver Name',
+		'mr' => 'ड्रायव्हरचे  नाव',
+	],
+	'vehicle_no' => [
+		'en' => 'Vehicle No.',
+		'mr' => 'वाहन नं',
+	],
+	'modal_no' => [
+		'en' => 'Modal No.',
+		'mr' => 'मॉडल नं',
+	],
 	'no_share' => [
 		'en' => 'No share',
 		'mr' => 'माहित नाही',
@@ -1429,6 +1517,10 @@ $_dictionary = array(
 	'sales' => [
 		'en' => "Sales",
 		'mr' => 'विक्री',
+	],
+	'sale_type' => [
+		'en' => "Sale Type",
+		'mr' => 'विक्री प्रकार',
 	],
 	'all_sales' => [
 		'en' => 'All Sales',
@@ -1559,6 +1651,10 @@ $_dictionary = array(
 		'en' => "Fees",
 		'mr' => 'शुल्क',
 	],
+	'payment_type' => [
+		'en' => "payment type",
+		'mr' => 'पैसे देण्याची  पध्दत',
+	],
 	'total_fees' => [
 		'en' => "Total fees",
 		'mr' => 'एकूण शुल्क',
@@ -1575,9 +1671,17 @@ $_dictionary = array(
 		'en' => "Extra charges",
 		'mr' => 'अतिरिक्त शुल्क',
 	],
+	'extra_tray' => [
+		'en' => "Extra tray",
+		'mr' => 'अतिरिक्त ट्रे',
+	],
 	'placed' => [
 		'en' => "Placed",
 		'mr' => 'ऑर्डर केले',
+	],
+	'farmer' => [
+		'en' => "Farmer",
+		'mr' => 'शेतकरी',
 	],
 	'farmer_name' => [
 		'en' => "Farmer Name",
@@ -1712,6 +1816,10 @@ $_dictionary = array(
 		'en' => "Transactions",
 		'mr' => 'व्यवहार',
 	],
+	'transport_dpt' => [
+		'en' => "Transport Department",
+		'mr' => 'वाहतूक विभाग',
+	],
 	'overview' => [
 		'en' => "Overview",
 		'mr' => 'आढावा',
@@ -1727,6 +1835,14 @@ $_dictionary = array(
 	'status' => [
 		'en' => "Status",
 		'mr' => 'स्थिती',
+	],
+	'section' => [
+		'en' => "Section",
+		'mr' => 'विभाग',
+	],
+	'num_pkt' => [
+		'en' => "No. of pkt",
+		'mr' => 'पाकीट संख्या ',
 	],
 	'menu' => [
 		'en' => "Menu",
@@ -1777,6 +1893,10 @@ $_dictionary = array(
 		'en' => "Sowing Destination",
 		'mr' => 'पेरणी स्थान',
 	],
+	'sowing_type' => [
+		'en' => "Sowing Type",
+		'mr' => 'पेरणीचे प्रकार',
+	],
 	'remark' => [
 		'en' => "Remark",
 		'mr' => 'टिप्पणी',
@@ -1792,6 +1912,32 @@ $_dictionary = array(
 	'select_sowing_date' => [
 		'en' => "Select sowing date",
 		'mr' => 'पेरणीची तारीख निवडा',
+	],
+	'select_staff' => [
+		'en' => "Select Staff",
+		'mr' => 'स्टाफ  निवडा',
+	],
+	'select_dpt' => [
+		'en' => "Select Department",
+		'mr' => 'विभाग  निवडा',
+	],
+	'booking_dpt' => [
+		'en' => "Booking Department",
+		'mr' => ' बुकिंग विभाग ',
+	],
+	'sowing_dpt' => [
+		'en' => "Sowing Department",
+		'mr' => ' पेरणी  विभाग ',
+	],
+	'hr_dpt' => [
+		'en' => "HR Department",
+		'mr' => ' एच आर  विभाग ',
+	],
+	
+	
+	'select_farmer' => [
+		'en' => "Select Farmer",
+		'mr' => 'शेतकरी  निवडा',
 	],
 	'select_product_for_sowing' => [
 		'en' => "Select product for sowing",
@@ -1977,6 +2123,10 @@ $_dictionary = array(
 	'discount' => [
 		'en' => 'Discount',
 		'mr' => 'सूट',
+	],
+	'dispatch_dpt' => [
+		'en' => 'Dispatch Department',
+		'mr' => 'डिस्पॅच  विभाग',
 	],
 	'total_discount' => [
 		'en' => 'Total discount',
@@ -2248,6 +2398,10 @@ $_dictionary = array(
 		'en' => 'View All',
 		'mr' => 'सर्व बघा',
 	],
+	'all' => [
+		'en' => 'All',
+		'mr' => 'सर्व',
+	],
 	'view_more' => [
 		'en' => 'View More',
 		'mr' => 'अजून बघा',
@@ -2259,6 +2413,14 @@ $_dictionary = array(
 	'whatsnew' => [
 		'en' => "What's new?",
 		'mr' => 'नवीन काय आहे?',
+	],
+	'sms' => [
+		'en' => "sms",
+		'mr' => 'मेसेज ',
+	],
+	'whatsapp' => [
+		'en' => "Whatsapp ",
+		'mr' => 'व्हाट्सअँप ',
 	],
 	'yes' => [
 		'en' => "Yes",
@@ -2323,6 +2485,10 @@ $_dictionary = array(
 	'loading' => [
 		'en' => 'Loading',
 		'mr' => 'लोड होत आहे',
+	],
+	'loaded_tray' => [
+		'en' => 'Loaded trays',
+		'mr' => 'लोडेड ट्रे',
 	],
 	'first' => [
 		'en' => 'First',
@@ -2655,6 +2821,10 @@ $_dictionary = array(
 	'booking_notes' => [
 		'en' => 'Quotation notes',
 		'mr' => 'बुकिंग साठी नोट्स',
+	],
+	'booking' => [
+		'en' => 'Booking',
+		'mr' => 'बुकिंग',
 	],
 	'add_booking_notes' => [
 		'en' => 'Add quotation notes',

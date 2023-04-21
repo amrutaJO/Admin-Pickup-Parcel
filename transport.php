@@ -5,7 +5,7 @@
 			<div class="col">
 				<h1 class="page-header-title d-flex align-items-center gap-3">
 					<a href="reports" class="link-dark"><i class="bi-arrow-left-circle-fill align-middle"></i></a>
-					<span>Transport Department</span>
+					<span><?= translate('transport_dpt')?></span>
 				</h1>
 			</div>
             <div class="col-auto">
@@ -33,13 +33,13 @@
 			<thead class="thead-light " align="left">
 				<tr>
 					
-					<th>vehicle name</th>
-					<th>vehicle number</th>
-					<th>modal number</th>
-					<th>Driver name</th>
-					<th>mobile number</th>
-					<th>batch no.</th>
-					
+					<th><?= translate('sr_no')?></th>
+					<th><?= translate('vehicle_name')?></th>
+					<th><?= translate('vehicle_no')?></th>
+					<th><?= translate('modal_no')?></th>
+					<th><?= translate('driver_name')?></th>
+					<th><?= translate('mobile_no')?></th>
+					<th><?= translate('batch_no')?></th>
 				</tr>
 			</thead>
 			<tbody>
