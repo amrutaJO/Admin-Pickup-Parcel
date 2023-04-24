@@ -858,4 +858,75 @@ if (isset($_POST['change_lang'])) {
     <!-- End Navbar Vertical --> <!-- ========== MAIN CONTENT ========== -->
     <main id="content" role="main" class="main">
 
-<!-- modals of dispatch -->
+        <!-- modals of dispatch -->
+        <div class="nav-item">
+            <a class="nav-link dropdown-toggle " href="#Accounts" role="button" data-bs-toggle="collapse"
+                data-bs-target="#Accounts" aria-expanded="false" aria-controls="Accounts">
+                <i class="bi bi-cash-stack nav-icon"></i>
+                <span class="nav-link-title">Accounts Management</span>
+            </a>
+            <div id="Accounts" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
+                <div class="badge bg-light text-secondary">CHART OF ACCOUNTS</div>
+                <a class="nav-link ">
+                    <i class="bi bi-person-lines-fill me-2"></i>
+                    <span class="nav-link-title">Accounting Info</span>
+                </a>
+                <div id="Accounting_info" class="nav-collapse collapse ">
+                    <a class="nav-link " href="">Group / Ledgers</a>
+                    <a class="nav-link " href="">Voucher Types</a>
+                </div>
+                <div class="badge bg-light text-secondary">_</div>
+                <a class="nav-link ">
+                    <i class="bi bi-shop-window me-2"></i>
+                    <span class="nav-link-title">Inventory Info</span>
+                </a>
+                <div id="Inventory_info" class="nav-collapse collapse ">
+                    <a class="nav-link " href="">Stock Groups</a>
+                    <a class="nav-link " href="">Stock Item</a>
+                    <a class="nav-link " href="">Unit of Measure</a>
+                </div>
+                <div class="badge bg-light text-secondary">VOUCHERS</div>
+                <a class="nav-link ">
+                    <i class="bi bi-person-check me-2"></i>
+                    <span class="nav-link-title">Accounting Voucher</span>
+                </a>
+                <div id="Accountig_voucher" class="nav-collapse collapse ">
+                    <a class="nav-link " href="">Contra</a>
+                    <a class="nav-link " href="">Payment</a>
+                    <a class="nav-link " href="">Recipt</a>
+                    <a class="nav-link " href="">Journal</a>
+                    <a class="nav-link " href="">Sales</a>
+                    <a class="nav-link " href="">Sales Return</a>
+                    <a class="nav-link " href="">Purchase</a>
+                    <a class="nav-link " href="">Purchase Return</a>
+                    <a class="nav-link " href="">Credit Note</a>
+                    <a class="nav-link " href="">Debit Note</a>
+                </div>
+                <div class="badge bg-light text-secondary">TRANSACTIONS</div>
+                <a class="nav-link " href="">
+                    <i class="bi bi-calendar2-check nav-icon"></i>
+                    Day Book</a>
+                <a class="nav-link " href="#Inventory_voucher" role="button" data-bs-toggle="collapse"
+                    data-bs-target="#Inventory_voucher" aria-expanded="false" aria-controls="Inventory_voucher">
+                    <i class="bi bi-shop me-2"></i>
+                    <span class="nav-link-title">Inventory Vouchers</span>
+                    <i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <div id="Inventory_voucher" class="nav-collapse collapse ">
+                    <a class="nav-link " href="">Material In</a>
+                    <a class="nav-link " href="">Material Out</a>
+                    <div class="badge bg-light text-secondary">_</div>
+                    <a class="nav-link " href="">Physical Stock</a>
+                    <a class="nav-link " href="">Stock Take</a>
+                    <a class="nav-link " href="">Stock Query</a>
+                </div>
+                <div class="badge bg-light text-secondary">UTILITIES</div>
+                <a class="nav-link " href="">Banking</a>
+                <div class="badge bg-light text-secondary">REPORTS</div>
+                <a class="nav-link " href="">Balance Sheet</a>
+                <a class="nav-link " href="">Profit & Loss A/c</a>
+                <a class="nav-link " href="">Stock Summary</a>
+                <div class="badge bg-light text-secondary">_</div>
+                <a class="nav-link " href="">Display More Reports</a>
+            </div>
+        </div>

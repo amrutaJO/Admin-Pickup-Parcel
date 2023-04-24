@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 (function () {
 	const selectElement = document.querySelector('#emptype');
 	let deptstaff = document.getElementById("deptstaff");
@@ -24,35 +24,36 @@ window.addEventListener("click", function () {
 	}
 });
 
-(function () {
-	const sendselect = document.querySelector('#sendby');
-	let staff = document.getElementById("staff_selection");
-	let department = document.getElementById("department_selection")
-	let farmer = document.getElementById("farmer_selection");
-	console.log(sendselect);
-	sendselect.addEventListener('click', function () {
-		if (sendselect.value == 'staff') {
-			staff.className = "px-sm-4 d-block"
-			department.className = "px-sm-4 d-none"
-			farmer.className = "px-sm-4 d-none"
-		}
-		else if (sendselect.value == 'department') {
-			department.className = "px-sm-4 d-block"
-			staff.className = "px-sm-4 d-none"
-			farmer.className = "px-sm-4 d-none"
-		}
-		else if (sendselect.value == 'farmer') {
-			farmer.className = "px-sm-4 d-block"
-			staff.className = "px-sm-4 d-none"
-			department.className = "px-sm-4 d-none"
-		}
-		else {
-			staff.className = "px-sm-4 d-none"
-			department.className = "px-sm-4 d-none"
-			farmer.className = "px-sm-4 d-none"
-		}
-	});
-})();
+if (document.getElementById("sendby")) {
+	(function () {
+		const sendselect = document.querySelector('#sendby');
+		let staff = document.getElementById("staff_selection");
+		let department = document.getElementById("department_selection")
+		let farmer = document.getElementById("farmer_selection");
+		sendselect.addEventListener('click', function () {
+			if (sendselect.value == 'staff') {
+				staff.className = "px-sm-4 d-block"
+				department.className = "px-sm-4 d-none"
+				farmer.className = "px-sm-4 d-none"
+			}
+			else if (sendselect.value == 'department') {
+				department.className = "px-sm-4 d-block"
+				staff.className = "px-sm-4 d-none"
+				farmer.className = "px-sm-4 d-none"
+			}
+			else if (sendselect.value == 'farmer') {
+				farmer.className = "px-sm-4 d-block"
+				staff.className = "px-sm-4 d-none"
+				department.className = "px-sm-4 d-none"
+			}
+			else {
+				staff.className = "px-sm-4 d-none"
+				department.className = "px-sm-4 d-none"
+				farmer.className = "px-sm-4 d-none"
+			}
+		});
+	})();
+}
 
 // ------------------------------custom js end
 function browserName() {

@@ -569,16 +569,10 @@ if (isset($_POST['change_lang'])) {
 								</div>
 							</div>
 							<div class="nav-item">
-								<a class="nav-link dropdown-toggle " href="#inventory" role="button" data-bs-toggle="collapse" data-bs-target="#inventory" aria-expanded="false" aria-controls="inventory">
+								<a class="nav-link" href="inventory.php">
 									<i class="bi-suit-club nav-icon"></i>
 									<span class="nav-link-title">Inventory</span>
 								</a>
-								<div id="inventory" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
-									<a class="nav-link " href="products.php">Add Product</a>
-									<a class="nav-link " href="">Purchase</a>
-									<a class="nav-link " href="">Supplier</a>
-									<a class="nav-link " href="">Stocktakes</a>
-								</div>
 							</div>
 							<div class="nav-item">
 								<a class="nav-link" href="index.php">
@@ -593,14 +587,10 @@ if (isset($_POST['change_lang'])) {
 								</a>
 							</div>
 							<div class="nav-item">
-								<a class="nav-link dropdown-toggle " href="#Sales" role="button" data-bs-toggle="collapse" data-bs-target="#Sales" aria-expanded="false" aria-controls="Sales">
-									<i class="bi-suit-club nav-icon"></i>
+								<a class="nav-link " href="sales-management.php">
+									<i class="bi-currency-exchange nav-icon"></i>
 									<span class="nav-link-title">Sales Management</span>
 								</a>
-								<div id="Sales" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
-									<a class="nav-link " href="projection.php">Projection Management</a>
-									<a class="nav-link " href="batchassign">Batch Assign / Batch Merge</a>
-								</div>
 							</div>
 							<div class="nav-item">
 								<a class="nav-link" href="sowing.php">
@@ -622,7 +612,7 @@ if (isset($_POST['change_lang'])) {
 							</div>
 							<div class="nav-item">
 								<a class="nav-link" href="transport.php">
-									<i class="bi-flower2 nav-icon"></i>
+									<i class="bi-truck-front nav-icon"></i>
 									<span class="nav-link-title">Transport Department</span>
 								</a>
 							</div>
@@ -634,40 +624,48 @@ if (isset($_POST['change_lang'])) {
 							</div>
 							<div class="nav-item">
 								<a class="nav-link dropdown-toggle " href="#Accounts" role="button" data-bs-toggle="collapse" data-bs-target="#Accounts" aria-expanded="false" aria-controls="Accounts">
-									<i class="bi-suit-club nav-icon"></i>
+									<i class="bi bi-cash-stack nav-icon"></i>
 									<span class="nav-link-title">Accounts Management</span>
 								</a>
 								<div id="Accounts" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
-									<div class="badge bg-light text-secondary">MASTERS</div>
-									<a class="nav-link " href="">Create</a>
-									<a class="nav-link " href="">Alter</a>
-									<a class="nav-link " href="">Chart of Accounts</a>
+									<div class="badge bg-light text-secondary">CHART OF ACCOUNTS</div>
+									<a class="nav-link " href="accounting-info.php">
+										<i class="bi bi-person-lines-fill me-2"></i>
+										<span class="nav-link-title">Accounting Info</span>
+									</a>
+									<div class="badge bg-light text-secondary">_</div>
+									<a class="nav-link " href="inventory-info.php">
+										<i class="bi bi-shop-window me-2"></i>
+										<span class="nav-link-title">Inventory Info</span>
+									</a>
+									<div class="badge bg-light text-secondary">VOUCHERS</div>
+									<a class="nav-link " href="accounting-voucher.php">
+										<i class="bi bi-person-check me-2"></i>
+										<span class="nav-link-title">Accounting Voucher</span>
+									</a>
 									<div class="badge bg-light text-secondary">TRANSACTIONS</div>
-									<a class="nav-link " href="">Vouchers</a>
-									<a class="nav-link " href="">Day Book</a>
+									<a class="nav-link " href="">
+										<i class="bi bi-calendar2-check nav-icon"></i>
+										Day Book</a>
+									<a class="nav-link " href="inventory-voucher.php">
+										<i class="bi bi-shop me-2"></i>
+										<span class="nav-link-title">Inventory Vouchers</span>
+									</a>
 									<div class="badge bg-light text-secondary">UTILITIES</div>
 									<a class="nav-link " href="">Banking</a>
 									<div class="badge bg-light text-secondary">REPORTS</div>
 									<a class="nav-link " href="">Balance Sheet</a>
 									<a class="nav-link " href="">Profit & Loss A/c</a>
 									<a class="nav-link " href="">Stock Summary</a>
-									<a class="nav-link " href="">Ratio Analysis</a>
 									<div class="badge bg-light text-secondary">_</div>
 									<a class="nav-link " href="">Display More Reports</a>
-									<div class="badge bg-light text-secondary">_</div>
-									<a class="nav-link " href="">Quit</a>
 								</div>
 							</div>
 							<div class="nav-item">
-								<a class="nav-link dropdown-toggle " href="#Ledger_manage" role="button" data-bs-toggle="collapse" data-bs-target="#Ledger_manage" aria-expanded="false" aria-controls="Ledger_manage">
+								<a class="nav-link " href="ledger-management.php">
 									<i class="bi-suit-club nav-icon"></i>
 									<span class="nav-link-title">Ledger Management</span>
 								</a>
-								<div id="Ledger_manage" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
-									<a class="nav-link " href="sowing.php">Crop</a>
-									<a class="nav-link " href="">Variety</a>
-									<a class="nav-link " href="">Tray Size</a>
-								</div>
 							</div>
 							<div class="nav-item">
 								<a class="nav-link" href="custumpush.php">
