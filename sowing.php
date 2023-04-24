@@ -5,7 +5,7 @@
 		<div class="row align-items-center">
 			<div class="col">
 				<h1 class="page-header-title">
-					Sowing </h1>
+					<?= translate('sowing')?> </h1>
 			</div>
 			<!-- End Col -->
 			<div class="col-auto">
@@ -49,26 +49,26 @@
 		<table id="data-table" class="table table-bordered table-nowrap table-align-middle">
 			<thead class="thead-light" align="left">
 				<tr>
-					<th>W</th>
-					<th>Sowing date</th>
-					<th>Projected date-ready for sale</th>
-					<th>Crop</th>
-					<th>Variety</th>
-					<th>Batch No.</th>
-					<th>Lot No.</th>
-					<th>Section</th>
-					<th>No. of PKT</th>
-					<th>Unit</th>
-					<th>Average</th>
-					<th>Tray No.</th>
-					<th>Tray size</th>
-					<th>Total tray</th>
-					<th>Gross Total</th>
-					<th>Sowing Type</th>
-					<th>Location</th>
-					<th>Bed No.</th>
-					<th>Germination %</th>
-					<th>Crop type</th>
+					<th><?= translate('sr_no')?></th>
+					<th><?= translate('sowing_date')?></th>
+					<th><?= translate('pr_date-ready-sale')?></th>
+					<th><?= translate('crop')?></th>
+					<th><?= translate('variety')?></th>
+					<th><?= translate('batch_no')?></th>
+					<th><?= translate('lot_no')?></th>
+					<th><?= translate('section')?></th>
+					<th><?= translate('num_pkt')?></th>
+					<th><?= translate('unit')?></th>
+					<th><?= translate('average')?></th>
+					<th><?= translate('tray_num')?></th>
+					<th><?= translate('tray_size')?></th>
+					<th><?= translate('total_tray')?></th>
+					<th><?= translate('gross_total')?></th>
+					<th><?= translate('sowing_type')?></th>
+					<th><?= translate('location')?></th>
+					<th><?= translate('bed_no')?></th>
+					<th><?= translate('germination')?></th>
+					<th><?= translate('crop_type')?></th>
 				</tr>
 			</thead>
 			<tbody>

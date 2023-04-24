@@ -5,7 +5,7 @@
 			<div class="col">
 				<h1 class="page-header-title d-flex align-items-center gap-3">
 					<a href="reports" class="link-dark"><i class="bi-arrow-left-circle-fill align-middle"></i></a>
-					<span>Dispatch Managament</span>
+					<span><?= translate('dispatch_dpt')?></span>
 				</h1>
 			</div>
 			<div class="col-auto">
@@ -32,24 +32,24 @@
 		<table id="data-table" class="table table-bordered table-nowrap table-align-middle">
 			<thead class="thead-light " align="left">
 				<tr>
-					<th>No.</th>
-					<th>Date.</th>
-					<th>Bill No</th>
-					<th>Farmer Name</th>
-					<th>Address</th>
-					<th>Taluka</th>
-					<th>Mobile Number</th>
-					<th>Crop</th>
-					<th>Variety</th>
-					<th>Tray Size</th>
-					<th>Qty</th>
-					<th>Batch No</th>
-					<th>Sale Type</th>
-					<th>Vehicle No</th>
-					<th>Payment Type</th>
-					<th>Remark</th>
-					<th>Extra Tray</th>
-					<th>Loaded Trays</th>
+					<th><?= translate('sr_no')?></th>
+					<th><?= translate('date')?></th>
+					<th><?= translate('bill_no')?></th>
+					<th><?= translate('farmer_name')?></th>
+					<th><?= translate('address')?></th>
+					<th><?= translate('taluka')?></th>
+					<th><?= translate('mobile_no')?></th>
+					<th><?= translate('crop')?></th>
+					<th><?= translate('variety')?></th>
+					<th><?= translate('tray_size')?></th>
+					<th><?= translate('qty')?></th>
+					<th><?= translate('batch_no')?></th>
+					<th><?= translate('sale_type')?></th>
+					<th><?= translate('vehicle_no')?></th>
+					<th><?= translate('payment_type')?></th>
+					<th><?= translate('remark')?></th>
+					<th><?= translate('extra_tray')?></th>
+					<th><?= translate('loaded_tray')?></th>
 				</tr>
 			</thead>
 			<tbody>
