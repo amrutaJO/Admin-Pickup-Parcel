@@ -67,6 +67,15 @@ function addUnitMeasure() {
 	$('#unit-measure-form').trigger('reset');
 	$('#unit-measure-AddModal').modal('show');
 }
+
+function addGroup() {
+	$('#group-form').trigger('reset');
+	$('#groupModal').modal('show');
+}
+function addLedger() {
+	$('#ledger-form').trigger('reset');
+	$('#ledgerModal').modal('show');
+}
 // ------------------------------custom js end
 function browserName() {
 	let browser;

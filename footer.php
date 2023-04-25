@@ -1648,6 +1648,123 @@
 </div>
 
 
+<div class="modal fade" id="groupModal" data-bs-backdrop="static">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Add New Group</h5>
+				<button type="button" class="btn-close"  data-bs-dismiss="modal" ></button>
+			</div>
+			<div class="modal-body py-3">
+				<form action="" class="row g-5 align-items-end" id="group-form">
+					<div class="col-md-6">
+						<label for="" class="form-label">Group Name
+						</label>
+						<input type="text" class="form-control form-control-sm" placeholder="Group Name">
+					</div>
+					<div class="col-md-6">
+						<label for="" class="form-label">Under
+						</label>
+						<select name="" class="form-control form-control-sm">
+							<option selected value="">Select</option>
+							<option value="">Primary</option>
+							<option value="">Secondary</option>
+						</select>
+					</div>
+					
+					<div class="col-md-3">
+						<label for="" class="form-label">Group behaves like a Sub-Ledger
+						</label>
+						<select name="" class="form-control form-control-sm">
+							<option selected value="">Select</option>
+							<option value="">yes</option>
+							<option value="">no</option>
+							
+						</select>
+					</div>
+					<div class="col-md-3">
+						<label for="" class="form-label">Nett Debit/Credit Balances for Reporting
+						</label>
+						<select name="" class="form-control form-control-sm">
+							<option selected value="">Select</option>
+							<option value="">yes</option>
+							<option value="">no</option>	
+						</select>
+					</div>
+					<div class="col-md-3">
+						<label for="" class="form-label">Used for Calculation
+						</label>
+						<select name="" class="form-control form-control-sm">
+							<option selected value="">Select</option>
+							<option value="">yes</option>
+							<option value="">no</option>	
+						</select>
+					</div>
+					<div class="col-md-3">
+						<label for="" class="form-label">Method to Allocate when used in Purchase Invoice
+						</label>
+						<select name="" class="form-control form-control-sm">
+							<option selected value="">Select</option>
+							<option value="">yes</option>
+							<option value="">no</option>	
+						</select>
+					</div>
+				</form>
+			</div>
+
+			<div class="modal-footer pt-0 border-top-0">
+				<button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button type="submit" form="stock-item-form" class="btn btn-sm btn-primary">Save</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="ledgerModal" data-bs-backdrop="static">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Add New Ledger</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body py-3">
+				<form action="" class="row g-5 align-items-end" id="ledger-form">
+					<div class="col-md-4">
+						<label for="" class="form-label"> Name
+						</label>
+						<input type="text" class="form-control form-control-sm" placeholder="Name">
+					</div>
+					<div class="col-md-4">
+						<label for="" class="form-label">Under
+						</label>
+						<select name="" class="form-control form-control-sm">
+							<option selected value="">Select</option>
+							<option value="">Primary</option>
+							<option value="">Secondary</option>
+						</select>
+					</div>
+					
+					<div class="col-md-4">
+						<label for="" class="form-label">Inventory Values are Affected ?
+						</label>
+						<select name="" class="form-control form-control-sm">
+							<option selected value="">Select</option>
+							<option value="">yes</option>
+							<option value="">no</option>
+							
+						</select>
+					</div>
+					<h5>Mailing Details</h5>
+				</form>
+			</div>
+
+			<div class="modal-footer pt-0 border-top-0">
+				<button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button type="submit" form="stock-item-form" class="btn btn-sm btn-primary">Save</button>
+			</div>
+		</div>
+	</div>
+</div>
 
 <script>
 	function Alert(options = {}) {

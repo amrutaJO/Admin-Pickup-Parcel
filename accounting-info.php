@@ -3,17 +3,10 @@
     <!-- Nav tabs -->
     <ul class="nav nav-pills mb-4" id="acount-info-tab" role="tablist">
         <li class="nav-item" role="presentation">
-<<<<<<< HEAD
-            <button class="btn btn-outline-primary active" id="group-ledger-tab" data-bs-toggle="tab" data-bs-target="#group-ledger-content" type="button" role="tab" aria-controls="group-ledger-content" aria-selected="true">Group</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="btn btn-outline-primary active" id="group-ledger-tab" data-bs-toggle="tab" data-bs-target="#group-ledger-content" type="button" role="tab" aria-controls="group-ledger-content" aria-selected="true">Ledgers</button>
-=======
             <button class="btn btn-outline-primary active" id="group-tab" data-bs-toggle="tab" data-bs-target="#group-content" type="button" role="tab" aria-controls="group-content" aria-selected="true">Group</button>
         </li>
         <li class="nav-item" role="presentation">
             <button class="btn btn-outline-primary" id="ledger-tab" data-bs-toggle="tab" data-bs-target="#ledger-content" type="button" role="tab" aria-controls="ledger-content" aria-selected="true">Ledger</button>
->>>>>>> 490440d7fc5189b0042a744a5e2d573d4428c4dc
         </li>
         <li class="nav-item" role="presentation">
             <button class="btn btn-outline-primary" id="voucher-type-tab" data-bs-toggle="tab" data-bs-target="#voucher-type-content" type="button" role="tab" aria-controls="voucher-type-content" aria-selected="false">Voucher Type</button>
@@ -31,9 +24,9 @@
                     </div>
                     <!-- End Col -->
                     <div class="col-auto">
-                        <a class="btn btn-sm btn-primary" href="javascript:void(0)" onclick="addBooking()">
+                        <a class="btn btn-sm btn-primary" href="javascript:void(0)" onclick="addGroup()">
                             <i class="bi-plus-circle me-1"></i>
-                            Add new booking</a>
+                            Add new Group</a>
                     </div>
                     <!-- End Col -->
                 </div>
@@ -58,9 +51,10 @@
                 </div>
             </div>
             <div class="table-responsive">
-                <table id="group-table" class="table table-bordered table-td-3-danger-bold table-nowrap table-align-middle">
+                <table id="group-table" class="table table-bordered table-td-3-danger-bold table-nowrap table-align-middle w-100">
                     <thead class="thead-light " align="left">
                         <tr>
+                            <th>Id</th>
                             <th>Name</th>
                             <th>Under</th>
                             <th>Group behaves like a Sub-Ledger</th>
@@ -83,9 +77,9 @@
                     </div>
                     <!-- End Col -->
                     <div class="col-auto">
-                        <a class="btn btn-sm btn-primary" href="javascript:void(0)" onclick="addBooking()">
+                        <a class="btn btn-sm btn-primary" href="javascript:void(0)" onclick="addLedger()">
                             <i class="bi-plus-circle me-1"></i>
-                            Add new booking</a>
+                            Add new Ledger</a>
                     </div>
                     <!-- End Col -->
                 </div>
@@ -110,18 +104,14 @@
                 </div>
             </div>
             <div class="table-responsive">
-                <table id="ledger-table" class="table table-bordered table-td-3-danger-bold table-nowrap table-align-middle">
+                <table id="ledger-table" class="table table-bordered table-td-3-danger-bold table-nowrap table-align-middle w-100">
                     <thead class="thead-light " align="left">
                         <tr>
-                            <th>Booking No.</th>
-                            <th>Booking date</th>
-                            <th>Booking By.</th>
-                            <th>Delivery date</th>
-                            <th>Farmer Name</th>
-                            <th>Address</th>
-                            <th>Taluka</th>
-                            <th>District</th>
-                            <th>Taluka</th>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Under</th>
+                            <th>Inventory Values are Affected</th>
+                            
                         </tr>
                     </thead>
                     <tbody></tbody>
@@ -167,18 +157,22 @@
                 </div>
             </div>
             <div class="table-responsive">
-                <table id="voucher-type-table" class="table table-bordered table-td-3-danger-bold table-nowrap table-align-middle">
+                <table id="voucher-type-table" class="table table-bordered table-td-3-danger-bold table-nowrap table-align-middle w-100">
                     <thead class="thead-light " align="left">
                         <tr>
-                            <th>Booking No.</th>
-                            <th>Booking date</th>
-                            <th>Booking By.</th>
-                            <th>Delivery date</th>
-                            <th>Farmer Name</th>
-                            <th>Address</th>
-                            <th>Taluka</th>
-                            <th>District</th>
-                            <th>Taluka</th>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Type of Voucher</th>
+                            <th>Abbr</th>
+                            <th>Method of Voucher Numbering</th>
+                            <th>Use Advance Configuration</th>
+                            <th>Use EFFECTIVE dates for Vouchers</th>
+                            <th>Make Optional as default</th>
+                            <th>Use Common narations</th>
+                            <th>Narations for each entry</th>
+                            <th>Enable defult accounting entries</th>
+                            <th>Set/Alter default accounting entries</th>
+                            <th>Print after saving voucher</th>
                         </tr>
                     </thead>
                     <tbody></tbody>
