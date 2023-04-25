@@ -55,6 +55,18 @@ if (document.getElementById("sendby")) {
 	})();
 }
 
+function addStockItem() {
+	$('#stock-item-form').trigger('reset');
+	$('#stock-item-AddModal').modal('show');
+}
+function addStockGroup() {
+	$('#stock-group-form').trigger('reset');
+	$('#stock-group-AddModal').modal('show');
+}
+function addUnitMeasure() {
+	$('#unit-measure-form').trigger('reset');
+	$('#unit-measure-AddModal').modal('show');
+}
 // ------------------------------custom js end
 function browserName() {
 	let browser;
@@ -564,6 +576,7 @@ function addSupplier() {
 	resetSupplierForm();
 	$('#supplierAddModal').modal('show');
 }
+
 function resetSupplierForm() {
 	$('#supplierAddModalLabel').text(translate('add_new_supplier'));
 	$('#supplier-form-action').attr('name', 'add_supplier');
@@ -1037,6 +1050,7 @@ function addBooking() {
 	$('.booking-product:not(:first-child)', parent).remove();
 	parent.modal('show');
 }
+
 function addDispatch() {
 	const parent = $('#dispatchAddModal')
 	$('#dispatch-form', parent).trigger('reset');

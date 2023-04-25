@@ -1472,7 +1472,7 @@
 </div>
 
 <!-- custom modal -->
-<div class="modal fade" id="dispatchAddModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="dispatchAddModalLabel" aria-hidden="true">
+<div class="modal fade" id="dispatchAddModal" data-bs-backdrop="static" data-bs-keyboard="false">
 	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
 		<div class="modal-content border shadow">
 			<div class="modal-header">
@@ -1524,6 +1524,129 @@
 		</div>
 	</div>
 </div>
+<div class="modal fade" id="stock-group-AddModal" data-bs-backdrop="static">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Add New Stock Group</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body py-3">
+				<form action="" class="row g-3 align-items-end" id="stock-group-form">
+					<div class="col-12">
+						<label for="" class="form-label">Stock Group Name
+						</label>
+						<input type="text" class="form-control form-control-sm" placeholder="Stock group Name">
+					</div>
+					<div class="col-md-6 ">
+						<label for="" class="form-label">Can Quantities of Items be Added ?
+						</label>
+						<select name="" class="form-control form-control-sm">
+							<option selected value="">Select</option>
+							<option value="">Yes</option>
+							<option value="">No</option>
+						</select>
+					</div>
+					<div class="col-md-6 ">
+						<label for="" class="form-label">Stock Group Under
+						</label>
+						<select name="" class="form-control form-control-sm">
+							<option selected value="">Select</option>
+						</select>
+					</div>
+				</form>
+			</div>
+
+			<div class="modal-footer pt-0 border-top-0">
+				<button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button type="submit" form="stock-group-form" class="btn btn-sm btn-primary">Save</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="stock-item-AddModal" data-bs-backdrop="static">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Add New Stock Item</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body py-3">
+				<form action="" class="row g-3 align-items-end" id="stock-item-form">
+					<div class="col-md-4">
+						<label for="" class="form-label">Stock Item Name
+						</label>
+						<input type="text" class="form-control form-control-sm" placeholder="Stock item Name">
+					</div>
+					<div class="col-md-4 ">
+						<label for="" class="form-label">Under
+						</label>
+						<select name="" class="form-control form-control-sm">
+							<option selected value="">Select</option>
+							<option value="">Primary</option>
+							<option value="">Secondary</option>
+						</select>
+					</div>
+					<div class="col-md-4 ">
+						<label for="" class="form-label">Units
+						</label>
+						<select name="" class="form-control form-control-sm">
+							<option selected value="">Not Applicable</option>
+							<option value="">nos</option>
+							<option value="">kilogram</option>
+						</select>
+					</div>
+					<h5>Opening Balance</h5>
+					<div class="col-md-4">
+						<label for="" class="form-label">Quantity
+						</label>
+						<input type="number" class="form-control form-control-sm" placeholder="0.00">
+					</div>
+					<div class="col-md-4">
+						<label for="" class="form-label">Rate Per
+						</label>
+						<input type="number" class="form-control form-control-sm" placeholder="0.00">
+					</div>
+					<div class="col-md-4">
+						<label for="" class="form-label">Value
+						</label>
+						<input readonly type="number" class="form-control form-control-sm" placeholder="0.00">
+					</div>
+				</form>
+			</div>
+
+			<div class="modal-footer pt-0 border-top-0">
+				<button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button type="submit" form="stock-item-form" class="btn btn-sm btn-primary">Save</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="unit-measure-AddModal" data-bs-backdrop="static">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Add New Stock Group</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body py-3">
+				<form action="" class="row g-3 align-items-end" id="unit-measure-form">
+					<div class="col-md-6">
+						<label for="" class="form-label">Unit Name
+						</label>
+						<input type="text" class="form-control form-control-sm">
+					</div>
+				</form>
+			</div>
+
+			<div class="modal-footer pt-0 border-top-0">
+				<button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button type="submit" form="unit-measure-form" class="btn btn-sm btn-primary">Save</button>
+			</div>
+		</div>
+	</div>
+</div>
+
 
 
 <script>

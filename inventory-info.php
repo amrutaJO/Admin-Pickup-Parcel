@@ -25,9 +25,9 @@
                     </div>
                     <!-- End Col -->
                     <div class="col-auto">
-                        <a class="btn btn-sm btn-primary" href="javascript:void(0)" onclick="addBooking()">
+                        <a class="btn btn-sm btn-primary" href="javascript:void(0)" onclick="addStockGroup()">
                             <i class="bi-plus-circle me-1"></i>
-                            Stock Item</a>
+                           Add Stock Group</a>
                     </div>
                     <!-- End Col -->
                 </div>
@@ -55,15 +55,10 @@
                 <table id="stock-group-table" class="table table-bordered table-td-3-danger-bold table-nowrap table-align-middle">
                     <thead class="thead-light " align="left">
                         <tr>
-                            <th>Booking No.</th>
-                            <th>Booking date</th>
-                            <th>Booking By.</th>
-                            <th>Delivery date</th>
-                            <th>Farmer Name</th>
-                            <th>Address</th>
-                            <th>Taluka</th>
-                            <th>District</th>
-                            <th>Taluka</th>
+                            <th>ID</th>
+                            <th>Stock Group Name</th>
+                            <th>Can Quantities of Items be Added ?</th>
+                            <th>Under</th>
                         </tr>
                     </thead>
                     <tbody></tbody>
@@ -82,9 +77,9 @@
                     </div>
                     <!-- End Col -->
                     <div class="col-auto">
-                        <a class="btn btn-sm btn-primary" href="javascript:void(0)" onclick="addBooking()">
+                        <a class="btn btn-sm btn-primary" href="javascript:void(0)" onclick="addStockItem()">
                             <i class="bi-plus-circle me-1"></i>
-                            Add new booking</a>
+                            Add Stock Item</a>
                     </div>
                     <!-- End Col -->
                 </div>
@@ -109,18 +104,16 @@
                 </div>
             </div>
             <div class="table-responsive">
-                <table id="stock-item-table" class="table table-bordered table-td-3-danger-bold table-nowrap table-align-middle">
+                <table id="stock-item-table" class="table table-bordered table-td-3-danger-bold table-nowrap table-align-middle w-100">
                     <thead class="thead-light " align="left">
                         <tr>
-                            <th>Booking No.</th>
-                            <th>Booking date</th>
-                            <th>Booking By.</th>
-                            <th>Delivery date</th>
-                            <th>Farmer Name</th>
-                            <th>Address</th>
-                            <th>Taluka</th>
-                            <th>District</th>
-                            <th>Taluka</th>
+                            <th>Id.</th>
+                            <th>Stock Item Name</th>
+                            <th>Under.</th>
+                            <th>Units</th>
+                            <th>Quantiy</th>
+                            <th>Rate Per</th>
+                            <th>Value</th>
                         </tr>
                     </thead>
                     <tbody></tbody>
@@ -139,9 +132,9 @@
                     </div>
                     <!-- End Col -->
                     <div class="col-auto">
-                        <a class="btn btn-sm btn-primary" href="javascript:void(0)" onclick="addBooking()">
+                        <a class="btn btn-sm btn-primary" href="javascript:void(0)" onclick="addUnitMeasure()">
                             <i class="bi-plus-circle me-1"></i>
-                            Add new booking</a>
+                            Add Unit of Measure</a>
                     </div>
                     <!-- End Col -->
                 </div>
@@ -166,18 +159,12 @@
                 </div>
             </div>
             <div class="table-responsive">
-                <table id="unit-measure-table" class="table table-bordered table-td-3-danger-bold table-nowrap table-align-middle">
+                <table id="unit-measure-table" class="table table-bordered table-td-3-danger-bold table-nowrap table-align-middle w-100">
                     <thead class="thead-light " align="left">
                         <tr>
-                            <th>Booking No.</th>
-                            <th>Booking date</th>
-                            <th>Booking By.</th>
-                            <th>Delivery date</th>
-                            <th>Farmer Name</th>
-                            <th>Address</th>
-                            <th>Taluka</th>
-                            <th>District</th>
-                            <th>Taluka</th>
+                            <th class="w-10">Id.</th>
+                            <th class="w-10">Alter</th>
+                            <th>Unit Name</th>
                         </tr>
                     </thead>
                     <tbody></tbody>
