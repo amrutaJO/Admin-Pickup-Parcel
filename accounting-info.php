@@ -3,7 +3,10 @@
     <!-- Nav tabs -->
     <ul class="nav nav-pills mb-4" id="acount-info-tab" role="tablist">
         <li class="nav-item" role="presentation">
-            <button class="btn btn-outline-primary active" id="group-ledger-tab" data-bs-toggle="tab" data-bs-target="#group-ledger-content" type="button" role="tab" aria-controls="group-ledger-content" aria-selected="true">Group / Ledger</button>
+            <button class="btn btn-outline-primary active" id="group-ledger-tab" data-bs-toggle="tab" data-bs-target="#group-ledger-content" type="button" role="tab" aria-controls="group-ledger-content" aria-selected="true">Group</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="btn btn-outline-primary active" id="group-ledger-tab" data-bs-toggle="tab" data-bs-target="#group-ledger-content" type="button" role="tab" aria-controls="group-ledger-content" aria-selected="true">Ledgers</button>
         </li>
         <li class="nav-item" role="presentation">
             <button class="btn btn-outline-primary" id="voucher-type-tab" data-bs-toggle="tab" data-bs-target="#voucher-type-content" type="button" role="tab" aria-controls="voucher-type-content" aria-selected="false">Voucher Type</button>
