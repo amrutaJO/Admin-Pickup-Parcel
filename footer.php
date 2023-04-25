@@ -1623,7 +1623,7 @@
 	</div>
 </div>
 <div class="modal fade" id="unit-measure-AddModal" data-bs-backdrop="static">
-	<div class="modal-dialog modal-sm">
+	<div class="modal-dialog modal-sm modal-dialog-centered">
 		<div class="modal-content">
 			<div class="modal-header">
 				<h5 class="modal-title">Add New Stock Group</h5>
@@ -1631,7 +1631,7 @@
 			</div>
 			<div class="modal-body py-3">
 				<form action="" class="row g-3 align-items-end" id="unit-measure-form">
-					<div class="col-md-6">
+					<div class="col-12">
 						<label for="" class="form-label">Unit Name
 						</label>
 						<input type="text" class="form-control form-control-sm">
