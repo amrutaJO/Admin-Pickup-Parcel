@@ -5,69 +5,83 @@
 		<div class="row align-items-center">
 			<div class="col">
 				<h1 class="page-header-title">
-					<?= translate('users') ?>
+					<?= translate('ride_requests') ?>
 				</h1>
 			</div>
 			<!-- End Col -->
+
+			<!-- <div class="col-auto">
+				<a class="btn btn-sm btn-primary" href="javascript:void(0)" onclick="addCustomer()">
+					<i class="bi-plus-circle me-1"></i>
+					<?= translate('Add New') ?> </a>
+			</div> -->
 
 			<!-- End Col -->
 		</div>
 		<!-- End Row -->
 	</div>
 	<!-- End Page Header -->
-	<div class="employees-table-filters">
+	<div class="data-table-filters">
 		<div class="row g-3">
 			<div class="col-12 col-md-3">
 				<div class="input-group input-group-sm">
 					<div class="input-group-text">
 						<i class="bi-search"></i>
 					</div>
-					<input type="search" class="form-control employees-table-search"
-						placeholder="<?= translate('search_here') ?>">
+					<input type="search" class="form-control customer-table-search" placeholder="<?= translate('search_here') ?>">
 				</div>
 			</div>
 			<div class="col-12 col-md-6 offset-md-3">
 				<div class="d-flex align-items-center gap-2">
-					<span class="ms-md-auto"><?= translate('user_role') ?></span>
-					<div>
-						<select class="form-select form-select-sm"
-							onchange="employeeListTable.column(4).search(this.value).draw()">
-							<option value="" selected><?= translate('all') ?></option>
-							<option value="Male"><?= translate('users') ?></option>
-							<option value="Female"><?= translate('admin') ?></option>
-							<option value="Other"><?= translate('partners') ?></option>
-						</select>
-					</div>
-					<div class="export-buttons"></div>
+					<div class="export-buttons ms-md-auto"></div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+
+	
 	<div class="table-responsive">
 		<table id="data-table" class="table table-bordered table-nowrap table-align-middle">
 			<thead class="thead-light" align="left">
-				<tr>
-					<th><?= translate('sr_no') ?></th>
-					<th><?= translate('id') ?></th>
+                <tr>
+                    <th><?= translate('sr_no') ?></th>
+                    <th><?= translate('transaction_id') ?></th>
 					<th><?= translate('user_name') ?></th>
-					<th><?= translate('user_role') ?></th>
-					<th><?= translate('mobile_number') ?></th>
-					<th><?= translate('email') ?></th>
+					<th><?= translate('pickup_address') ?></th>
+					<th><?= translate('drop_address') ?></th>
+					<th><?= translate('request_time') ?></th>
+					<th><?= translate('request_type') ?></th>
+					<th><?= translate('status') ?></th>
 				</tr>
 			</thead>
 			<tbody>
+
 				<tr>
-					<td>1</td>
-					<td>001</td>
-					<td>Shashikant Shirsath</td>
-					<td>user</td>
-					<td>9356234575</td>
-					<td>abc@gmail.com</td>
+					<td>01</td>
+					<td>ABCX3423E</td>
+					<td>Manish9322</td>
+					<td>Govind Nagar, Nashik</td>
+					<td>Ruchita Nagar, Nashik</td>
+					<td>12.05pm</td>
+					<td>Recent</td>
+					<td>Pending</td>
 				</tr>
+				<tr>
+					<td>02</td>
+					<td>DEFZ3423F</td>
+					<td>Rahul8979</td>
+					<td>Govind Nagar, Nashik</td>
+					<td>Ruchita Nagar, Nashik</td>
+					<td>11.45pm</td>
+					<td>History</td>
+					<td>Pending</td>
+				</tr>
+
 			</tbody>
 		</table>
 	</div>
-	<div class="employees-table-footer"></div>
+	<div class="customer-table-footer"></div>
 </div>
 <!-- End Content -->
 <?php require_once __DIR__ . '/footer.php' ?>
@@ -88,7 +102,7 @@
 		initComplete: function (settings, json) {
 			$('.dataTables_filter').hide();
 			$('.data-table-footer').append($('#data-table_wrapper .row:last-child()')).find('.previous').addClass('ms-md-auto');
-			$('.dataTables_info').before($('.dataTables_length').find('label').attr('class', 'd-inline-flex text-nowrap mb-1 align-items-center gap-2'));
+			$('.dataTables_info').before($('.dataTables_length').find('label').attr('class', 'd-inline-flex text-nowrap align-items-center gap-2'));
 			$('.data-table-search').on('input', function () {
 				sowingListTable.search(this.value).draw();
 			});

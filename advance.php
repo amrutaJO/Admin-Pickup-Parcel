@@ -40,7 +40,7 @@
 			<thead class="thead-light" align="left">
 				<tr>
 					<th>Given date</th>
-					<th>Employee name</th>
+					<th>Partner name</th>
 					<th>Given amount</th>
 					<th>Taken for what</th>
 					<!-- <th>Advance amount deducted</th> -->

@@ -28,7 +28,7 @@
 						<tr>
 							<th rowspan="2" class="fs-5">Sr.No.</th>
 							<th rowspan="2" class="text-start fs-5">
-								Employee name							</th>
+								Partner name							</th>
 														<th colspan="3" class="">
 								<div class="fs-5">
 									Monday								</div>

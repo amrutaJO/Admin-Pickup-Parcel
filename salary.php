@@ -23,7 +23,7 @@
 				<thead class="thead-light" align="center">
 					<tr>
 						<th>Sr.No.</th>
-						<th class="text-start">Employee name</th>
+						<th class="text-start">Partner name</th>
 																		<th>01</th>
 																								<th>02</th>
 																								<th>03</th>

@@ -1,77 +1,49 @@
 <?php require_once __DIR__ . "/header.php" ?>
 <div class="content container-fluid">
-	<!-- Page Header -->
 	<div class="page-header">
 		<div class="row align-items-center">
 			<div class="col">
-				<h1 class="page-header-title">
-					<?= translate('view_users') ?>
+				<h1 class="page-header-title d-flex align-items-center gap-3">
+					<!-- <a href="reports" class="link-dark"><i class="bi-arrow-left-circle-fill align-middle"></i></a> -->
+					<span> <?= translate('add_document_type')  ?> </span>
 				</h1>
 			</div>
-			<!-- End Col -->
-
-			<!-- <div class="col-auto">
-				<a class="btn btn-sm btn-primary" href="javascript:void(0)" onclick="addCustomer()">
-					<i class="bi-plus-circle me-1"></i>
-					<?= translate('Add New') ?> </a>
-			</div> -->
-
-			<!-- End Col -->
-		</div>
-		<!-- End Row -->
-	</div>
-	<!-- End Page Header -->
-	<div class="data-table-filters">
-		<div class="row g-3">
-			<div class="col-12 col-md-3">
-				<div class="input-group input-group-sm">
-					<div class="input-group-text">
-						<i class="bi-search"></i>
-					</div>
-					<input type="search" class="form-control customer-table-search" placeholder="Search here">
-				</div>
-			</div>
-			<div class="col-12 col-md-6 offset-md-3">
-				<div class="d-flex align-items-center gap-2">
-					<div class="export-buttons ms-md-auto"></div>
-				</div>
+			<div class="col-auto">
+				<a class="btn btn-sm btn-primary" href="view-document-type.php">
+					<i class="bi-card-list me-1"></i>
+					<?= translate('see_document_types') ?> </a>
 			</div>
 		</div>
 	</div>
 
+	<form class="row g-3" id="user-form">
+		<div class="col-12 col-md-6">
 
-	
-	<div class="table-responsive">
-		<table id="data-table" class="table table-bordered table-nowrap table-align-middle">
-			<thead class="thead-light" align="left">
-				<tr>
-					<th><?= translate('sr_no') ?></th>
-					<th><?= translate('user_name') ?></th>
-					<th><?= translate('mobile_no') ?></th>
-					<th><?= translate('email_id') ?></th>
-					<th><?= translate('gender') ?></th>
-					<th><?= translate('address') ?></th>
-				</tr>
-			</thead>
-			<tbody>
+			<label for="" class="form-label"> <?= translate('name') ?> </label>
+			<input type="text" class="form-control form-control-sm" placeholder="<?= translate('name') ?>" required>
 
-				<tr>
-					<td>01</td>
-					<td>Manish9322</td>
-					<td>9322897948</td>
-					<td>manishsonawane3010@gmail.com</td>
-					<td>Male</td>
-					<td>Navi Mumbai, Maharashtra</td>
-				</tr>
+		</div>
+		<div class="col-12 col-md-6">
 
-			</tbody>
-		</table>
-	</div>
-	<div class="customer-table-footer"></div>
+			<label for="formFileMultiple" class="form-label"> <?= translate('upload_preview_image') ?> </label>
+            <input class="form-control form-control-sm" type="file" id="formFileMultiple" multiple required>
+
+		</div>
+		<div class="col-12 col-md-6">
+
+			<label for="" class="form-label"> <?= translate('description') ?> </label>
+            <textarea class="form-control form-control-sm" placeholder="<?= translate('description') ?>" id="floatingTextarea2" style="height: 100px" required></textarea>
+			
+		</div>
+
+        <div class="modal-footer pt-0 border-top-0">
+            <button type="reset" form="user-form" class="btn btn-sm btn-secondary"> <?= translate('reset') ?></button>
+            <button type="submit" form="user-form" class="btn btn-sm btn-primary ms-2"> <?= translate('save') ?> </button>
+        </div>
+
+	</form>
 </div>
-<!-- End Content -->
 <?php require_once __DIR__ . '/footer.php' ?>
-
 
 <script>
 	let sowingListTable = false;

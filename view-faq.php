@@ -5,13 +5,8 @@
 			<div class="col">
 				<h1 class="page-header-title d-flex align-items-center gap-3">
 					<!-- <a href="reports" class="link-dark"><i class="bi-arrow-left-circle-fill align-middle"></i></a> -->
-					<span><?= translate('Vehicle management')?></span>
+					<span><?= translate('view_faqs') ?></span>
 				</h1>
-			</div>
-            <div class="col-auto">
-				<a class="btn btn-sm btn-primary" href="javascript:void(0)" onclick="addTransport()">
-					<i class="bi-plus-circle me-1"></i>
-					Add New </a>
 			</div>
 		</div>
 	</div>
@@ -22,28 +17,25 @@
 					<div class="input-group-text">
 					  <i class="bi-search"></i>
 					</div>
-					<input type="search" class="form-control reports-table-search" placeholder="Search here">
+					<input type="search" class="form-control reports-table-search" placeholder="<?= translate('search_here') ?>">
 				</div>
 			</div>
-			
 		</div>
 	</div>
 	<div class="table-responsive">
 		<table id="data-table" class="table table-bordered table-nowrap table-align-middle">
 			<thead class="thead-light " align="left">
-				<tr>
-					
-					<th><?= translate('sr_no')?></th>
-					<th><?= translate('vehicle_name')?></th>
-					<th><?= translate('vehicle_no')?></th>
-					<th><?= translate('modal_no')?></th>
-					<th><?= translate('driver_name')?></th>
-					<th><?= translate('mobile_no')?></th>
-					<!-- <th><?= translate('batch_no')?></th> -->
+				<tr>	
+                <th><?php echo translate('s_no'); ?></th>
+                <th><?php echo translate('main_topic'); ?></th>
+                <th><?php echo translate('sub_topic'); ?></th>
+                <th><?php echo translate('question'); ?></th>
+                <th><?php echo translate('answer'); ?></th>
+                <th><?php echo translate('action'); ?></th>
+            </tr>
 				</tr>
 			</thead>
 			<tbody>
-              
             </tbody>
 		</table>
 	</div>
@@ -66,7 +58,7 @@
 		initComplete: function(settings, json) {
 			$('.dataTables_filter').hide();
 			$('.data-table-footer').append($('#data-table_wrapper .row:last-child()')).find('.previous').addClass('ms-md-auto');
-			$('.dataTables_info').before($('.dataTables_length').find('label').attr('class', 'd-inline-flex text-nowrap align-items-center gap-2'));
+			$('.dataTables_info').before($('.dataTables_length').find('label').attr('class', 'd-inline-flex text-nowrap mb-1 align-items-center gap-2'));
 			$('.data-table-search').on('input', function() {
 				sowingListTable.search(this.value).draw();
 			});
@@ -79,23 +71,23 @@
 			className: 'btn-sm btn-outline-primary',
 			buttons: [{
 					extend: 'copy',
-					text: '<i class="bi-clipboard2-check dropdown-item-icon"></i> Copy'
+					text: '<i class="bi-clipboard2-check dropdown-item-icon"></i> <?= translate('copy') ?>'
 				},
 				{
 					extend: 'excel',
-					text: '<i class="bi-filetype-xlsx dropdown-item-icon"></i> Excel'
+					text: '<i class="bi-filetype-xlsx dropdown-item-icon"></i> <?= translate('excel') ?>'
 				},
 				{
 					extend: 'csv',
-					text: '<i class="bi-filetype-csv dropdown-item-icon"></i> CSV'
+					text: '<i class="bi-filetype-csv dropdown-item-icon"></i> <?= translate('csv') ?>'
 				},
 				{
 					extend: 'pdf',
-					text: '<i class="bi-filetype-pdf dropdown-item-icon"></i> PDF'
+					text: '<i class="bi-filetype-pdf dropdown-item-icon"></i> <?= translate('pdf') ?>'
 				},
 				{
 					extend: 'print',
-					text: '<i class="bi-printer dropdown-item-icon"></i> Print'
+					text: '<i class="bi-printer dropdown-item-icon"></i> <?= translate('print') ?>'
 				}
 			]
 		}],

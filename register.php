@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-    <title>Register | Nursery Solution</title>
+    <title>Register | Paarsh Infotech</title>
   <!-- Favicon -->
   <link rel="shortcut icon" href="favicon.ico">
 

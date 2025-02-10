@@ -1,8 +1,8 @@
 <?php
 $_dictionary = array(
 	'title' => [
-		'en' => 'Nursery Solution',
-		'mr' => 'नर्सरी सोल्युशन',
+		'en' => 'Pickup and Parcel',
+		'mr' => 'पिकअप अँड पार्सल',
 	],
 	'paarsh' => [
 		'en' => 'Paarsh Infotech Pvt. Ltd.',
@@ -29,7 +29,7 @@ $_dictionary = array(
 		'mr' => 'तुमचे नाव',
 	],
 	'enter_fname' => [
-		'en' => 'Please enter your first name.',
+		'en' => 'Please enter your first name',
 		'mr' => 'कृपया तुमचे नाव प्रविष्ट करा',
 	],
 	'lname' => [
@@ -37,7 +37,7 @@ $_dictionary = array(
 		'mr' => 'तुमचे आडनाव',
 	],
 	'enter_lname' => [
-		'en' => 'Please enter your last name.',
+		'en' => 'Please enter your last name',
 		'mr' => 'कृपया तुमचे आडनाव प्रविष्ट करा',
 	],
 	'mobile' => [
@@ -101,15 +101,15 @@ $_dictionary = array(
 		'mr' => 'तुमचा मोबाईल नंबर',
 	],
 	'invalid_mobile' => [
-		'en' => 'Please enter a valid mobile number.',
+		'en' => 'Please enter a valid mobile number',
 		'mr' => 'कृपया वैध मोबाईल नंबर प्रविष्ट करा',
 	],
 	'enter_n_digits' => [
-		'en' => 'Please enter at least %s digits.',
+		'en' => 'Please enter at least %s digits',
 		'mr' => 'कृपया किमान %s अंक प्रविष्ट करा.',
 	],
 	'enter_n_characters' => [
-		'en' => 'Please enter at least %s characters.',
+		'en' => 'Please enter at least %s characters',
 		'mr' => 'कृपया किमान %s वर्ण प्रविष्ट करा.',
 	],
 	'your_email' => [
@@ -117,7 +117,7 @@ $_dictionary = array(
 		'mr' => 'तुमचा इमेल',
 	],
 	'invalid_email' => [
-		'en' => 'Please enter a valid email address.',
+		'en' => 'Please enter a valid email address',
 		'mr' => 'कृपया वैध इमेल प्रविष्ट करा',
 	],
 	'user_with_email_exist' => [
@@ -137,7 +137,7 @@ $_dictionary = array(
 		'mr' => 'पासवर्ड रीसेट',
 	],
 	'reset_password_text' => [
-		'en' => "Enter the email address you used when you joined and we'll send you instructions to reset your password.",
+		'en' => "Enter the email address you used when you joined and we'll send you instructions to reset your password",
 		'mr' => 'रजिस्टर झाल्यावर तुम्ही वापरलेला ईमेल पत्ता प्रविष्ट करा आणि मग आम्ही तुम्हाला तुमचा पासवर्ड रीसेट करण्यासाठी सूचना पाठवू.',
 	],
 	'password' => [
@@ -173,15 +173,15 @@ $_dictionary = array(
 		'mr' => 'तुमच्या खात्यासाठी नवीन पासवर्ड तयार करा',
 	],
 	'enter_mobile_email' => [
-		'en' => 'Please enter mobile number or email address.',
+		'en' => 'Please enter mobile number or email address',
 		'mr' => 'कृपया मोबाईल किंवा इमेल प्रविष्ट करा',
 	],
 	'enter_mobile' => [
-		'en' => 'Please enter mobile number.',
+		'en' => 'Please enter mobile number',
 		'mr' => 'कृपया मोबाईल नंबर प्रविष्ट करा',
 	],
 	'enter_email' => [
-		'en' => 'Please enter email address.',
+		'en' => 'Please enter email address',
 		'mr' => 'कृपया इमेल प्रविष्ट करा',
 	],
 	'mobile_email_no_empty' => [
@@ -189,19 +189,19 @@ $_dictionary = array(
 		'mr' => 'मोबाईल नंबर किंवा ईमेल रिक्त असू शकत नाही',
 	],
 	'enter_password' => [
-		'en' => 'Please enter password.',
+		'en' => 'Please enter password',
 		'mr' => 'कृपया पासवर्ड प्रविष्ट करा',
 	],
 	'invalid_password' => [
-		'en' => 'Please enter a valid password.',
+		'en' => 'Please enter a valid password',
 		'mr' => 'कृपया वैध पासवर्ड प्रविष्ट करा',
 	],
 	'invalid_password_retry' => [
-		'en' => 'Your password is invalid. Please try again.',
+		'en' => 'Your password is invalid. Please try again',
 		'mr' => 'तुमचा पासवर्ड अवैध आहे. कृपया पुन्हा प्रयत्न करा.',
 	],
 	'password_cpassword_not_matched' => [
-		'en' => 'Password does not match the confirm password.',
+		'en' => 'Password does not match the confirm password',
 		'mr' => 'कन्फर्म पासवर्ड आणि पासवर्ड जुळत नाही.',
 	],
 	'old_password_not_matched' => [
@@ -576,6 +576,13 @@ $_dictionary = array(
 		'en' => 'Taken for what',
 		'mr' => 'कशासाठी घेतले',
 	],
+
+	'day' => [
+		'en' => 'Day',
+		'mr' => 'दिवस',
+	],
+
+
 	'per_day_salary' => [
 		'en' => 'Per day salary',
 		'mr' => 'प्रतिदिन पगार',
@@ -860,6 +867,12 @@ $_dictionary = array(
 		'mr' => 'सुरुवातीचा स्टॉक',
 	],
 	// User
+
+	'view_users' => [
+    'en' => 'View Users',
+    'mr' => 'वापरकर्ता पहा',
+],
+
 	'user' => [
 		'en' => 'User',
 		'mr' => 'वापरकर्ता',
@@ -886,7 +899,7 @@ $_dictionary = array(
 		'mr' => 'वापरकर्ता भूमिका',
 	],
 	'add_new_user' => [
-		'en' => 'Add new user',
+		'en' => 'Add New User',
 		'mr' => 'नवीन वापरकर्ता जोडा',
 	],
 	'edit_user' => [
@@ -909,6 +922,119 @@ $_dictionary = array(
 		'en' => 'Unable to delete this user',
 		'mr' => 'हा वापरकर्ता हटविण्यात अक्षम',
 	],
+
+	'add_user' => [
+    'en' => 'Add User',
+    'mr' => 'वापरकर्ता जोडा',
+],
+
+'mobile_number' => [
+    'en' => 'Mobile Number',
+    'mr' => 'मोबाईल क्रमांक',
+],
+
+'male' => [
+    'en' => 'Male',
+    'mr' => 'पुरुष',
+],
+'female' => [
+    'en' => 'Female',
+    'mr' => 'स्त्री',
+],
+'other' => [
+    'en' => 'Other',
+    'mr' => 'इतर',
+],
+'dont_want_to_share' => [
+    'en' => "Don't Want To Share",
+    'mr' => 'सांगू इच्छित नाही',
+],
+'address' => [
+    'en' => 'Address',
+    'mr' => 'पत्ता',
+],
+'city' => [
+    'en' => 'City',
+    'mr' => 'शहर',
+],
+'state' => [
+    'en' => 'State',
+    'mr' => 'राज्य',
+],
+'nashik' => [
+    'en' => 'Nashik',
+    'mr' => 'नाशिक',
+],
+'mumbai' => [
+    'en' => 'Mumbai',
+    'mr' => 'मुंबई',
+],
+'pune' => [
+    'en' => 'Pune',
+    'mr' => 'पुणे',
+],
+'maharashtra' => [
+    'en' => 'Maharashtra',
+    'mr' => 'महाराष्ट्र',
+],
+'gujarat' => [
+    'en' => 'Gujarat',
+    'mr' => 'गुजरात',
+],
+'karnataka' => [
+    'en' => 'Karnataka',
+    'mr' => 'कर्नाटक',
+],
+'reset' => [
+    'en' => 'Reset',
+    'mr' => 'रीसेट',
+],
+'save' => [
+    'en' => 'Save',
+    'mr' => 'साठवा',
+],
+
+
+// Vehicle master
+
+
+'add_vehicle_master' => [
+    'en' => 'Add Vehicle Master',
+    'mr' => 'वाहन मास्टर जोडा',
+],
+
+'view_vehicle_master' => [
+    'en' => 'View Vehicle Master',
+    'mr' => 'वाहन मास्टर पहा',
+],
+
+'manufacturer_name' => [
+    'en' => 'Manufacturer Name',
+    'mr' => 'निर्मात्याचे नाव',
+],
+
+'vehicle_color' => [
+    'en' => 'Vehicle Color',
+    'mr' => 'वाहनाचा रंग',
+],
+
+'model_name' => [
+    'en' => 'Model Name',
+    'mr' => 'मॉडेल नाव',
+],
+
+'manufacturing_year' => [
+    'en' => 'Manufacturing Year',
+    'mr' => 'निर्मिती वर्ष',
+],
+
+'seat_arrangement' => [
+    'en' => 'Seat Arrangement',
+    'mr' => 'आसन व्यवस्था',
+],
+
+
+
 	// Subscription
 	'package' => [
 		'en' => 'Package',
@@ -1490,10 +1616,23 @@ $_dictionary = array(
 		'en' => 'Vehicle No.',
 		'mr' => 'वाहन नं',
 	],
-	'modal_no' => [
-		'en' => 'Modal No.',
-		'mr' => 'मॉडल नं',
+	'vehicle_model_no' => [
+		'en' => 'Vehicle Modal No.',
+		'mr' => 'वाहनाचा मॉडल नं',
 	],
+
+	'color' => [
+		'en' => 'Color',
+		'mr' => 'रंग',
+	],
+
+
+	'seating_arrangement' => [
+		'en' => 'Seating Arrangement',
+		'mr' => 'बसण्याची व्यवस्था',
+	],
+
+
 	'no_share' => [
 		'en' => 'No share',
 		'mr' => 'माहित नाही',
@@ -1554,6 +1693,60 @@ $_dictionary = array(
 		'en' => 'Daily Sales',
 		'mr' => 'दैनिक विक्री',
 	],
+
+	// Partner 
+
+
+	'partners' => [
+		'en' => 'Partners',
+		'mr' => 'वितरण सहयोगी',
+	],
+	'view_partners' => [
+		'en' => 'View Partners',
+		'mr' => 'सहयोगी पहा',
+	],
+	'add_partner' => [
+		'en' => 'View Partners',
+		'mr' => 'सहयोगी जोडा ',
+	],
+	'partner_name' => [
+		'en' => 'Partner Name',
+		'mr' => 'वितरण सहयोगीचे नाव',
+	],
+	'partner_type' => [
+		'en' => 'Partner Type',
+		'mr' => 'सहयोगी प्रकार',
+	],
+	'select_type' => [
+		'en' => 'Select Type',
+		'mr' => 'प्रकार निवडा',
+	],
+	'daily_wages' => [
+		'en' => 'Daily Wages',
+		'mr' => 'दैनिक वेतन',
+	],
+	'staff' => [
+		'en' => 'Staff',
+		'mr' => 'कर्मचारी',
+	],
+	'outstation_services' => [
+		'en' => 'Outstation Services',
+		'mr' => 'बाह्य सेवा',
+	],
+	'daily_services' => [
+		'en' => 'Daily Services',
+		'mr' => 'दैनिक सेवा',
+	],
+	'upi_id' => [
+		'en' => 'UPI ID',
+		'mr' => 'UPI आयडी ',
+	],
+
+
+
+
+
+
 	// Purchase
 	'add_new_purchase' => [
 		'en' => 'Add new purchase',
@@ -1933,8 +2126,8 @@ $_dictionary = array(
 		'en' => "HR Department",
 		'mr' => ' एच आर  विभाग ',
 	],
-	
-	
+
+
 	'select_farmer' => [
 		'en' => "Select Farmer",
 		'mr' => 'शेतकरी  निवडा',
@@ -2116,6 +2309,16 @@ $_dictionary = array(
 	],
 
 	// Sales / Billing
+
+
+	'save' => [
+		'en' => 'Save',
+		'mr' => 'जतन करा',
+	],
+	'reset' => [
+		'en' => 'Reset',
+		'mr' => 'रिसेट करा',
+	],
 	'sales_date' => [
 		'en' => 'Sales Date',
 		'mr' => 'विक्री दिनांक',
@@ -2887,6 +3090,12 @@ $_dictionary = array(
 		'mr' => 'कोटेशन मध्ये नोट्स दाखवा',
 	],
 	// Address
+
+
+	'address' => [
+		'en' => 'Address',
+		'mr' => 'पत्ता',
+	],
 	'village' => [
 		'en' => 'Village',
 		'mr' => 'गाव',
@@ -3013,6 +3222,1782 @@ $_dictionary = array(
 		'en' => 'Clear',
 		'mr' => 'क्लिअर करा',
 	],
+
+
+	'feedback' => [
+		'en' => 'Feedback',
+		'mr' => 'अभिप्राय',
+	],
+
+	'transaction_id' => [
+		'en' => 'Transaction ID',
+		'mr' => 'व्यवहार आयडी',
+	],
+
+
+	'pickup_address' => [
+		'en' => 'Pickup Address',
+		'mr' => 'उचलण्याचा पत्ता',
+	],
+
+	'drop_address' => [
+		'en' => 'Drop Address',
+		'mr' => 'सोडण्याचा पत्ता',
+	],
+
+	'request_time' => [
+		'en' => 'Request Time',
+		'mr' => 'विनंतीची वेळ',
+	],
+
+	'request_type' => [
+		'en' => 'Request Type',
+		'mr' => 'विनंती प्रकार',
+	],
+
+	'ride_requests' => [
+		'en' => 'Ride Requests',
+		'mr' => 'राइड विनंत्या',
+	],
+
+	'view_ride_requests' => [
+		'en' => 'View Ride Requests',
+		'mr' => 'राइड विनंत्या पहा',
+	],
+
+	'pending' => [
+		'en' => 'Pending',
+		'mr' => 'प्रलंबित',
+	],
+
+
+	// Rental Management
+	'add_package' => [
+		'en' => 'Add Package',
+		'mr' => 'पॅकेज जोडा',
+	],
+	'distance_km' => [
+		'en' => 'Distance (KM)',
+		'mr' => 'अंतर (किमी)',
+	],
+	'enter_distance' => [
+		'en' => 'Enter Distance',
+		'mr' => 'अंतर प्रविष्ट करा',
+	],
+	'time_hours' => [
+		'en' => 'Time (Hours)',
+		'mr' => 'वेळ (तास)',
+	],
+	'enter_time' => [
+		'en' => 'Enter Time',
+		'mr' => 'वेळ प्रविष्ट करा',
+	],
+
+
+	// Rental Management
+	'view_packages' => [
+		'en' => 'View Packages',
+		'mr' => 'पॅकेज पहा',
+	],
+
+	'serial_no' => [
+		'en' => 'Serial No',
+		'mr' => 'अनुक्रमांक',
+	],
+
+
+	'image_description' => [
+		'en' => 'Image Description',
+		'mr' => 'प्रतिमा वर्णन',
+	],
+
+	'show' => [
+		'en' => 'Show',
+		'mr' => 'दाखवा',
+	],
+	'entries' => [
+		'en' => 'entries',
+		'mr' => 'नोंदी',
+	],
+
+	'company_footer' => [
+		'en' => 'Nursery Solution | Paarsh Infotech Pvt. Ltd. © 2022',
+		'mr' => 'नर्सरी सोल्यूशन | पार्श इन्फोटेक प्रा. लि. © 2022',
+	],
+	// Rental Service
+	'add_rental_service' => [
+		'en' => 'Add Rental Service',
+		'mr' => 'भाड्याने सेवा जोडा',
+	],
+	'hourly_package' => [
+		'en' => 'Hourly Package',
+		'mr' => 'तासिक पॅकेज',
+	],
+	'basic' => [
+		'en' => 'Basic',
+		'mr' => 'मूळ',
+	],
+	'base_fare' => [
+		'en' => 'Base Fare',
+		'mr' => 'मूळ भाडे',
+	],
+	'booking_fee' => [
+		'en' => 'Booking Fee',
+		'mr' => 'बुकिंग फी',
+	],
+	'vehicle_type' => [
+		'en' => 'Vehicle Type',
+		'mr' => 'वाहन प्रकार',
+	],
+	'car' => [
+		'en' => 'Car',
+		'mr' => 'कार',
+	],
+	'per_km_rate' => [
+		'en' => 'Per KM Rate',
+		'mr' => 'प्रति किमी दर',
+	],
+	'per_minute_rate' => [
+		'en' => 'Per Minute Rate',
+		'mr' => 'प्रति मिनिट दर',
+	],
+	// Rental Service
+	'view_rental_service' => [
+		'en' => 'View Rental Service',
+		'mr' => 'भाड्याने सेवा पहा',
+	],
+
+	// Service
+
+	'service' => [
+		'en' => 'Service',
+		'mr' => 'सेवा'
+	],
+	'service_name' => [
+		'en' => 'Service Name',
+		'mr' => 'सेवा नाव',
+	],
+	'number_of_seats' => [
+		'en' => 'Number of Seats',
+		'mr' => 'आसनांची संख्या',
+	],
+
+	'minimum_fare' => [
+		'en' => 'Minimum Fare',
+		'mr' => 'किमान शुल्क',
+	],
+	'booking_fare' => [
+		'en' => 'Booking Fare',
+		'mr' => 'बुकिंग शुल्क',
+	],
+	'tax_percentage' => [
+		'en' => 'Tax Percentage',
+		'mr' => 'कर टक्केवारी',
+	],
+	'price_per_minute' => [
+		'en' => 'Price per Minute',
+		'mr' => 'प्रति मिनिट किंमत',
+	],
+	'price_per_mile_km' => [
+		'en' => 'Price per Mile/Km',
+		'mr' => 'प्रति माईल/किमी किंमत',
+	],
+	'mileage' => [
+		'en' => 'Mileage (Dropdown: Yes/No)',
+		'mr' => 'माईलेज (ड्रॉपडाउन: होय/नाही)',
+	],
+	'daily_service' => [
+		'en' => 'Daily Service (Dropdown: Yes/No)',
+		'mr' => 'दैनिक सेवा (ड्रॉपडाउन: होय/नाही)',
+	],
+	'outstation_service' => [
+		'en' => 'Outstation Service (Dropdown: Yes/No)',
+		'mr' => 'आउटस्टेशन सेवा (ड्रॉपडाउन: होय/नाही)',
+	],
+	'rental_service' => [
+		'en' => 'Rental Service (Dropdown: Yes/No)',
+		'mr' => 'भाडे सेवा (ड्रॉपडाउन: होय/नाही)',
+	],
+	'provider_commission' => [
+		'en' => 'Provider Commission (Percentage)',
+		'mr' => 'प्रदायक आयोग (टक्केवारी)',
+	],
+	'admin_commission' => [
+		'en' => 'Admin Commission (Percentage)',
+		'mr' => 'व्यवस्थापक आयोग (टक्केवारी)',
+	],
+	'driver_cash_limit' => [
+		'en' => 'Driver Cash Limit',
+		'mr' => 'ड्रायव्हर रोख मर्यादा',
+	],
+	'service_picture' => [
+		'en' => 'Service Picture',
+		'mr' => 'सेवा चित्र',
+	],
+
+	// User Rating
+
+	'rating' => [
+		'en' => 'Rating',
+		'mr' => 'मूल्यांकन',
+	],
+
+	'comments' => [
+		'en' => 'Comments',
+		'mr' => 'टिप्पणी',
+	],
+	'request_count' => [
+		'en' => 'Request Count',
+		'mr' => 'विनंती संख्या',
+	],
+
+
+	// Cancellation
+
+
+	'cancellation_form' => [
+		'en' => 'Cancellation Form',
+		'mr' => 'रद्द करण्याचा फॉर्म',
+	],
+
+	'cancellation_reason' => [
+		'en' => 'Cancellation Reason',
+		'mr' => 'रद्द करण्याचे कारण',
+	],
+
+	'select_reason' => [
+		'en' => 'Select Reason',
+		'mr' => 'कारण निवडा',
+	],
+
+	'delayed' => [
+		'en' => 'Delayed',
+		'mr' => 'उशीर झाला',
+	],
+
+	'wrong_item' => [
+		'en' => 'Wrong Item',
+		'mr' => 'चुकीची वस्तू',
+	],
+
+	'change_mind' => [
+		'en' => 'Changed My Mind',
+		'mr' => 'मन बदलले',
+	],
+
+	'booked_by_mistake' => [
+		'en' => 'Booked by Mistake',
+		'mr' => 'चुकून बुक केले',
+	],
+
+	'found_another_ride' => [
+		'en' => 'Found Another Ride',
+		'mr' => 'दुसरी सवारी सापडली',
+	],
+
+	'price_too_high' => [
+		'en' => 'Price Too High',
+		'mr' => 'किंमत खूप जास्त आहे',
+	],
+
+	'other' => [
+		'en' => 'Other',
+		'mr' => 'इतर',
+	],
+
+	'custom_reason' => [
+		'en' => 'Custom Reason',
+		'mr' => 'स्वतःचे कारण',
+	],
+
+	'enter_custom_reason' => [
+		'en' => 'Enter Custom Reason',
+		'mr' => 'स्वतःचे कारण प्रविष्ट करा',
+	],
+
+	'additional_info' => [
+		'en' => 'Additional Information',
+		'mr' => 'अतिरिक्त माहिती',
+	],
+
+	'provide_additional_details' => [
+		'en' => 'Provide Additional Details',
+		'mr' => 'अतिरिक्त तपशील द्या',
+	],
+
+
+	'view_cancellations' => [
+		'en' => 'View Cancellations',
+		'mr' => 'रद्द करण्याचे दृश्य',
+	],
+
+	'place_new_order' => [
+		'en' => 'Place New Order',
+		'mr' => 'नवीन ऑर्डर ठेवा',
+	],
+
+	'filter' => [
+		'en' => 'Filter',
+		'mr' => 'गाळणी',
+	],
+
+	'filter_by_cancellation_reasons' => [
+		'en' => 'Filter by Cancellation Reasons',
+		'mr' => 'रद्द करण्याच्या कारणांनुसार गाळणी',
+	],
+
+	'filter_by_user_id' => [
+		'en' => 'Filter by User ID',
+		'mr' => 'वापरकर्ता आयडी नुसार गाळणी',
+	],
+
+	'all' => [
+		'en' => 'All',
+		'mr' => 'सर्व',
+	],
+
+	'late_delivery' => [
+		'en' => 'Late Delivery',
+		'mr' => 'उशिरा वितरण',
+	],
+
+	'damaged_goods' => [
+		'en' => 'Damaged Goods',
+		'mr' => 'हानी झालेली उत्पादने',
+	],
+
+	'clear_all_filters' => [
+		'en' => 'Clear all filters',
+		'mr' => 'सर्व गाळण्या साफ करा',
+	],
+
+	'close' => [
+		'en' => 'Close',
+		'mr' => 'बंद करा',
+	],
+
+	'apply_filters' => [
+		'en' => 'Apply Filters',
+		'mr' => 'गाळण्या लागू करा',
+	],
+
+	'customer_name' => [
+		'en' => 'Customer Name',
+		'mr' => 'ग्राहकाचे नाव',
+	],
+
+	'cancellation_reason' => [
+		'en' => 'Cancellation Reason',
+		'mr' => 'रद्द करण्याचे कारण',
+	],
+
+	'customer_id' => [
+		'en' => 'Customer ID',
+		'mr' => 'ग्राहक आयडी',
+	],
+
+	'vehicle_id' => [
+		'en' => 'Vehicle ID',
+		'mr' => 'वाहन आयडी',
+	],
+
+	'driver_name' => [
+		'en' => 'Driver Name',
+		'mr' => 'चालकाचे नाव',
+	],
+
+	'date' => [
+		'en' => 'Date',
+		'mr' => 'तारीख',
+	],
+
+	'action' => [
+		'en' => 'Action',
+		'mr' => 'क्रिया',
+	],
+
+	'view' => [
+		'en' => 'View',
+		'mr' => 'पहा',
+	],
+
+	'edit' => [
+		'en' => 'Edit',
+		'mr' => 'संपादित करा',
+	],
+
+	'delete' => [
+		'en' => 'Delete',
+		'mr' => 'हटवा',
+	],
+
+	'actions' => [
+		'en' => 'Actions',
+		'mr' => 'क्रिया',
+	],
+
+	'price_too_high' => [
+		'en' => 'Price too high',
+		'mr' => 'किंमत खूप जास्त आहे',
+	],
+
+
+	// view cancellation
+
+	'view_cancellations' => [
+		'en' => 'View Cancellations',
+		'mr' => 'रद्द केलेले पहा',
+	],
+	'filter' => [
+		'en' => 'Filter',
+		'mr' => 'गाळणी',
+	],
+	'filter_by_cancellation_reasons' => [
+		'en' => 'Filter by Cancellation Reasons',
+		'mr' => 'रद्द करण्याच्या कारणांनुसार गाळणी करा',
+	],
+	'filter_by_user_id' => [
+		'en' => 'Filter by User ID',
+		'mr' => 'वापरकर्ता आयडी नुसार गाळणी करा',
+	],
+	'all' => [
+		'en' => 'All',
+		'mr' => 'सर्व',
+	],
+	'late_delivery' => [
+		'en' => 'Late Delivery',
+		'mr' => 'विलंबित वितरण',
+	],
+	'damaged_goods' => [
+		'en' => 'Damaged Goods',
+		'mr' => 'निकृष्ट वस्तू',
+	],
+	'clear_all_filters' => [
+		'en' => 'Clear all filters',
+		'mr' => 'सर्व गाळण्या साफ करा',
+	],
+	'close' => [
+		'en' => 'Close',
+		'mr' => 'बंद करा',
+	],
+	'apply_filters' => [
+		'en' => 'Apply Filters',
+		'mr' => 'गाळणी लागू करा',
+	],
+	'search_here' => [
+		'en' => 'Search here',
+		'mr' => 'येथे शोधा',
+	],
+	'id' => [
+		'en' => 'ID',
+		'mr' => 'आयडी',
+	],
+	'customer_name' => [
+		'en' => 'Customer Name',
+		'mr' => 'ग्राहकाचे नाव',
+	],
+	'cancellation_reason' => [
+		'en' => 'Cancellation Reason',
+		'mr' => 'रद्द करण्याचे कारण',
+	],
+	'customer_id' => [
+		'en' => 'Customer ID',
+		'mr' => 'ग्राहक आयडी',
+	],
+	'vehicle_id' => [
+		'en' => 'Vehicle ID',
+		'mr' => 'वाहन आयडी',
+	],
+	'driver_name' => [
+		'en' => 'Driver Name',
+		'mr' => 'चालकाचे नाव',
+	],
+	'date' => [
+		'en' => 'Date',
+		'mr' => 'तारीख',
+	],
+	'action' => [
+		'en' => 'Action',
+		'mr' => 'क्रिया',
+	],
+	'view' => [
+		'en' => 'View',
+		'mr' => 'पहा',
+	],
+	'edit' => [
+		'en' => 'Edit',
+		'mr' => 'संपादित करा',
+	],
+	'delete' => [
+		'en' => 'Delete',
+		'mr' => 'हटवा',
+	],
+	'actions' => [
+		'en' => 'Actions',
+		'mr' => 'क्रिया',
+	],
+	'export' => [
+		'en' => 'Export',
+		'mr' => 'निर्यात',
+	],
+	'copy' => [
+		'en' => 'Copy',
+		'mr' => 'प्रत करा',
+	],
+	'excel' => [
+		'en' => 'Excel',
+		'mr' => 'एक्सेल',
+	],
+	'csv' => [
+		'en' => 'CSV',
+		'mr' => 'CSV',
+	],
+	'pdf' => [
+		'en' => 'PDF',
+		'mr' => 'PDF',
+	],
+	'print' => [
+		'en' => 'Print',
+		'mr' => 'प्रिंट',
+	],
+	'page' => [
+		'en' => 'page',
+		'mr' => 'प्रिंट',
+	],
+
+
+	// Vehicle 
+
+
+	//Add Vehicle
+
+	'add_vehicle' => [
+		'en' => 'Add Vehicle',
+		'mr' => 'वाहन जोडा',
+	],
+	'view_vehicles' => [
+		'en' => 'View Vehicles',
+		'mr' => 'वाहने पहा',
+	],
+	'vehicle_name' => [
+		'en' => 'Vehicle Name',
+		'mr' => 'वाहनाचे नाव',
+	],
+	'select' => [
+		'en' => 'Select',
+		'mr' => 'निवडा',
+	],
+	'vehicle_model' => [
+		'en' => 'Vehicle Model',
+		'mr' => 'वाहन मॉडेल',
+	],
+	'driver_name' => [
+		'en' => 'Driver Name',
+		'mr' => 'ड्रायव्हरचे  नाव',
+	],
+	'vehicle_no' => [
+		'en' => 'Vehicle Number',
+		'mr' => 'वाहन क्रमांक',
+	],
+	'driver_mobile_number' => [
+		'en' => 'Driver Mobile Number',
+		'mr' => 'चालकाचा मोबाईल नंबर',
+	],
+	'contact_number' => [
+		'en' => 'Contact Number',
+		'mr' => 'संपर्क क्रमांक',
+	],
+	'reset' => [
+		'en' => 'Reset',
+		'mr' => 'रीसेट',
+	],
+	'save' => [
+		'en' => 'Save',
+		'mr' => 'संचयित करा',
+	],
+
+
+
+	// Document Management
+	'add_document_type' => [
+		'en' => 'Add Document Type',
+		'mr' => 'दस्तऐवज प्रकार जोडा',
+	],
+	'see_document_types' => [
+		'en' => 'See Document Types',
+		'mr' => 'दस्तऐवज प्रकार पहा',
+	],
+	'upload_preview_image' => [
+		'en' => 'Upload Preview Image',
+		'mr' => 'पूर्वावलोकन प्रतिमा अपलोड करा',
+	],
+	'document_management' => [
+		'en' => 'Document Management',
+		'mr' => 'दस्तऐवज व्यवस्थापन'
+	],
+
+	
+	//  Order Dashboard
+
+		// booking
+		'book' => [
+			'en' => "(Booking)",
+			'mr' => 'बुकिंग',
+		],
+		// Completed
+		'completed' => [
+		'en' => '(Completed)',
+		'mr' => 'पूर्ण झाले',
+	],
+'order_dashboard' => [
+    'en' => 'Order Dashboard',
+    'mr' => 'ऑर्डर डॅशबोर्ड',
+],
+
+	
+	'requests' => [
+		'en' => 'Requested Ride',
+		'mr' => 'विनंत्या',
+	],
+	'ongoing_requests' => [
+		'en' => 'Ongoing Rides',
+		'mr' => 'चालू गाड्या',
+	],
+	'completed_requests' => [
+		'en' => 'Completed Ride',
+		'mr' => 'पूर्ण झालेल्या गाड्या',
+	],
+	'canceled_requests' => [
+		'en' => 'Canceled Ride',
+		'mr' => 'रद्द झालेल्या गाड्या',
+	],
+	'rental_rides' => [
+		'en' => 'Rental Rides',
+		'mr' => 'भाड्याने गाड्या',
+	],
+	'booking' => [
+			'en' => "Booking Ride",
+			'mr' => 'बुकिंग गाड्या',
+		],
+		'total_bookings' => [
+			'en' => 'Total Bookings',
+			'mr' => 'एकूण बुकिंग्स',
+		],
+		'yearly_bookings' => [
+			'en' => 'Yearly Bookings',
+			'mr' => 'वार्षिक बुकिंग्स',
+		],
+		'monthly_bookings' => [
+			'en' => 'Monthly Bookings',
+			'mr' => 'मासिक बुकिंग्स',
+		],
+		'daily_bookings' => [
+			'en' => 'Daily Bookings',
+			'mr' => 'दैनिक बुकिंग्स',
+		],
+	
+		// Ride Requests
+		'total_requests' => [
+			'en' => 'Total Requests',
+			'mr' => 'एकूण विनंत्या',
+		],
+		'yearly_requests' => [
+			'en' => 'Yearly Requests',
+			'mr' => 'वार्षिक विनंत्या',
+		],
+		'monthly_requests' => [
+			'en' => 'Monthly Requests',
+			'mr' => 'मासिक विनंत्या',
+		],
+		'daily_requests' => [
+			'en' => 'Daily Requests',
+			'mr' => 'दैनिक विनंत्या',
+		],
+	
+		// Ongoing Rides
+		'total_ongoing_rides' => [
+			'en' => 'Total Ongoing Rides',
+			'mr' => 'एकूण चालू गाड्या',
+		],
+		'yearly_ongoing_rides' => [
+			'en' => 'Yearly Ongoing Rides',
+			'mr' => 'वार्षिक चालू गाड्या',
+		],
+		'monthly_ongoing_rides' => [
+			'en' => 'Monthly Ongoing Rides',
+			'mr' => 'मासिक चालू गाड्या',
+		],
+		'daily_ongoing_rides' => [
+			'en' => 'Daily Ongoing Rides',
+			'mr' => 'दैनिक चालू गाड्या',
+		],
+	
+		// Completed Rides
+		'total_completed_rides' => [
+			'en' => 'Total Completed Rides',
+			'mr' => 'एकूण पूर्ण झालेल्या गाड्या',
+		],
+		'yearly_completed_rides' => [
+			'en' => 'Yearly Completed Rides',
+			'mr' => 'वार्षिक पूर्ण झालेल्या गाड्या',
+		],
+		'monthly_completed_rides' => [
+			'en' => 'Monthly Completed Rides',
+			'mr' => 'मासिक पूर्ण झालेल्या गाड्या',
+		],
+		'daily_completed_rides' => [
+			'en' => 'Daily Completed Rides',
+			'mr' => 'दैनिक पूर्ण झालेल्या गाड्या',
+		],
+	
+		// Canceled Rides
+		'total_canceled_rides' => [
+			'en' => 'Total Canceled Rides',
+			'mr' => 'एकूण रद्द झालेल्या गाड्या',
+		],
+		'yearly_canceled_rides' => [
+			'en' => 'Yearly Canceled Rides',
+			'mr' => 'वार्षिक रद्द झालेल्या गाड्या',
+		],
+		'monthly_canceled_rides' => [
+			'en' => 'Monthly Canceled Rides',
+			'mr' => 'मासिक रद्द झालेल्या गाड्या',
+		],
+		'daily_canceled_rides' => [
+			'en' => 'Daily Canceled Rides',
+			'mr' => 'दैनिक रद्द झालेल्या गाड्या',
+		],
+	
+		// Rental Rides
+		'total_rental_rides' => [
+			'en' => 'Total Rental Rides',
+			'mr' => 'एकूण भाड्याने गाड्या',
+		],
+		'yearly_rental_rides' => [
+			'en' => 'Yearly Rental Rides',
+			'mr' => 'वार्षिक भाड्याने गाड्या',
+		],
+		'monthly_rental_rides' => [
+			'en' => 'Monthly Rental Rides',
+			'mr' => 'मासिक भाड्याने गाड्या',
+		],
+		'daily_rental_rides' => [
+			'en' => 'Daily Rental Rides',
+			'mr' => 'दैनिक भाड्याने गाड्या',
+		],
+	
+	
+
+	//View Rental Service
+	'serial_no' => [
+		'en' => 'Serial No',
+		'mr' => 'अनुक्रमांक'
+	],
+	'hourly_package' => [
+		'en' => 'Hourly Package',
+		'mr' => 'तासगणिक पॅकेज'
+	],
+	'base_fare' => [
+		'en' => 'Base Fare',
+		'mr' => 'मूलभूत भाडे'
+	],
+	'booking_fee' => [
+		'en' => 'Booking Fee',
+		'mr' => 'बुकिंग शुल्क'
+	],
+	'vehicle_type' => [
+		'en' => 'Vehicle Type',
+		'mr' => 'वाहन प्रकार'
+	],
+	'per_km_rate' => [
+		'en' => 'Per KM Rate',
+		'mr' => 'प्रति किलोमीटर दर'
+	],
+	'per_minute_rate' => [
+		'en' => 'Per Minute Rate',
+		'mr' => 'प्रति मिनिट दर'
+	],
+	'action' => [
+		'en' => 'Action',
+		'mr' => 'क्रिया'
+	],
+	'actions' => [
+		'en' => 'Actions',
+		'mr' => 'क्रिया'
+	],
+	'transactions' => [
+		'en' => 'Transactions',
+		'mr' => 'व्यवहार'
+	],
+	'redeems' => [
+		'en' => 'Redeems',
+		'mr' => 'मिळवा'
+	],
+	'first_package' => [
+		'en' => 'First Package',
+		'mr' => 'प्रथम पॅकेज'
+	],
+	'bike' => [
+		'en' => 'Bike',
+		'mr' => 'बाईक'
+	],
+	'view_rental_services' => [
+		'en' => 'View Rental Services',
+		'mr' => 'भाड्याने सेवा पहा'
+	],
+	'search_placeholder' => [
+		'en' => 'Search here',
+		'mr' => 'इथे शोधा'
+	],
+	//ADD PACKAGE
+	'Add Package' => [
+		'en' => 'Add Package',
+		'mr' => 'पॅकेज जोडा'
+	],
+	'Distance (KM)' => [
+		'en' => 'Distance (KM)',
+		'mr' => 'दूरी (KM)'
+	],
+	'Enter Distance' => [
+		'en' => 'Enter Distance',
+		'mr' => 'दूरी प्रविष्ट करा'
+	],
+	'Time (Hours)' => [
+		'en' => 'Time (Hours)',
+		'mr' => 'वेळ (तास)'
+	],
+	'Enter Time' => [
+		'en' => 'Enter Time',
+		'mr' => 'वेळ प्रविष्ट करा'
+	],
+	'Save' => [
+		'en' => 'Save',
+		'mr' => 'संचयित करा'
+	],
+	'Reset' => [
+		'en' => 'Reset',
+		'mr' => 'रीसेट'
+	],
+
+	'View Packages' => [
+		'en' => 'View Packages',
+		'mr' => 'पॅकेजेस पहा'
+	],
+	'Search here' => [
+		'en' => 'Search here',
+		'mr' => 'येथे शोधा'
+	],
+	'Serial No' => [
+		'en' => 'Serial No',
+		'mr' => 'सिरियल नंबर'
+	],
+	'Distance (km)' => [
+		'en' => 'Distance (km)',
+		'mr' => 'दूरी (किमी)'
+	],
+	'Time (hours)' => [
+		'en' => 'Time (hours)',
+		'mr' => 'वेळ (तास)'
+	],
+	'Action' => [
+		'en' => 'Action',
+		'mr' => 'कार्य'
+	],
+	'Actions' => [
+		'en' => 'Actions',
+		'mr' => 'कार्य'
+	],
+	'Transactions' => [
+		'en' => 'Transactions',
+		'mr' => 'लेन-देन'
+	],
+	'Redeems' => [
+		'en' => 'Redeems',
+		'mr' => 'रिडीम'
+	],
+	'Copy' => [
+		'en' => 'Copy',
+		'mr' => 'कॉपी'
+	],
+	'Excel' => [
+		'en' => 'Excel',
+		'mr' => 'एक्सेल'
+	],
+	'CSV' => [
+		'en' => 'CSV',
+		'mr' => 'CSV'
+	],
+	'PDF' => [
+		'en' => 'PDF',
+		'mr' => 'PDF'
+	],
+	'Print' => [
+		'en' => 'Print',
+		'mr' => 'प्रिंट'
+	],
+
+
+
+	// Wallet Management
+
+	'user_wallets' => [
+		'en' => 'User Wallets',
+		'mr' => 'वापरकर्ता वॉलेट',
+	],
+	'search_here' => [
+		'en' => 'Search here',
+		'mr' => 'येथे शोधा',
+	],
+	'user_name' => [
+		'en' => 'User Name',
+		'mr' => 'वापरकर्त्याचे नाव',
+	],
+	'total_amount' => [
+		'en' => 'Total Amount',
+		'mr' => 'एकूण रक्कम',
+	],
+	'remaining_amount' => [
+		'en' => 'Remaining Amount',
+		'mr' => 'शिल्लक रक्कम',
+	],
+	'used_amount' => [
+		'en' => 'Used Amount',
+		'mr' => 'वापरलेली रक्कम',
+	],
+	'last_updated' => [
+		'en' => 'Last Updated',
+		'mr' => 'शेवटचे अद्यतन',
+	],
+	'actions' => [
+		'en' => 'Actions',
+		'mr' => 'क्रिया',
+	],
+	'transactions' => [
+		'en' => 'Transactions',
+		'mr' => 'व्यवहार',
+	],
+	'redeems' => [
+		'en' => 'Redeems',
+		'mr' => 'परतावा',
+	],
+	'copy' => [
+		'en' => 'Copy',
+		'mr' => 'कॉपी',
+	],
+	'excel' => [
+		'en' => 'Excel',
+		'mr' => 'एक्सेल',
+	],
+	'csv' => [
+		'en' => 'CSV',
+		'mr' => 'सीएसव्ही',
+	],
+	'pdf' => [
+		'en' => 'PDF',
+		'mr' => 'पीडीएफ',
+	],
+	'print' => [
+		'en' => 'Print',
+		'mr' => 'प्रिंट',
+	],
+	'Wallet Payments' => [
+		'en' => 'Wallet Payments',
+		'mr' => 'वॉलेट पेमेंट्स',
+	],
+	'Passenger Name' => [
+		'en' => 'Passenger Name',
+		'mr' => 'प्रवासी नाव',
+	],
+	'Title' => [
+		'en' => 'Title',
+		'mr' => 'शीर्षक',
+	],
+	'Payment ID' => [
+		'en' => 'Payment ID',
+		'mr' => 'पेमेंट आयडी',
+	],
+	'Payment Mode' => [
+		'en' => 'Payment Mode',
+		'mr' => 'पेमेंट मोड',
+	],
+	'Total Amount' => [
+		'en' => 'Total Amount',
+		'mr' => 'एकूण रक्कम',
+	],
+	'Paid At' => [
+		'en' => 'Paid At',
+		'mr' => 'पेमेंट तारीख',
+	],
+	'Flight Payment' => [
+		'en' => 'Flight Payment',
+		'mr' => 'फ्लाइट पेमेंट',
+	],
+	'Train Payment' => [
+		'en' => 'Train Payment',
+		'mr' => 'ट्रेन पेमेंट',
+	],
+	'Credit Card' => [
+		'en' => 'Credit Card',
+		'mr' => 'क्रेडिट कार्ड',
+	],
+	'Debit Card' => [
+		'en' => 'Debit Card',
+		'mr' => 'डेबिट कार्ड',
+	],
+	'Actions' => [
+		'en' => 'Actions',
+		'mr' => 'क्रिया',
+	],
+	'Transactions' => [
+		'en' => 'Transactions',
+		'mr' => 'व्यवहार',
+	],
+	'Redeems' => [
+		'en' => 'Redeems',
+		'mr' => 'रिडीम्स',
+	],
+
+
+	
+	// Services
+
+	'add_service' => [
+		'en' => 'Add Service',
+		'mr' => 'नवीन सेवा जोडा',
+	],
+
+
+	'service_name' => [
+		'en' => 'Service Name',
+		'mr' => 'सेवा नाव',
+	],
+	'number_of_seats' => [
+		'en' => 'Number of Seats',
+		'mr' => 'आसनांची संख्या',
+	],
+	'base_fare' => [
+		'en' => 'Base Fare',
+		'mr' => 'बेस शुल्क',
+	],
+	'minimum_fare' => [
+		'en' => 'Minimum Fare',
+		'mr' => 'किमान शुल्क',
+	],
+	'booking_fee' => [
+		'en' => 'Booking Fee',
+		'mr' => 'बुकिंग फी',
+	],
+	'tax_percentage' => [
+		'en' => 'Tax Percentage',
+		'mr' => 'कर टक्केवारी',
+	],
+	'price_per_minute' => [
+		'en' => 'Price per Minute',
+		'mr' => 'प्रति मिनिट किंमत',
+	],
+	'price_per_mile_km' => [
+		'en' => 'Price per Mile/Km',
+		'mr' => 'प्रति माईल/किमी किंमत',
+	],
+	'mileage' => [
+		'en' => 'Mileage (Dropdown: Yes/No)',
+		'mr' => 'माईलेज (ड्रॉपडाउन: होय/नाही)',
+	],
+	'daily_service' => [
+		'en' => 'Daily Service (Dropdown: Yes/No)',
+		'mr' => 'दैनिक सेवा (ड्रॉपडाउन: होय/नाही)',
+	],
+	'outstation_service' => [
+		'en' => 'Outstation Service (Dropdown: Yes/No)',
+		'mr' => 'आउटस्टेशन सेवा (ड्रॉपडाउन: होय/नाही)',
+	],
+	'rental_service' => [
+		'en' => 'Rental Service (Dropdown: Yes/No)',
+		'mr' => 'भाडे सेवा (ड्रॉपडाउन: होय/नाही)',
+	],
+	'provider_commission' => [
+		'en' => 'Provider Commission (Percentage)',
+		'mr' => 'प्रदायक आयोग (टक्केवारी)',
+	],
+	'admin_commission' => [
+		'en' => 'Admin Commission (Percentage)',
+		'mr' => 'व्यवस्थापक आयोग (टक्केवारी)',
+	],
+	'driver_cash_limit' => [
+		'en' => 'Driver Cash Limit',
+		'mr' => 'ड्रायव्हर रोख मर्यादा',
+	],
+	'service_picture' => [
+		'en' => 'Service Picture',
+		'mr' => 'सेवा चित्र',
+	],
+	
+	'users' => [
+	'en' => 'Users',
+	'mr' => 'वापरकर्ते',
+],
+'mobile_number' => [
+	'en' => 'Mobile Number',
+	'mr' => 'मोबाईल नंबर',
+],
+
+
+// Notification
+
+
+//notification--
+'custom_push' => [
+	'en' => 'Custom Push',
+	'mr' => 'कस्टम पुश',
+],
+'notification' => [
+	'en' => 'Notification',
+	'mr' => 'सूचना',
+],
+'SMS' => [
+	'en' => 'SMS',
+	'mr' => 'एसएमएस',
+],
+'WhatsApp' => [
+	'en' => 'WhatsApp',
+	'mr' => 'व्हॉट्सअ‍ॅप',
+],
+'send_by' => [
+	'en' => 'Send By',
+	'mr' => 'कायम करण्यासाठी',
+],
+'select' => [
+	'en' => 'Please Select',
+	'mr' => 'कृपया निवडा',
+],
+'Admin' => [
+	'en' => 'Admin',
+	'mr' => 'प्रशासक',
+],
+'User' => [
+	'en' => 'User',
+	'mr' => 'वापरकर्ता',
+],
+'Partner' => [
+	'en' => 'Partner',
+	'mr' => 'भागीदार',
+],
+'message' => [
+	'en' => 'Message',
+	'mr' => 'संदेश',
+],
+'Select Admin' => [
+	'en' => 'Select Admin',
+	'mr' => 'प्रशासक निवडा',
+],
+'Select User' => [
+	'en' => 'Select User',
+	'mr' => 'वापरकर्ता निवडा',
+],
+'send' => [
+	'en' => 'Send',
+	'mr' => 'पाठवा',
+],
+'Select Partners' => [
+	'en' => 'Select Partners',
+	'mr' => 'सहभागी निवडा',
+],
+'all' => [
+	'en' => 'All',
+	'mr' => 'सर्व',
+],
+'Online' => [
+	'en' => 'Online',
+	'mr' => 'ऑनलाइन',
+],
+'Offline' => [
+	'en' => 'Offline',
+	'mr' => 'ऑफलाइन',
+],
+
+
+//notification-management--
+
+'notification_management' => [
+	'en' => 'Notification Management',
+	'mr' => 'सूचना व्यवस्थापन',
+],
+'id' => [
+	'en' => 'ID',
+	'mr' => 'आयडी',
+],
+'user id' => [
+	'en' => 'User ID',
+	'mr' => 'वापरकर्ता आयडी',
+],
+'partner id' => [
+	'en' => 'Partner ID',
+	'mr' => 'भागीदार आयडी',
+],
+'status' => [
+	'en' => 'Status',
+	'mr' => 'स्थिती',
+],
+'message' => [
+	'en' => 'Message',
+	'mr' => 'संदेश',
+],
+
+'created_at' =>[
+'en' => 'Created At',
+'mr' => 'निर्मित तारीख'
+],
+
+'delivered_at' => [
+	'en' => 'Delivered At',
+	'mr' => 'पोचवण्याची तारीख',
+],
+
+
+// Transactions
+
+    'transactions' => [
+'en' => 'Transactions',
+'mr' => 'व्यवहार',
+    ],
+
+    'transaction_id' => [
+        'en' => 'Transaction ID',
+        'mr' => 'व्यवहार आयडी',
+    ],
+    'order_id' => [
+        'en' => 'Order ID',
+        'mr' => 'ऑर्डर आयडी',
+    ],
+    'user_id' => [
+        'en' => 'User ID',
+        'mr' => 'वापरकर्ता आयडी',
+    ],
+    'partner_id' => [
+        'en' => 'Partner ID',
+        'mr' => 'भागीदार आयडी',
+    ],
+    'amount' => [
+        'en' => 'Amount',
+        'mr' => 'रक्कम',
+    ],
+    'payment method' => [
+        'en' => 'Payment Method',
+        'mr' => 'देयक पद्धत',
+    ],
+    'status' => [
+        'en' => 'Status',
+        'mr' => 'स्थिती',
+    ],
+    'date & time' => [
+        'en' => 'Date & Time',
+        'mr' => 'तारीख आणि वेळ',
+    ],
+    'search here' => [
+        'en' => 'Search here',
+        'mr' => 'येथे शोधा',
+    ],
+    'online' => [
+        'en' => 'Online',
+        'mr' => 'ऑनलाइन',
+    ],
+    'completed' => [
+        'en' => 'Completed',
+        'mr' => 'पूर्ण झाले',
+    ],
+    'copy' => [
+        'en' => 'Copy',
+        'mr' => 'कॉपी करा',
+    ],
+    'excel' => [
+        'en' => 'Excel',
+        'mr' => 'एक्सेल',
+    ],
+    'csv' => [
+        'en' => 'CSV',
+        'mr' => 'सीएसव्ही',
+    ],
+    'pdf' => [
+        'en' => 'PDF',
+        'mr' => 'पीडीएफ',
+    ],
+    'print' => [
+        'en' => 'Print',
+        'mr' => 'छपाई',
+    ],
+
+
+	// Promocodes 
+	// Add Promocode
+
+	'add_promocode' => [
+	'en' => 'Add Promocode',
+	'mr' => 'प्रोमोकोड जोडा',
+],
+'view_promocodes' => [
+	'en' => 'View Promocodes',
+	'mr' => 'प्रोमोकोड्स पहा',
+],
+'promo_code' => [
+	'en' => 'Promo Code',
+	'mr' => 'प्रोमो कोड',
+],
+'discount_amount' => [
+	'en' => 'Discount Amount',
+	'mr' => 'सवलत रक्कम',
+],
+'max_usage_total' => [
+	'en' => 'Max Usage (Total)',
+	'mr' => 'कमाल वापर (एकूण)',
+],
+'max_usage_per_customer' => [
+	'en' => 'Max Usage (Per Customer)',
+	'mr' => 'कमाल वापर (प्रति ग्राहक)',
+],
+'type' => [
+	'en' => 'Type',
+	'mr' => 'प्रकार',
+],
+'flat_off' => [
+	'en' => 'Flat Off',
+	'mr' => 'सरळ सवलत',
+],
+'percent_off' => [
+	'en' => 'Percent Off',
+	'mr' => 'टक्केवारी सवलत',
+],
+'short_description' => [
+	'en' => 'Short Description',
+	'mr' => 'संक्षिप्त वर्णन',
+],
+'long_description' => [
+	'en' => 'Long Description',
+	'mr' => 'लांब वर्णन',
+],
+'start_date' => [
+	'en' => 'Start Date',
+	'mr' => 'सुरुवात तारीख',
+],
+'expiry_date' => [
+	'en' => 'Expiry Date',
+	'mr' => 'समाप्ती तारीख',
+],
+'save' => [
+	'en' => 'Save',
+	'mr' => 'साठवा',
+],
+'reset' => [
+	'en' => 'Reset',
+	'mr' => 'पुन्हा सेट करा',
+],
+
+
+// Edit Promocodes
+
+    'edit_promocode' => [
+        'en' => 'Edit Promocode',
+        'mr' => 'प्रोमोकोड संपादित करा',
+    ],
+    'view_promocodes' => [
+        'en' => 'View Promocodes',
+        'mr' => 'प्रोमोकोड पहा',
+    ],
+    'promo_code' => [
+        'en' => 'Promo Code',
+        'mr' => 'प्रोमो कोड',
+    ],
+    'discount_amount' => [
+        'en' => 'Discount Amount',
+        'mr' => 'सवलत रक्कम',
+    ],
+    'max_usage_total' => [
+        'en' => 'Max Usage (Total)',
+        'mr' => 'कमाल वापर (एकूण)',
+    ],
+    'max_usage_per_customer' => [
+        'en' => 'Max Usage (Per Customer)',
+        'mr' => 'कमाल वापर (प्रत्येक ग्राहकासाठी)',
+    ],
+    'type' => [
+        'en' => 'Type',
+        'mr' => 'प्रकार',
+    ],
+    'flat_off' => [
+        'en' => 'Flat Off',
+        'mr' => 'सरळ सवलत',
+    ],
+    'percent_off' => [
+        'en' => 'Percent Off',
+        'mr' => 'टक्केवारी सवलत',
+    ],
+    'short_description' => [
+        'en' => 'Short Description',
+        'mr' => 'लघु वर्णन',
+    ],
+    'long_description' => [
+        'en' => 'Long Description',
+        'mr' => 'दीर्घ वर्णन',
+    ],
+    'start_date' => [
+        'en' => 'Start Date',
+        'mr' => 'प्रारंभ तारीख',
+    ],
+    'expiry_date' => [
+        'en' => 'Expiry Date',
+        'mr' => 'कालावधी संपलेली तारीख',
+    ],
+
+
+	// View Promocodes
+
+
+    'view_promocodes' => [
+        'en' => 'View Promocodes',
+        'mr' => 'प्रोमोकोड पहा',
+    ],
+    'filter' => [
+        'en' => 'Filter',
+        'mr' => 'तपासणी करा',
+    ],
+    'filter_by_promo_code' => [
+        'en' => 'Filter by Promo Code',
+        'mr' => 'प्रोमो कोड द्वारा तपासा',
+    ],
+    'all' => [
+        'en' => 'All',
+        'mr' => 'सर्व',
+    ],
+    'filter_by_status' => [
+        'en' => 'Filter by Status',
+        'mr' => 'स्थिती द्वारा तपासा',
+    ],
+    'valid' => [
+        'en' => 'Valid',
+        'mr' => 'वैध',
+    ],
+    'invalid' => [
+        'en' => 'Invalid',
+        'mr' => 'अवैध',
+    ],
+    'expired' => [
+        'en' => 'Expired',
+        'mr' => 'कालबाह्य',
+    ],
+    'clear_all_filters' => [
+        'en' => 'Clear all filters',
+        'mr' => 'सर्व फिल्टर स्पष्ट करा',
+    ],
+    'close' => [
+        'en' => 'Close',
+        'mr' => 'बंद करा',
+    ],
+    'apply_filters' => [
+        'en' => 'Apply Filters',
+        'mr' => 'फिल्टर लागू करा',
+    ],
+    'search_here' => [
+        'en' => 'Search here',
+        'mr' => 'येथे शोधा',
+    ],
+    'actions' => [
+        'en' => 'Actions',
+        'mr' => 'क्रिया',
+    ],
+    'sr_no' => [
+        'en' => 'Sr.No',
+        'mr' => 'स.नं',
+    ],
+    'promo_code' => [
+        'en' => 'Promo Code',
+        'mr' => 'प्रोमो कोड',
+    ],
+    'start_date' => [
+        'en' => 'Start Date',
+        'mr' => 'प्रारंभ तारीख',
+    ],
+    'expiry_date' => [
+        'en' => 'Expiry Date',
+        'mr' => 'कालावधी संपलेली तारीख',
+    ],
+    'description' => [
+        'en' => 'Description',
+        'mr' => 'वर्णन',
+    ],
+    'status' => [
+        'en' => 'Status',
+        'mr' => 'स्थिती',
+    ],
+    'action' => [
+        'en' => 'Action',
+        'mr' => 'क्रिया',
+    ],
+    'copy' => [
+        'en' => 'Copy',
+        'mr' => 'कॉपी करा',
+    ],
+    'excel' => [
+        'en' => 'Excel',
+        'mr' => 'एक्सेल',
+    ],
+    'csv' => [
+        'en' => 'CSV',
+        'mr' => 'CSV',
+    ],
+    'pdf' => [
+        'en' => 'PDF',
+        'mr' => 'PDF',
+    ],
+    'print' => [
+        'en' => 'Print',
+        'mr' => 'प्रिंट करा',
+    ],
+
+	'feedback' => [
+		'en' => 'Feedback',
+		'mr' => 'अभिप्राय',
+	],
+	'select_rating'  => [
+		'en' => 'Select Rating',
+		'mr' => 'मूल्यांकन निवडा',
+	],
+	'enter_name' => [
+		'en' => 'Enter your name',
+		'mr' => 'तुमचे नाव प्रविष्ट करा',
+	],
+	'enter_feedback' => [
+		'en' => 'Enter your Feedback',
+		'mr' => 'तुमचा अभिप्राय प्रविष्ट करा',
+	],
+
+	'enter_feedback_here' => [
+		'en' => 'Enter Your Feedback Here',
+		'mr' => 'तुमचा अभिप्राय प्रविष्ट करा'
+	],
+
+
+	'add_feed' => [
+		'en' => 'Add Feedback',
+		'mr' => 'अभिप्राय जोडा',
+	],
+	'view_feedbacks' => [
+		'en' => 'View Feedbacks',
+		'mr' => 'अभिप्राय पहा',
+	],
+
+	'all_feedbacks' => [
+		'en' => 'All Feedbacks',
+		'mr' => 'सर्व अभिप्राय',
+	],
+
+
+	// Partner Ratings
+
+
+		'partner_ratings' => [
+			'en' => 'Partner Ratings',
+			'mr' => 'पार्टनर रेटिंग्स',
+		],
+		'place new order' => [
+			'en' => 'Place New Order',
+			'mr' => 'नवीन ऑर्डर ठरवा',
+		],
+		'sr_no' => [
+			'en' => 'Sr. No.',
+			'mr' => 'अनुक्रमांक',
+		],
+		'partner_name' => [
+			'en' => 'Partner Name',
+			'mr' => 'पार्टनरचे नाव',
+		],
+		'user_name' => [
+			'en' => 'User Name',
+			'mr' => 'वापरकर्त्याचे नाव',
+		],
+		'request_count' => [
+			'en' => 'Request Count',
+			'mr' => 'विनंती संख्या',
+		],
+		'date' => [
+			'en' => 'Date',
+			'mr' => 'तारीख',
+		],
+		'rating' => [
+			'en' => 'Rating',
+			'mr' => 'रेटिंग',
+		],
+		'comments' => [
+			'en' => 'Comments',
+			'mr' => 'टिप्पणी',
+		],
+		'action' => [
+			'en' => 'Action',
+			'mr' => 'क्रिया',
+		],
+		'filter' => [
+			'en' => 'Filter',
+			'mr' => 'फिल्टर',
+		],
+		'clear all filters' => [
+			'en' => 'Clear All Filters',
+			'mr' => 'सर्व फिल्टर्स साफ करा',
+		],
+		'apply filters' => [
+			'en' => 'Apply Filters',
+			'mr' => 'फिल्टर्स लागू करा',
+		],
+		'search here' => [
+			'en' => 'Search Here',
+			'mr' => 'येथे शोधा',
+		],
+		'excel' => [
+			'en' => 'Excel',
+			'mr' => 'एक्सेल',
+		],
+		'csv' => [
+			'en' => 'CSV',
+			'mr' => 'सीएसव्ही',
+		],
+		'pdf' => [
+			'en' => 'PDF',
+			'mr' => 'पीडीएफ',
+		],
+		'print' => [
+			'en' => 'Print',
+			'mr' => 'प्रिंट',
+		],
+
+	
+
+'user_ratings' => [
+    'en' => 'User Ratings',
+    'mr' => 'वापरकर्ता रेटिंग्स',
+],
+
+
+// FAQ 
+
+    'add_faq' => [
+        'en' => 'Add FAQs',
+        'mr' => 'FAQ जोडाः',
+    ],
+    'view_faqs' => [
+        'en' => 'View FAQs',
+        'mr' => 'FAQ पहा',
+    ],
+    'main_topic' => [
+        'en' => 'Main Topic',
+        'mr' => 'मुख्य विषय',
+    ],
+    'enter_main_topic' => [
+        'en' => 'Enter Main Topic',
+        'mr' => 'मुख्य विषय प्रविष्ट करा',
+    ],
+    'sub_topic' => [
+        'en' => 'Sub Topic',
+        'mr' => 'उपविषय',
+    ],
+    'enter_sub_topic' => [
+        'en' => 'Enter Sub Topic',
+        'mr' => 'उपविषय प्रविष्ट करा',
+    ],
+    'save' => [
+        'en' => 'Save',
+        'mr' => 'जतन करा',
+    ],
+    'select_main_topic' => [
+        'en' => 'Select Main Topic',
+        'mr' => 'मुख्य विषय निवडा',
+    ],
+    'choose_main_topic' => [
+        'en' => 'Choose Main Topic',
+        'mr' => 'मुख्य विषय निवडा',
+    ],
+    'select_sub_topic' => [
+        'en' => 'Select Sub Topic',
+        'mr' => 'उपविषय निवडा',
+    ],
+    'choose_sub_topic' => [
+        'en' => 'Choose Sub Topic',
+        'mr' => 'उपविषय निवडा',
+    ],
+    'question' => [
+        'en' => 'Question',
+        'mr' => 'प्रश्न',
+    ],
+    'enter_question' => [
+        'en' => 'Enter Question',
+        'mr' => 'प्रश्न प्रविष्ट करा',
+    ],
+    'answer' => [
+        'en' => 'Answer',
+        'mr' => 'उत्तर',
+    ],
+    'enter_answer' => [
+        'en' => 'Enter Answer',
+        'mr' => 'उत्तर प्रविष्ट करा',
+    ],
+    'reset' => [
+        'en' => 'Reset',
+        'mr' => 'पुन्हा सेट करा',
+    ],
+
+    'view_faqs' => [
+        'en' => 'View FAQs',
+        'mr' => 'FAQ पहा',
+    ],
+    'search_here' => [
+        'en' => 'Search Here',
+        'mr' => 'इथे शोधा',
+    ],
+    's_no' => [
+        'en' => 'S.NO',
+        'mr' => 'क्र.स.',
+    ],
+    'main_topic' => [
+        'en' => 'Main Topic',
+        'mr' => 'मुख्य विषय',
+    ],
+    'sub_topic' => [
+        'en' => 'Sub Topic',
+        'mr' => 'उप विषय',
+    ],
+    'question' => [
+        'en' => 'Question',
+        'mr' => 'प्रश्न',
+    ],
+    'answer' => [
+        'en' => 'Answer',
+        'mr' => 'उत्तर',
+    ],
+    'action' => [
+        'en' => 'Action',
+        'mr' => 'कार्य',
+    ],
+    'copy' => [
+        'en' => 'Copy',
+        'mr' => 'कॉपी',
+    ],
+    'excel' => [
+        'en' => 'Excel',
+        'mr' => 'एक्सेल',
+    ],
+    'csv' => [
+        'en' => 'CSV',
+        'mr' => 'CSV',
+    ],
+    'pdf' => [
+        'en' => 'PDF',
+        'mr' => 'PDF',
+    ],
+    'print' => [
+        'en' => 'Print',
+        'mr' => 'प्रिंट',
+    ],
+
+
+
+
+
 );
 if (pathinfo($_SERVER['SCRIPT_NAME'], PATHINFO_FILENAME) === 'lang' && isset($_GET['js_lang'])) {
 	$lang = (!empty($_GET['js_lang']) && in_array($_GET['js_lang'], ['en', 'mr'])) ? $_GET['js_lang'] : 'en';
@@ -3021,5 +5006,5 @@ if (pathinfo($_SERVER['SCRIPT_NAME'], PATHINFO_FILENAME) === 'lang' && isset($_G
 	foreach ($_dictionary as $title => $data) {
 		$langs[$title] = $data[$lang];
 	}
-	echo 'const language_disctionary = '. json_encode($langs,  JSON_UNESCAPED_UNICODE);
+	echo 'const language_disctionary = ' . json_encode($langs, JSON_UNESCAPED_UNICODE);
 }
