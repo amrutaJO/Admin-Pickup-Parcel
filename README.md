@@ -1,1 +1,1 @@
-# Admin Panel Pick up and Pay Parce;
+# Admin Panel Pick up and Pay Parcel
